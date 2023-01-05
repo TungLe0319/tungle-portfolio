@@ -1,0 +1,16 @@
+
+  {
+    "name": "tungle-portfolio",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "npm run setup:server",
+      "setup:app": "npm run setup:server && npm run setup:client",
+      "setup:client": "cd tungle-portfolio.client && npm i",
+      "setup:server": "cd tungle-portfolio && npm i",
+      "start": "node tungle-portfolio/index.js"
+    },
+    "engines": {
+      "node": "^14.17.0"
+    }
+  }
+  
