@@ -26,18 +26,21 @@
           
         </div>
         <div class="col-md-6">
-          <a
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            href="https://boisecodeworks.com/"
-          >
-            <div class="v-motion">
+        
+            <!-- <div class="v-motion">
               <img
                 src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
                 alt="Full Stack Immersive Logo"
                 class=" "
               /></div
-          ></a>
+          >
+         -->
+        <div class="card-1">
+
+  <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="Front image" class="front-image">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="Back image" class="back-image" width="175" height="175">
+</div>
+      
         </div>
 
         <div class="col-md-6 align-items-center">
@@ -354,6 +357,48 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+
+
+
+.card-1 {
+  perspective: 1000px;
+  position: relative;
+}
+
+.card-1 img {
+  position: absolute;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+}
+.card-1 img.front-image {
+  opacity: 0;
+
+}
+
+
+
+.card-1:hover img.front-image {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+
+.card-1:hover img.back-image {
+  opacity: 0;
+  transform: rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .active {
   color: #ffd454 !important;
   font-size: 2rem;
