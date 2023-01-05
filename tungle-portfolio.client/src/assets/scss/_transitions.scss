@@ -13,10 +13,9 @@
   opacity: 1; // try setting to 0
 }
 
-
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .fade-enter-from,
 .fade-leave-to {
@@ -25,7 +24,7 @@
 .slideY-enter-active,
 .slideY-leave-active {
   transform: translateY(0);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .slideY-enter-from,
 .slideY-leave-to {
@@ -34,7 +33,7 @@
 .slideX-enter-active,
 .slideX-leave-active {
   transform: translateX(0);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 }
 .slideX-enter-from,
 .slideX-leave-to {

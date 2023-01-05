@@ -6,9 +6,12 @@ import App from './App.vue'
 import { registerGlobalComponents } from './registerGlobalComponents'
 import { router } from './router'
 
-const root = createApp(App)
-registerGlobalComponents(root)
+import { MotionPlugin } from "@vueuse/motion";
+// Vuetify
 
-root
-  .use(router)
-  .mount('#app')
+// import Particles from "vue3-particles";
+
+const root = createApp(App);
+registerGlobalComponents(root);
+
+root.use(router).use(MotionPlugin).mount("#app");
