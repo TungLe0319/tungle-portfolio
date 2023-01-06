@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [vue()],
   build: {
-    outDir: '../tungle-portfolio/client',
+    outDir: 'dist',
     sourcemap: false
   },
   server: {
