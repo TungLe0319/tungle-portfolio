@@ -27,7 +27,7 @@
       <use xlink:href="#gentle-wave" x="50" y="9" fill="#18262c" />
     </g>
     <g class="parallax4">
-      <use xlink:href="#gentle-wave" x="50" y="6" fill="#333333" />
+      <use xlink:href="#gentle-wave" x="50" y="6" fill="#212529" />
     </g>
   </svg>
 </template>
