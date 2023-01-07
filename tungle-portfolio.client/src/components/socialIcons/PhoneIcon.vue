@@ -1,6 +1,6 @@
 <template>
   <a href="tel:208905308">
-    <i class="mdi mdi-phone fs-3 text-light" title="Github Link"></i>
+    <i class="mdi mdi-phone fs-3 text-light" title="Phone"></i>
   </a>
 </template>
 

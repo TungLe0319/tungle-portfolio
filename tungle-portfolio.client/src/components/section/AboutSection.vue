@@ -67,14 +67,14 @@
           <div class="d-md-flex justify-content-around p-2">
             <img
               src="../../assets/img/Coco.png"
-              alt=""
+              alt="image of a dog wearing bumblee bee hat"
               width="240"
               height="240"
               class="elevation-6 rounded mb-2 mb-md-0"
             />
             <img
               src="../../assets/img/Goblin.png"
-              alt=""
+              alt="close up image of a cat"
               width="240"
               height="240"
               class="elevation-6 rounded"
@@ -102,57 +102,57 @@
         </div>
 
         <div class="d-flex flex-wrap justify-content-around">
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/SunflowerStar.png"
-                alt=""
+                alt="sunflowerstar"
                 class="procreate-art"
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Trex.png"
-                alt=""
+                alt="Trex"
                 class="procreate-art"
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/CosmicWolf.png"
-                alt=""
+                alt="CosmicWolf"
                 class="procreate-art perspective-right"
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Mandala1.png"
-                alt=""
+                alt="Mandala"
                 class="procreate-art perspective-left"
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Mandala2.png"
-                alt=""
+                alt="Mandala 2"
                 class="procreate-art perspective-right"
               />
             </ParallaxMouse>
           </div>
 
-          <div v-motion-slide-visible-once-bottom :delay="600" class="">
+          <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Turtle.png"
-                alt=""
+                alt="Turtle"
                 class="procreate-art perspective-left"
               />
             </ParallaxMouse>

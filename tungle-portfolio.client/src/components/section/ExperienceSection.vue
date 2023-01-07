@@ -84,7 +84,7 @@
           <a href="https://github.com/TungLe0319" target="_blank">
             <img
               src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
-              alt=""
+              alt=" Github Lang stats"
               class="elevation-6 rounded"
             />
           </a>
@@ -93,7 +93,7 @@
           <a href="https://github.com/TungLe0319" target="_blank">
             <img
               src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
-              alt=""
+              alt="Github Overview"
               class="elevation-6 rounded"
             />
           </a>
@@ -240,7 +240,7 @@
           >
             <img
               src="https://fireship.io/courses/react-next-firebase/img/featured.png"
-              alt=""
+              alt="fireship.io react/firebase Image"
               class="rounded img-fluid"
           
             />
@@ -256,7 +256,7 @@
             <a href="https://fireship.io/">
               <img
                 src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
-                alt=""
+                alt="fireship.io logo"
                 width="40"
               />
               <b class="text-light darken-10"> Fireship.io's </b>
