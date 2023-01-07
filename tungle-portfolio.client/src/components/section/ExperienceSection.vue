@@ -137,12 +137,15 @@
             </li>
           </ul>
         </div>
-        <div class="image-container row g-3">
-          <div
+        <div class="image-container row g-3 justify-content-center">
+          <div class="col-md-10">
+            <div class="row image-container g-3">
+<div
             class="col-6 col-md-2 image-item"
             v-for="s in skillsIcons"
             :type="s.type"
             :key="s.id"
+            v-bind="$attrs"
           >
             <ParallaxMouse>
               <CartoonFrame v-motion-roll-visible-once-left>
@@ -150,6 +153,9 @@
               </CartoonFrame>
             </ParallaxMouse>
           </div>
+            </div>
+          </div>
+          
         </div>
         <div
           class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
@@ -282,7 +288,7 @@ import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
 import CartoonFrame from "../CartoonFrame.vue";
 import ParallaxMouse from "../ParallaxMouse.vue";
-
+import { logger } from "../../utils/Logger.js";
 export default {
   props: {},
   setup(props) {
@@ -305,6 +311,7 @@ export default {
       filterImages(type, button) {
         // Get the list of all images
         const imageList = document.querySelectorAll(".image-item");
+        
         const buttonList = document.querySelectorAll(".filter-button");
         // Remove the "active" class from all buttons
         buttonList.forEach((btn) => {
@@ -316,7 +323,8 @@ export default {
         }
         // Hide all images
         imageList.forEach((image) => {
-          if (image.__vnode.props.type != type) {
+        const skillType =  image.getAttribute('type')
+          if (skillType!= type) {
             image.style.display = "none";
             image.style.opacity = 0;
             image.style.transform = "scale(0.1)";
