@@ -64,10 +64,10 @@
             >
               Custom Designed and built website for a small yoga business owner
               client. intergrated Ghost for CMS Publishing for her blog as well
-              as configuring MailGun for Email Service. The app will allow users
+              as configuring MailGun for Email Service. The app allows users
               to easily browse and sign up for classes, view class schedules,
-              and purchase memberships and packages. It will also include a
-              feature for teachers to manage their schedules and events and for
+              and sign up for yoga retreats. It will also include a
+              feature for teachers to manage their schedules and events,
               the business to manage customer information. The SPA will be
               optimized for both desktop and mobile use, making it convenient
               for users to access from any device. Overall, the goal of the app

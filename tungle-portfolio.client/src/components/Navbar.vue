@@ -51,22 +51,9 @@ import { onMounted } from "vue";
 export default {
   setup() {
     onMounted(() => {
-      // hideOnScroll()
+   
     });
-    function hideOnScroll() {
-      let nav = document.querySelector("#navBar");
-      let prevScrollpos = window.scrollY;
-      console.log(nav);
-      window.onscroll = function () {
-        let currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-          nav.style.top = "0px";
-        } else {
-          nav.style.top = "-250px";
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    }
+   
     return {
       scrollTo(x) {
         console.log(x);
@@ -105,9 +92,7 @@ a:hover {
 
   color: turquoise !important;
 }
-.nav-link {
-  text-transform: uppercase;
-}
+
 
 .navbar-nav .router-link-exact-active {
   border-bottom: 2px solid var(--bs-success);
@@ -121,7 +106,7 @@ nav {
 }
 
 .bg-custom {
-  background-color: rgba(51, 46, 46, 0.685);
-  backdrop-filter: blur(8px);
+  background-color: #212529c2;
+  backdrop-filter: blur(2px);
 }
 </style>
