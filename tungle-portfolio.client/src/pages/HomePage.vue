@@ -31,7 +31,7 @@ import ContactSection from "../components/section/ContactSection.vue";
 
 import PortfolioSection from "../components/section/PortfolioSection.vue";
 import ExperienceSection from "../components/section/ExperienceSection.vue";
-import SocialBar from "../components/SocialBar.vue";
+import SocialBar from "../components/socialIcons/SocialBar.vue";
 import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
 
 export default {

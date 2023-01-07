@@ -11,7 +11,7 @@
         <div class="col-md-8 text-center">
 
           <p class="font-2 fs-5 text-light ">
-             I'm open to hire and looking for new opportunities to contribute. The best way to get in touch with me is by phone, so don't hesitate to give me a call at (123) 456-7890. I look forward to discussing how we can work together!
+             I'm open to hire and looking for new opportunities to contribute. The best way to get in touch with me is by phone, so don't hesitate to give me a call. I look forward to discussing how we can work together!
           </p>
         </div>
         <div class="col-md-6 d-flex justify-content-around">
@@ -34,7 +34,7 @@
 
 <script>
 import { onMounted, ref, watchEffect } from "vue";
-import ContactForm from "../ContactForm.vue";
+
 
 
 export default {
@@ -45,7 +45,7 @@ export default {
       editable,
     };
   },
-  components: { ContactForm },
+  components: {  },
 };
 </script>
 

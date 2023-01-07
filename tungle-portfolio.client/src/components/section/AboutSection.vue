@@ -26,29 +26,32 @@
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
-            Hello! My name is Tung and I
-            <b class="text-light darken-10">LOVE</b> design and creating. I
-            don't have any specific style. I prefer to adapt to each project and
-            use it as to new things and expand my knowledge, Keeping the good
-            and learning from the bad. I was immeditaley captivated with web
-            development upon my first
-            <b class="text-light darken-10">"Hello World!" </b> 1 year ago. I
-            have a strong foundation in both front-end and back-end development,
-            and I am always looking for ways to expand my skillset. I am highly
-            creative and love coming up with new and innovative solutions for my
-            projects. With my love for creativity and a thirst for knowledge,
-            during my free time you can find me tinkering with new technologies
-            with my projects or learning about the latest design trends. I am a
-            problem-solver at heart and enjoy the challenge of finding creative
-            solutions to complex problems and passionate about creating
-            beautiful and functional websites that deliver an exceptional user
-            experience. "
+            Hi there! My name is Tung and I am a web developer who is
+            <b class="text-light darken-10">passionate </b> about design and
+            innovation. I don't have a particular style, but I enjoy adapting to
+            each project and using it as a chance to try new things and grow my
+            knowledge. My first
+            <b class="text-light darken-10">"Hello World"</b> in web development
+            sparked my interest in the field, and since then I've been working
+            hard to build my skills in both front-end and back-end
+            development.My time at CodeWorks has left me with a strong
+            foundation and a strong desire to keep learning and improving. I am
+            grateful for the education and opportunities I received at
+            CodeWorks, and I am excited to continue learning and growing in the
+            software development field. When I'm not working, you can find me
+            experimenting with new technologies and staying up-to-date on the
+            latest design trends. I am a problem-solver at heart and thrive on
+            finding creative solutions to complex challenges, and I am dedicated
+            to creating beautiful and functional websites that deliver
+            exceptional user experiences.
           </p>
         </div>
       </div>
 
       <div class="row my-5 justify-content-center">
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-center"
+        >
           <p class="font-1 fs-4 text-warning">Current Favorite Song</p>
           <iframe
             class="elevation-6"
@@ -60,7 +63,11 @@
             allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
-          ></iframe>
+            as="font"
+            rel="preload"
+          >
+        
+        </iframe>
         </div>
         <div class="col-md-6 text-center">
           <p class="font-1 fs-4 text-warning">Creatures I'd die for</p>
@@ -95,7 +102,7 @@
             background in art as helped me develop valuable skills such as
             attention to detail, problem-solving, and the ability to visualize
             and communicate solutions to complex problems and to communicate
-            more effectively with colleagues and clients. Finally, My artwork is
+            more effectively with colleagues and clients.My artwork is
             a source of personal satisfaction and pride, which aids me to
             maintaining motivation and a positive outlook in my career and life.
           </p>
@@ -204,9 +211,8 @@ export default {
   height: 300px;
   cursor: pointer;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  height: 250px;
-
+  @media only screen and (max-width: 768px) {
+    height: 250px;
   }
 }
 

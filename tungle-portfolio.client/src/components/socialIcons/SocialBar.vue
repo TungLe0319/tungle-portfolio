@@ -39,12 +39,12 @@
 <script>
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../AppState.js";
-import { logger } from "../utils/Logger.js";
-import Pop from "../utils/Pop.js";
-import GitHubIcon from "./socialIcons/GitHubIcon.vue";
-import LinkedInIcon from "./socialIcons/LinkedInIcon.vue";
-import PhoneIcon from "./socialIcons/PhoneIcon.vue";
+import { AppState } from "../../AppState.js";
+import { logger } from "../../utils/Logger.js";
+import Pop from "../../utils/Pop.js";
+import GitHubIcon from "./GitHubIcon.vue";
+import LinkedInIcon from "./LinkedInIcon.vue";
+import PhoneIcon from "./PhoneIcon.vue";
 
 export default {
   props: {},
