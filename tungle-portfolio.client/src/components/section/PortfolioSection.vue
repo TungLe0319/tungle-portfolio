@@ -12,7 +12,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/samadhiApp.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060067418073993226/samadhiApp.png?width=720&height=399"
               class="img-fluid elevation-6 rounded"
               alt="Project Image"
             />
@@ -227,7 +227,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/BetterAfterBooks.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060067418820579439/BetterAfterBooks.png?width=720&height=390"
               class="img-fluid elevation-5 rounded"
               alt="Project Image"
             />
@@ -242,7 +242,7 @@
             <img
               v-motion-slide-visible-bottom
               :delay="500"
-              src="../../assets/img/portfolio/KeeprSS.png"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1060068356541120683/KeeprSS.png?width=720&height=395"
               class="img-fluid elevation-6 rounded"
               alt="Project Image"
             />

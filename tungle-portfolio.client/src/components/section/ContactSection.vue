@@ -10,8 +10,9 @@
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
 
-          <p class="font-2 fs-5 text-light ">
-             I'm open to hire and looking for new opportunities to contribute. The best way to get in touch with me is by phone, so don't hesitate to give me a call. I look forward to discussing how we can work together!
+          <p class="font-2 fs-6 text-light  ">
+             I'm open to hire and looking for new opportunities to contribute. <br> The best way to get in touch with me is by phone, so don't hesitate to give me a call.
+             <br> I look forward to discussing how we can work together!
           </p>
         </div>
         <div class="col-md-6 d-flex justify-content-around">
@@ -33,24 +34,21 @@
 </template>
 
 <script>
-import { onMounted, ref, watchEffect } from "vue";
 
 
 
 export default {
-  props: {},
-  setup(props) {
-    const editable = ref({});
+  setup() {
+  
     return {
-      editable,
+  
     };
   },
-  components: {  },
+
 };
 </script>
 
 <style lang="scss" scoped>
-
 
 .my-6 {
   margin-top: 8rem;
@@ -60,8 +58,6 @@ export default {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-
-
 
 
 

@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import ProgressBar from "./ProgressBar.vue";
+import ProgressBar from "./effects/ProgressBar.vue";
 import { onMounted } from "vue";
 export default {
   setup() {

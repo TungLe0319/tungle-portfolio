@@ -299,8 +299,8 @@
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
-import CartoonFrame from "../CartoonFrame.vue";
-import ParallaxMouse from "../ParallaxMouse.vue";
+import CartoonFrame from "../effects/CartoonFrame.vue";
+import ParallaxMouse from "../effects/ParallaxMouse.vue";
 export default {
   props: {},
   setup(props) {

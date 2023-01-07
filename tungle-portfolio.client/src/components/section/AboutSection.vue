@@ -96,7 +96,7 @@
       <div class="row">
         <div class="col-md-12">
           <p class="font-1 fs-4 text-warning">Some of my artwork</p>
-          <p class="font-2 fs-5 text-light text-center">
+          <p class="font-2 fs-6 text-light text-center">
             I love drawing mandalas as a way of relaxation and creative outlet
             that allows me to express myself and explore new ideas. Having a
             background in art as helped me develop valuable skills such as
@@ -174,7 +174,7 @@
 import { computed } from "@vue/reactivity";
 import { useParallax } from "@vueuse/core";
 import { onMounted, ref, watchEffect } from "vue";
-import ParallaxMouse from "../ParallaxMouse.vue";
+import ParallaxMouse from "../effects/ParallaxMouse.vue";
 
 export default {
   props: {},
@@ -200,7 +200,7 @@ export default {
 
 <style lang="scss" scoped>
 .about-me-text {
-  font-size: 1.25rem;
+
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
     font-size: 1rem;

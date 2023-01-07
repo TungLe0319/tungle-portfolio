@@ -33,6 +33,7 @@ import PortfolioSection from "../components/section/PortfolioSection.vue";
 import ExperienceSection from "../components/section/ExperienceSection.vue";
 import SocialBar from "../components/socialIcons/SocialBar.vue";
 import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
+import LoadingAnimation from "../components/effects/LoadingAnimation.vue";
 
 export default {
   data() {
@@ -47,14 +48,14 @@ export default {
     }, 3000);
   },
   components: {
- 
     AboutSection,
     PortfolioSection,
     ExperienceSection,
     ContactSection,
     SocialBar,
     EmailBar,
-    HeroSectionV2
+    HeroSectionV2,
+    LoadingAnimation
 },
 };
 </script>

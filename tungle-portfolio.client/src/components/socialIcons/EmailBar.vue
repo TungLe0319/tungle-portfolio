@@ -9,8 +9,6 @@
 </template>
 
 <script>
-import { computed } from "@vue/reactivity";
-import { onMounted, ref, watchEffect } from "vue";
 
 export default {
 
@@ -19,7 +17,7 @@ export default {
 
  
     return {
-      editable,
+ 
     };
   },
 };

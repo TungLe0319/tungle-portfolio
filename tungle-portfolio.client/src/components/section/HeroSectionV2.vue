@@ -6,7 +6,7 @@
   <div
     class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
-  <!-- <ParticleComponent /> -->
+
     <section
     class="locomotive-section container-fluid"
     :style="{ transform: `translateY(-${scrollY}px)` }"
@@ -78,8 +78,9 @@
 
  
  <script>
-import { onMounted, ref, watchEffect } from "vue";
-import ParticleComponent from "../ParticleComponent.vue";
+import { onMounted, ref } from "vue";
+import GentleWave from "../effects/GentleWave.vue";
+
 
 export default {
     name: "LocomotiveSection",
@@ -100,7 +101,7 @@ export default {
             scrollY
         };
     },
-    components: { ParticleComponent }
+    components: {  GentleWave }
 };
 
  </script>

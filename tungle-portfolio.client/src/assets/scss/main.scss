@@ -1,8 +1,6 @@
 @import "./_variables.scss";
 @import "bootstrap";
-@import "./_overrides.scss";
 @import "./_utilities.scss";
-@import "./loaders.scss";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Courgette&family=DM+Sans&family=Marko+One&family=Montserrat&family=Passion+One&family=Patrick+Hand&family=Roboto&display=swap");
 #tsparticles {
   position: absolute;
@@ -65,38 +63,6 @@ main {
 a {
   text-decoration: none;
 }
-
-input,
-textarea,
-select {
-  &:not(:placeholder-shown) {
-    &:valid {
-      border: 1px solid $success;
-    }
-    &:invalid {
-      border: 1px solid $danger;
-    }
-  }
-}
-
-form:invalid button[type="submit"] {
-  filter: grayscale(1);
-  pointer-events: none;
-}
-
-// .container{
-//   padding-left: 1rem;
-//   padding-right: 1rem;
-// }
-
-
-
-
-
-
-
-
-
 
 
 
