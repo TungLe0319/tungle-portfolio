@@ -56,7 +56,7 @@ export default {
    
     return {
       scrollTo(x) {
-        console.log(x);
+        // console.log(x);
         let elementId;
         if (x == 1) {
           elementId = "about";

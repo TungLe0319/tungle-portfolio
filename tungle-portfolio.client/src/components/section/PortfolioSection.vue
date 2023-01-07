@@ -560,7 +560,7 @@ export default {
       archivedProjects: computed(() => AppState.archivedProjects),
       devProjects: computed(() => AppState.devProjects),
       test() {
-        console.log("hi");
+        // console.log("hi");
       },
     };
   },

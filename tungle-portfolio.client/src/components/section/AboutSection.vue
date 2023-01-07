@@ -203,6 +203,11 @@ export default {
   width: auto;
   height: 300px;
   cursor: pointer;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+  height: 250px;
+
+  }
 }
 
 .procreate-art:hover {
@@ -244,8 +249,9 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    width: 240px;
+    width: 340px;
     height: 360px;
+    padding: 4px;
   }
 }
 
