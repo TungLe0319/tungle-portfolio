@@ -43,6 +43,8 @@ props:{
 <style lang="scss" scoped>
 
 
+/*
+
 
 @font-face {
     font-family: 'Sketch Block';
@@ -73,6 +75,8 @@ props:{
 
 
   
+
+*/
 
     blockquote {
         width: 565px;

@@ -109,7 +109,24 @@
             </a>
           </div>
         </div>
-
+<div class="col-md-12">
+ 
+<div class="tab-bar">
+  <div class="tab active" data-tab-target="#tab-1">Tab 1</div>
+  <div class="tab" data-tab-target="#tab-2">Tab 2</div>
+  <div class="tab" data-tab-target="#tab-3">Tab 3</div>
+  <div class="blob"></div>
+</div>
+<div id="tab-1" class="tab-content active">
+  Content for tab 1 goes here.
+</div>
+<div id="tab-2" class="tab-content">
+  Content for tab 2 goes here.
+</div>
+<div id="tab-3" class="tab-content">
+  Content for tab 3 goes here.
+</div>
+</div>
         <div class="col-md-12">
           <ul
             class="d-md-flex justify-content-between bg-dark rounded-pill elevation-6 p-2 py-4 navbar-list justify-content-evenly"
@@ -306,8 +323,26 @@ export default {
   props: {},
   setup(props) {
     const editable = ref({});
-    onMounted(() => {});
-    watchEffect(() => {});
+    onMounted(() => {
+  // Get a reference to the blob and the tab buttons
+const blob = document.querySelector('.blob');
+const tabButtons = document.querySelectorAll('.tab');
+
+// Set the blob's initial position based on the active tab
+blob.classList.add(tabButtons[0].classList.contains('active') ? 'active' : 'inactive');
+
+// Add click event listeners to the tab buttons
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Toggle the active and inactive classes on the blob
+    blob.classList.toggle('active');
+    blob.classList.toggle('inactive');
+  });
+});
+    });
+    watchEffect(() => {
+      
+    });
 
     return {
       editable,
@@ -383,6 +418,73 @@ button.target.classList.add("active");
 </script>
 
 <style lang="scss" scoped>
+/* Add a transition to the blob */
+.blob {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* When the blob is inactive, slide it off the screen */
+.blob.inactive {
+  transform: translateX(-100%);
+}
+
+/* When the blob is active, slide it back onto the screen */
+.blob.active {
+  transform: translateX(0);
+}
+
+.tab-bar {
+  display: flex;
+  position: relative;
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tab.active {
+  background-color: #f7d778;
+}
+
+.blob {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 4px;
+  background-color: #f7d778;
+  border-radius: 50px;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+[data-tab="tab-2"] ~ .blob {
+  transform: translateX(100%);
+}
+
+[data-tab="tab-3"] ~ .blob {
+  transform: translateX(200%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .underline {
   position: absolute;
