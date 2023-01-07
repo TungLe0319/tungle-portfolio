@@ -38,11 +38,12 @@
             </div>
             <div class="ms-4">
               <a
-                v-motion-slide-visible-bottom
-                :delay="600"
+             
                 href="https://www.samadhiyogaidaho.com/#/"
                 class="mb-2"
                 ><img
+                   v-motion-slide-visible-bottom
+                :delay="600"
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
                   alt="external Link"
                   title="site Link"
@@ -124,8 +125,7 @@
            <div class="d-flex justify-content-end">
               <div class="me-4">
               <a
-                v-motion-slide-visible-bottom
-                :delay="600"
+              
                 target="_blank"
                 href="https://betterafterbooks.apps.devopportunities.dev/"
                 class="mb-2"
@@ -135,6 +135,8 @@
                   title="site Link"
                   width="60"
                   height="60"
+                     v-motion-slide-visible-bottom
+                :delay="600"
               /></a>
             </div>
             <div>
@@ -266,8 +268,7 @@
             </div>
             <div class="ms-4">
               <a
-                v-motion-slide-visible-bottom
-                :delay="600"
+           
                 target="_blank"
                 href="https://keepr-project-demo.onrender.com"
                 class="mb-2"
@@ -277,6 +278,8 @@
                   title="site Link"
                   width="60"
                   height="60"
+                     v-motion-slide-visible-bottom
+                :delay="600"
               /></a>
             </div>
           </div>
@@ -336,8 +339,7 @@
            <div class="d-flex justify-content-end">
              <div class="me-4">
               <a
-                v-motion-slide-visible-bottom
-                :delay="600"
+            
                 href="https://thetower-f4he.onrender.com"
                 class="mb-2"
                 ><img
@@ -346,6 +348,8 @@
                   title="site Link"
                   width="60"
                   height="60"
+                     v-motion-slide-visible-bottom
+                :delay="600"
               /></a>
             </div>
             <div>

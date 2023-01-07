@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import Login from "./Login.vue";
 import ProgressBar from "./ProgressBar.vue";
 import { onMounted } from "vue";
 export default {
@@ -76,7 +75,7 @@ export default {
       },
     };
   },
-  components: { Login, ProgressBar },
+  components: {  ProgressBar },
 };
 </script>
 

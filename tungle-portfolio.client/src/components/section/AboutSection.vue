@@ -60,7 +60,7 @@
             width="100%"
             height="152"
             frameBorder="0"
-            allowfullscreen=""
+     
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             as="font"
@@ -181,7 +181,7 @@ export default {
   setup(props) {
     const editable = ref({});
     const container = ref(null);
-    const { tilt, roll, source } = useParallax(container);
+  useParallax(container);
 
     // Use an intersection observer to call the typeWriter function when the element comes into view
 

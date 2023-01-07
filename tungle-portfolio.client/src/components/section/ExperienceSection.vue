@@ -301,7 +301,6 @@ import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
 import CartoonFrame from "../CartoonFrame.vue";
 import ParallaxMouse from "../ParallaxMouse.vue";
-import { logger } from "../../utils/Logger.js";
 export default {
   props: {},
   setup(props) {
@@ -402,11 +401,11 @@ export default {
   }
 }
 
-li {
+li .filter-btn {
   position: relative;
 }
 
-li::before {
+li .filter-btn::before {
   content: "";
   position: absolute;
   bottom: 0;
