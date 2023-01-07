@@ -1,37 +1,38 @@
 <template>
-  <div class="hero-image d-flex flex-column justify-content-center align-items-center">
-   
-    <div class="col-md-12 text-center">
-     
-          <h1 class="display-3 font-1 text-dark testing">
-            WELCOME TO MY DEVELOPER PORTFOLIO
-          </h1>
-      
-      </div>
-    <div class="row">
-      
-      <div class="col-md-12">
-        <div class="mosaic-loader mt-5">
-      <div class="cell d-0"></div>
-      <div class="cell d-1"></div>
-      <div class="cell d-2"></div>
-      <div class="cell d-3"></div>
-      <div class="cell d-1"></div>
-      <div class="cell d-2"></div>
-      <div class="cell d-3"></div>
-      <div class="cell d-4"></div>
-      <div class="cell d-2"></div>
-      <div class="cell d-3"></div>
-      <div class="cell d-4"></div>
-      <div class="cell d-5"></div>
-      <div class="cell d-3"></div>
-      <div class="cell d-4"></div>
-      <div class="cell d-5"></div>
-      <div class="cell d-6"></div>
-    </div>
-      </div>
-    </div>
+  <div
+    class="hero-image d-flex flex-column justify-content-center align-items-center"
+  >
+    <div class="col-md-12 text-center mb-5">
     
+        <h1 class="display-1 font-1 text-dark testing" >
+          WELCOME TO MY DEVELOPER PORTFOLIO
+        </h1>
+    
+      
+
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div class="mosaic-loader mt-5 loading-animation" >
+          <div class="cell d-0"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-6"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -61,13 +62,29 @@ export default {
 
     return {
       editable,
-      typeWriter
+      typeWriter,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
+.loading-animation {
+  animation: spin-and-shrink 1s ease-in-out ;
+    animation-delay: 2.75s; /* delay start of animation by 2 seconds */
+
+}
+
+@keyframes spin-and-shrink {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+
 $--p-1: #d4aee0;
 $--p-2: #8975b4;
 $--p-3: #64518a;

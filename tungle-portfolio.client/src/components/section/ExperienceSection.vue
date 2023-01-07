@@ -25,20 +25,21 @@
           </div>
           
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex justify-content-center">
         
-            <!-- <div class="v-motion">
-              <img
-                src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
-                alt="Full Stack Immersive Logo"
-                class=" "
-              /></div
-          >
-         -->
         <div class="card-1">
+<a href="https://boisecodeworks.com/courses/immersive-full-stack" target="_blank" rel="noopener noreferrer">
 
-  <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="Front image" class="front-image">
-  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="Back image" class="back-image" width="175" height="175">
+  <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="full stack immersive image"  title="full stack immersive">
+</a>
+ 
+</div>
+        <div class="card-1">
+<a href="https://boisecodeworks.com/" target="_blank" rel="noopener noreferrer">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="boise codeworks image" title="Boise Codeworks"  width="175" height="175">
+
+</a>
+ 
 </div>
       
         </div>
@@ -77,7 +78,8 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
- <div class="row">
+ <div class="row justify-content-evenly">
+  
         <div class="col-md-4">
           <a href="https://github.com/TungLe0319" target="_blank">
             <img
@@ -101,34 +103,34 @@
 
 
 
-        <div class="col-md-12">
-          <ul class="d-md-flex justify-content-between gap-5 g-5">
+        <div class="col-md-12 ">
+          <ul class="d-md-flex justify-content-between bg-dark rounded p-2  justify-content-evenly">
             <li
-              class="list-group-item font-2 fs-5 filter-button active  selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button active  filter-btn rounded"
               @click="filterImages('reset', $event)"
             >
               All
             </li>
             <li
-              class="list-group-item font-2 fs-5 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('lang', $event)"
             >
               Languages
             </li>
             <li
-              class="list-group-item font-2 fs-5 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('tech', $event)"
             >
               Technologies
             </li>
             <li
-              class="list-group-item font-2 fs-5 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('framework', $event)"
             >
               Frameworks & Libraries
             </li>
             <li
-              class="list-group-item font-2 fs-5 filter-button selectable rounded"
+              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('database', $event)"
             >
               Databases
@@ -161,7 +163,7 @@
         <div class="section-title">
           <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
         </div>
-        <div class="col-md-6 d-flex justify-content-center my-3 my-md-0">
+        <div class="col-md-6 d-flex justify-content-center align-items-center my-3 my-md-0">
           <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6"
           >
@@ -188,21 +190,21 @@
             them to ensure that their goals are met.
           </p>
 
-          <ul>
-            <li>
+          <ul class="numbered">
+            <li class="numbered-list-item">
               Effectively communicate technical concepts to non-technical
               stakeholders and to build strong working relationships.
             </li>
-            <li>
+            <li class="numbered-list-item">
               Proactive in seeking feedback and making adjustments as needed to
               ensure that the final product meets the client's expectations.
             </li>
-            <li>
+            <li class="numbered-list-item">
               While I have not had a great deal of experience working directly
               with clients, I am eager to learn and to continue developing my
               skills in this area.
             </li>
-            <li>
+            <li class="numbered-list-item">
               Confident that with my strong technical abilities and my
               commitment to delivering high-quality work, I will be able to make
               a valuable contribution to any project.
@@ -211,10 +213,10 @@
 
           <p class="font-1 fs-5 text-light darken-10">
             Projects & work done Listed Below
-            <!-- <i
+            <i
               @click="scrollToProjects()"
               class="mdi mdi-arrow-down-circle fs-1 text-light action"
-            ></i> -->
+            ></i>
           </p>
         </div>
         <div class="row">
@@ -240,6 +242,7 @@
               src="https://fireship.io/courses/react-next-firebase/img/featured.png"
               alt=""
               class="rounded img-fluid"
+          
             />
           </div>
         </div>
@@ -360,33 +363,16 @@ export default {
 
 
 
+.filter-btn {
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+.filter-btn:hover {
+  transform: scale(1.1);
 
-.card-1 {
-  perspective: 1000px;
-  position: relative;
+  color: turquoise !important;
 }
 
-.card-1 img {
-  position: absolute;
-  transition: all 0.5s ease;
-  transform-style: preserve-3d;
-}
-.card-1 img.front-image {
-  opacity: 0;
-
-}
-
-
-
-.card-1:hover img.front-image {
-  opacity: 1;
-  transform: rotateY(180deg);
-}
-
-.card-1:hover img.back-image {
-  opacity: 0;
-  transform: rotateY(0deg);
-}
 
 
 
@@ -405,14 +391,14 @@ export default {
   border-top: none !important;
   border-bottom: #f7d778 4px solid !important;
 }
-ul {
+ ul .numbered {
   counter-reset: index;
   padding: 0;
 
 }
 
 /* List element */
-li {
+ li.numbered-list-item {
   counter-increment: index;
   display: flex;
   align-items: center;
@@ -423,7 +409,7 @@ li {
 }
 
 /* Element counter */
-li::before {
+li.numbered-list-item::before {
   content: counters(index, ".", decimal-leading-zero);
   font-size: 1.5rem;
   text-align: right;
@@ -439,16 +425,25 @@ li::before {
 }
 
 /* Element separation */
-li + li {
+li.numbered-list-item + li.numbered-list-item {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .devsopportunities-image {
-  height: 200px;
+  height: 400px;
+  width: 400px;
+  img {
+    height: 400px;
+    width: 400px;
+  }
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+   height: 200px;
   width: 200px;
   img {
     height: 200px;
     width: 200px;
+  }
   }
 }
 

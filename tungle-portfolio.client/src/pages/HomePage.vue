@@ -1,11 +1,9 @@
 <template>
-
-
-     <div>
+  <div>
     <!-- The opening animation page -->
     <transition name="slide" mode="out-in" appear>
       <div class="opening-animation" v-if="!mainLoaded">
-    <LoadingAnimation/>
+        <LoadingAnimation />
       </div>
     </transition>
 
@@ -13,15 +11,14 @@
     <transition name="fade" mode="out-in" appear>
       <div class="main-page" v-if="mainLoaded">
         <!-- Add your main page content here -->
-          <HeroSection />
-  <AboutSection />
-  <ExperienceSection />
-  <PortfolioSection />
-  <ContactSection />
-  <div class="position-relative"></div>
-  <SocialBar />
-  <!-- <EmailBar/> -->
-
+        <HeroSectionV2 />
+        <AboutSection />
+        <ExperienceSection />
+        <PortfolioSection />
+        <ContactSection />
+        <div class="position-relative"></div>
+        <SocialBar />
+        <!-- <EmailBar/> -->
       </div>
     </transition>
   </div>
@@ -31,10 +28,11 @@
 import EmailBar from "../components/socialIcons/EmailBar.vue";
 import AboutSection from "../components/section/AboutSection.vue";
 import ContactSection from "../components/section/ContactSection.vue";
-import HeroSection from "../components/section/HeroSection.vue";
+
 import PortfolioSection from "../components/section/PortfolioSection.vue";
 import ExperienceSection from "../components/section/ExperienceSection.vue";
 import SocialBar from "../components/SocialBar.vue";
+import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
 
 export default {
   data() {
@@ -49,23 +47,24 @@ export default {
     }, 3000);
   },
   components: {
-    HeroSection,
+ 
     AboutSection,
     PortfolioSection,
     ExperienceSection,
     ContactSection,
     SocialBar,
     EmailBar,
-  },
+    HeroSectionV2
+},
 };
 </script>
 
 <style scoped lang="scss">
-.opening-animation{
-  height: 100vh;
- 
-}
 
+
+.opening-animation {
+  height: 100vh;
+}
 
 .slide-enter-active,
 .slide-leave-active {
@@ -81,13 +80,6 @@ export default {
 .slide-leave-to {
   transform: translateY(0);
 }
-
-
-
-
-
-
-
 
 .fade-enter-active,
 .fade-leave-active {

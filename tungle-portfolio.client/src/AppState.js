@@ -61,7 +61,7 @@ export const AppState = reactive({
     },
     {
       title: "BootStrap ",
-      src: "https://www.logolynx.com/images/logolynx/08/085ade05736e0445ef9eecce7676251e.png",
+      src: "https://pluspng.com/img-png/bootstrap-logo-vector-png-bem-with-bootstrap-bootstrap-logo-1024.png",
       type: "framework",
       id: 8,
     },
@@ -85,6 +85,12 @@ export const AppState = reactive({
       id: 11,
     },
     {
+      title: "Auth0",
+      src: "https://www.pngrepo.com/png/349297/512/auth0.png",
+      type: "tech",
+      id: 11,
+    },
+    {
       title: "Scrum",
       src: "https://i.pinimg.com/originals/71/26/cd/7126cdceaae0b3225e4af95d593a7236.png",
       type: "tech",
@@ -92,7 +98,7 @@ export const AppState = reactive({
     },
     {
       title: "MongoDb",
-      src: "http://www.lafabriquedecode.com/blog/wp-content/uploads/2013/04/mongo_logo.png",
+      src: "https://pluspng.com/img-png/logo-mongodb-png-hundreds-of-popular-mongodb-articles-400.png",
       type: "database",
       id: 13,
     },

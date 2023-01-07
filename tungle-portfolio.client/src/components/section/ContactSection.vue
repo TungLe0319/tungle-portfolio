@@ -16,11 +16,12 @@
         </div>
         <div class="col-md-6 d-flex justify-content-around">
           <a href="mailto:tung.le0319@gmail.com" target="_blank"><button class="btn bg-transparent fs-1 font-1 ">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail Icon" title="Gmail Icon" width="100" height="100">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail Icon" title="tung.le0319@gmail.com" width="100" height="100">
           </button></a>
-          <a href="tel:2088905308" target="_blank">  <button class="btn bg-transparent fs-1 font-1 ">
-            <img src="https://cdn-icons-png.flaticon.com/512/2936/2936151.png" alt="Phone Icon" title="Phone Icon" width="100" height="100">
+          <a href="tel:2088905308" target="_blank" data-title="2088905308">  <button class="btn bg-transparent fs-1 font-1 ">
+            <img src="https://cdn-icons-png.flaticon.com/512/2936/2936151.png" alt="Phone Icon"  width="100" height="100">
           </button></a>
+          
         
         </div>
       </div>

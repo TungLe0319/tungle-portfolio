@@ -520,7 +520,7 @@
       <!-- SECTION LLC PROJECTS -->
       <div id="devProjects" class="row g-3 my-5">
         <div
-          class="col-md-12 text-center d-flex align-items-center justify-content-center"
+          class="col-md-12 text-center d-flex align-items-center justify-content-center mb-3"
         >
           <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6 d-none d-md-block"
