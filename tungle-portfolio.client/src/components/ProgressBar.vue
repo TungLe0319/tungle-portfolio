@@ -14,7 +14,6 @@
       id="progress"
       class=""
     >
-    
       <img
         src="https://vignette.wikia.nocookie.net/hollowknight/images/9/94/Knight_godmaster.png/revision/latest?cb=20190129170812"
         alt="Hollow Night"
@@ -23,7 +22,7 @@
       <img
         src="https://www.pinclipart.com/picdir/big/572-5722312_transparent-masks-clipart-soul-hollow-knight-shade-png.png"
         alt="Hollow Night Shade"
-        class="progress bg-transparent floating tester2 "
+        class="progress bg-transparent floating tester2"
       />
 
       <p class="position-absolute start-0 top-0 font-1 text-success">
@@ -72,24 +71,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.tester1{
-
+.tester1 {
 }
 
-
-#progress:hover{
-  .tester1{
+#progress:hover {
+  .tester1 {
     opacity: 0;
     transition: 0.25s ease;
+  }
 
-}
-
-  .tester2{
- opacity: 1;
-transition: all 0.25s ease;
-}
-
+  .tester2 {
+    opacity: 1;
+    transition: all 0.25s ease;
+  }
 }
 
 .floating {
@@ -122,24 +116,23 @@ transition: all 0.25s ease;
   height: 1px;
   background: rgb(250, 236, 236);
 }
-#progress{
- 
+#progress {
   position: relative;
-  .tester2{
- opacity: 0;
-transition: all 0.25s ease;
-position: absolute;
-top: 0;
-
-
-}
+ 
+  z-index: -999;
+  .tester2 {
+    opacity: 0;
+    transition: all 0.25s ease;
+    position: absolute;
+    top: 0;
+  }
 }
 #progress,
 #progress2 {
   transition: all 0.75s ease-out;
 }
 .progress {
-  height: 100px;
+  height: 75px;
   transform: translateX(-65px);
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {

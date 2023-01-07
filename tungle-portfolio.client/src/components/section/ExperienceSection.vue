@@ -23,25 +23,36 @@
               Education
             </p>
           </div>
-          
         </div>
         <div class="col-md-6 d-flex justify-content-center">
-        
-        <div class="card-1">
-<a href="https://boisecodeworks.com/courses/immersive-full-stack" target="_blank" rel="noopener noreferrer">
-
-  <img src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4" alt="full stack immersive image"  title="full stack immersive">
-</a>
- 
-</div>
-        <div class="card-1">
-<a href="https://boisecodeworks.com/" target="_blank" rel="noopener noreferrer">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images" alt="boise codeworks image" title="Boise Codeworks"  width="175" height="175">
-
-</a>
- 
-</div>
-      
+          <div class="card-1">
+            <a
+              href="https://boisecodeworks.com/courses/immersive-full-stack"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
+                alt="full stack immersive image"
+                title="full stack immersive"
+              />
+            </a>
+          </div>
+          <div class="card-1">
+            <a
+              href="https://boisecodeworks.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images"
+                alt="boise codeworks image"
+                title="Boise Codeworks"
+                width="175"
+                height="175"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="col-md-6 align-items-center">
@@ -78,35 +89,33 @@
           <p class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
- <div class="row justify-content-evenly">
-  
-        <div class="col-md-4">
-          <a href="https://github.com/TungLe0319" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
-              alt=" Github Lang stats"
-              class="elevation-6 rounded"
-            />
-          </a>
+        <div class="row justify-content-evenly">
+          <div class="col-md-4">
+            <a href="https://github.com/TungLe0319" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
+                alt=" Github Lang stats"
+                class="elevation-6 rounded"
+              />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/TungLe0319" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
+                alt="Github Overview"
+                class="elevation-6 rounded"
+              />
+            </a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <a href="https://github.com/TungLe0319" target="_blank">
-            <img
-              src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
-              alt="Github Overview"
-              class="elevation-6 rounded"
-            />
-          </a>
-        </div>
-      </div>
 
-
-
-
-        <div class="col-md-12 ">
-          <ul class="d-md-flex justify-content-between bg-dark rounded p-2  justify-content-evenly">
+        <div class="col-md-12">
+          <ul
+            class="d-md-flex justify-content-between bg-dark rounded-pill elevation-6 p-2 py-4 navbar-list justify-content-evenly"
+          >
             <li
-              class="list-group-item font-2 fs-5 filter-button active  filter-btn rounded"
+              class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
               @click="filterImages('reset', $event)"
             >
               All
@@ -140,22 +149,25 @@
         <div class="image-container row g-3 justify-content-center">
           <div class="col-md-10">
             <div class="row image-container g-3">
-<div
-            class="col-6 col-md-2 image-item"
-            v-for="s in skillsIcons"
-            :type="s.type"
-            :key="s.id"
-            v-bind="$attrs"
-          >
-            <ParallaxMouse>
-              <CartoonFrame v-motion-roll-visible-once-left>
-                <img class="img-fluid box3 box" :src="s.src" :title="s.title" />
-              </CartoonFrame>
-            </ParallaxMouse>
-          </div>
+              <div
+                class="col-6 col-md-2 image-item"
+                v-for="s in skillsIcons"
+                :type="s.type"
+                :key="s.id"
+                v-bind="$attrs"
+              >
+                <ParallaxMouse>
+                  <CartoonFrame v-motion-roll-visible-once-left>
+                    <img
+                      class="img-fluid box3 box"
+                      :src="s.src"
+                      :title="s.title"
+                    />
+                  </CartoonFrame>
+                </ParallaxMouse>
+              </div>
             </div>
           </div>
-          
         </div>
         <div
           class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
@@ -169,7 +181,9 @@
         <div class="section-title">
           <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
         </div>
-        <div class="col-md-6 d-flex justify-content-center align-items-center my-3 my-md-0">
+        <div
+          class="col-md-6 d-flex justify-content-center align-items-center my-3 my-md-0"
+        >
           <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6"
           >
@@ -196,7 +210,7 @@
             them to ensure that their goals are met.
           </p>
 
-          <ul class="numbered">
+          <ul class="numbered nav-list">
             <li class="numbered-list-item">
               Effectively communicate technical concepts to non-technical
               stakeholders and to build strong working relationships.
@@ -248,7 +262,6 @@
               src="https://fireship.io/courses/react-next-firebase/img/featured.png"
               alt="fireship.io react/firebase Image"
               class="rounded img-fluid"
-          
             />
           </div>
         </div>
@@ -311,20 +324,22 @@ export default {
       filterImages(type, button) {
         // Get the list of all images
         const imageList = document.querySelectorAll(".image-item");
-        
+
         const buttonList = document.querySelectorAll(".filter-button");
         // Remove the "active" class from all buttons
-        buttonList.forEach((btn) => {
-          btn.classList.remove("active");
-        });
+       buttonList.forEach((btn) => {
+  btn.classList.remove("active");
+});
+button.target.classList.add("active");
 
         if (type !== "reset") {
           button.target.classList.add("active");
         }
+
         // Hide all images
         imageList.forEach((image) => {
-        const skillType =  image.getAttribute('type')
-          if (skillType!= type) {
+          const skillType = image.getAttribute("type");
+          if (skillType != type) {
             image.style.display = "none";
             image.style.opacity = 0;
             image.style.transform = "scale(0.1)";
@@ -369,6 +384,58 @@ export default {
 
 <style lang="scss" scoped>
 
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f7d778;
+  transition: left 1.2s ease-in-out;
+}
+
+.active {
+  border-bottom: none !important;
+  .underline {
+    left: 0;
+  }
+}
+
+.filter-button {
+  position: relative;
+
+  &:not(.active) {
+    .underline {
+      left: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+li {
+  position: relative;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #f7d778;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
 
 
 .filter-btn {
@@ -381,32 +448,45 @@ export default {
   color: turquoise !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.active {
-  color: #ffd454 !important;
-  font-size: 2rem;
-  border-top: none !important;
-  border-bottom: #f7d778 4px solid !important;
+.navbar-list {
+  position: relative;
+  list-style: none;
 }
- ul .numbered {
+
+.navbar-list li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.navbar-list li.active {
+  color: turquoise !important;
+  font-size: 2rem;
+  border-top: none;
+  border-bottom: #f7d778 4px solid;
+
+  padding: 4px;
+}
+
+.navbar-list li.active::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 8px;
+  background: #f7d778;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+ul .numbered {
   counter-reset: index;
   padding: 0;
-
 }
 
 /* List element */
- li.numbered-list-item {
+li.numbered-list-item {
   counter-increment: index;
   display: flex;
   align-items: center;
@@ -445,13 +525,13 @@ li.numbered-list-item + li.numbered-list-item {
     width: 400px;
   }
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-   height: 200px;
-  width: 200px;
-  img {
+  @media only screen and (max-width: 768px) {
     height: 200px;
     width: 200px;
-  }
+    img {
+      height: 200px;
+      width: 200px;
+    }
   }
 }
 
