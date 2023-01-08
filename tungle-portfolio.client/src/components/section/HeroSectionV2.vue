@@ -67,9 +67,9 @@
       </div>
     </div>
    
-
-  
+    
   </section>
+  <ScrollDownIcon/>
   <GentleWave />
    
   </div>
@@ -80,6 +80,7 @@
  <script>
 import { onMounted, ref } from "vue";
 import GentleWave from "../effects/GentleWave.vue";
+import ScrollDownIcon from "../socialIcons/ScrollDownIcon.vue";
 
 
 export default {
@@ -101,7 +102,7 @@ export default {
             scrollY
         };
     },
-    components: {  GentleWave }
+    components: { GentleWave, ScrollDownIcon }
 };
 
  </script>

@@ -9,6 +9,8 @@
         >
           Skills & Experience
         </h1>
+
+        <ResumeComponent/>
       </div>
 
       <!-- SECTION EDUCATION -->
@@ -301,6 +303,7 @@ import { onMounted, ref, watchEffect } from "vue";
 import { AppState } from "../../AppState.js";
 import CartoonFrame from "../effects/CartoonFrame.vue";
 import ParallaxMouse from "../effects/ParallaxMouse.vue";
+import ResumeComponent from "../ResumeComponent.vue";
 export default {
   props: {},
   setup(props) {
@@ -379,7 +382,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent },
 };
 </script>
 
