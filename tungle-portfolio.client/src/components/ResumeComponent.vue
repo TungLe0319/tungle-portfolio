@@ -1,6 +1,24 @@
 <template>
- <div class="test d-flex justify-content-center">
-    <video v-if="inViewport" src="../assets/img/Resume.mp4" autoplay   class="video rounded elevation-6"></video>
+  <div class="">
+
+  <button  @click="inViewport = !inViewport" class="btn bg-dark text-light font-1 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Resume 
+  </button>
+
+    <div class="test d-flex justify-content-center">
+   
+   <div class="collapse" id="collapseExample">
+     <div class="card">
+      
+       <video v-if="inViewport" src="../assets/img/Resume.mp4" autoplay   class="video rounded elevation-6"></video>
+     </div>
+   </div>
+   
+   
+   
+   
+     </div>
+
   </div>
 </template>
 
@@ -11,24 +29,9 @@ export default {
       inViewport: false
     }
   },
-  mounted() {
-    window.addEventListener('scroll', this.checkInViewport);
-  },
-  destroyed() {
-    window.removeEventListener('scroll', this.checkInViewport);
-  },
+ 
   methods: {
-    checkInViewport() {
-      // Use IntersectionObserver API to check if the element is in the viewport
-      const observer = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting) {
-          this.inViewport = true;
-        } else {
-          this.inViewport = false;
-        }
-      });
-      observer.observe(this.$el);
-    }
+
   }
 }
 </script>
@@ -38,16 +41,12 @@ export default {
 
 
 <style lang="scss" scoped>
-.test{
-  transform: scale(3);
-  margin-top: 500px;
-  margin-bottom: 500px;
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 
-.video{
-  width: 290px;
- height: 370px;
-  
-}
 </style>
