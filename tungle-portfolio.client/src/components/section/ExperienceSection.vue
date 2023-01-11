@@ -10,7 +10,7 @@
           Skills & Experience
         </h1>
 
-        <ResumeComponent/>
+        <!-- <ResumeComponent/> -->
       </div>
 
       <!-- SECTION EDUCATION -->

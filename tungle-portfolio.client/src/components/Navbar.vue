@@ -37,6 +37,11 @@
             Contact
           </button>
         </li>
+        <li>
+           <button  @click="readFile()" class="btn text-light font-1 fs-4" >
+  Resume 
+  </button>
+        </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
     </div>
@@ -72,7 +77,12 @@ export default {
           left: 0,
           behavior: "smooth",
         });
+
+
       },
+      readFile() {
+     window.open('src/assets/img/Dev_resume.pdf', '_blank') //to open in new tab
+   }
     };
   },
   components: {  ProgressBar },
