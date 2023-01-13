@@ -249,7 +249,7 @@
       <!-- SECTION DEVSOPPORTUNITIES -->
 
       <!-- SECTION CURRENTLY LEARNING -->
-      <div class="row my-5 gy-3">
+      <!-- <div class="row my-5 gy-3">
         <div class="section-title">
           <p class="font-1 text-warning fs-2">Currently Learning</p>
         </div>
@@ -291,7 +291,7 @@
             data storage, and deployment, among others.
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- !SECTION CURRENTLY LEARNING -->
     </div>
   </section>

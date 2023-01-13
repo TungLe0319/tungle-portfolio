@@ -37,13 +37,10 @@
               </p>
             </div>
             <div class="ms-4">
-              <a
-             
-                href="https://www.samadhiyogaidaho.com/#/"
-                class="mb-2"
+              <a href="https://www.samadhiyogaidaho.com/#/" class="mb-2"
                 ><img
-                   v-motion-slide-visible-bottom
-                :delay="600"
+                  v-motion-slide-visible-bottom
+                  :delay="600"
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
                   alt="external Link"
                   title="site Link"
@@ -65,15 +62,15 @@
             >
               Custom Designed and built website for a small yoga business owner
               client. intergrated Ghost for CMS Publishing for her blog as well
-              as configuring MailGun for Email Service. The app allows users
-              to easily browse and sign up for classes, view class schedules,
-              and sign up for yoga retreats. It will also include a
-              feature for teachers to manage their schedules and events,
-              the business to manage customer information. The SPA will be
-              optimized for both desktop and mobile use, making it convenient
-              for users to access from any device. Overall, the goal of the app
-              is to provide a seamless and convenient experience for both the
-              business and its customers.
+              as configuring MailGun for Email Service. The app allows users to
+              easily browse and sign up for classes, view class schedules, and
+              sign up for yoga retreats. It will also include a feature for
+              teachers to manage their schedules and events, the business to
+              manage customer information. The SPA will be optimized for both
+              desktop and mobile use, making it convenient for users to access
+              from any device. Overall, the goal of the app is to provide a
+              seamless and convenient experience for both the business and its
+              customers.
             </div>
 
             <ul class="list-group list-group-horizontal bg-transparent">
@@ -122,10 +119,9 @@
 
       <div class="row my-6" style="">
         <div class="col-md-5 position-relative text-end order-1 order-md-0">
-           <div class="d-flex justify-content-end">
-              <div class="me-4">
+          <div class="d-flex justify-content-end">
+            <div class="me-4">
               <a
-              
                 target="_blank"
                 href="https://betterafterbooks.apps.devopportunities.dev/"
                 class="mb-2"
@@ -135,8 +131,8 @@
                   title="site Link"
                   width="60"
                   height="60"
-                     v-motion-slide-visible-bottom
-                :delay="600"
+                  v-motion-slide-visible-bottom
+                  :delay="600"
               /></a>
             </div>
             <div>
@@ -152,10 +148,9 @@
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
-               Better After Books
+                Better After Books
               </p>
             </div>
-          
           </div>
           <div
             v-motion-slide-visible-bottom
@@ -249,7 +244,7 @@
           </a>
         </div>
         <div class="col-md-5 position-relative">
-           <div class="d-flex">
+          <div class="d-flex">
             <div>
               <p
                 v-motion-slide-visible-bottom
@@ -268,7 +263,6 @@
             </div>
             <div class="ms-4">
               <a
-           
                 target="_blank"
                 href="https://keepr-project-demo.onrender.com"
                 class="mb-2"
@@ -278,8 +272,8 @@
                   title="site Link"
                   width="60"
                   height="60"
-                     v-motion-slide-visible-bottom
-                :delay="600"
+                  v-motion-slide-visible-bottom
+                  :delay="600"
               /></a>
             </div>
           </div>
@@ -336,20 +330,17 @@
       <!-- SECTION Tower -->
       <div class="row my-6" style="">
         <div class="col-md-5 position-relative text-end order-1 order-md-0">
-           <div class="d-flex justify-content-end">
-             <div class="me-4">
-              <a
-            
-                href="https://thetower-f4he.onrender.com"
-                class="mb-2"
+          <div class="d-flex justify-content-end">
+            <div class="me-4">
+              <a href="https://thetower-f4he.onrender.com" class="mb-2"
                 ><img
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
                   alt="external Link"
                   title="site Link"
                   width="60"
                   height="60"
-                     v-motion-slide-visible-bottom
-                :delay="600"
+                  v-motion-slide-visible-bottom
+                  :delay="600"
               /></a>
             </div>
             <div>
@@ -365,10 +356,9 @@
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
-               Tower
+                Tower
               </p>
             </div>
-           
           </div>
           <div
             v-motion-slide-visible-bottom
@@ -433,9 +423,134 @@
         </div>
       </div>
       <!-- !SECTION Tower -->
+
+      <!-- SECTION NextFire -->
+      <div class="row my-5">
+        <div class="col-md-7">
+          <a target="_blank" href="https://nextfire-app-xi-nine.vercel.app/">
+            <img
+              v-motion-slide-visible-bottom
+              :delay="500"
+              src="https://media.discordapp.net/attachments/1060066788878069891/1063581265971904593/Screenshot_2023-01-13_at_3.11.41_PM.png?width=1362&height=747"
+              class="img-fluid elevation-6 rounded"
+              alt="Project Image"
+            />
+          </a>
+        </div>
+        <div class="col-md-5 position-relative">
+          <div class="d-flex">
+            <div>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="500"
+                class="font-1 fs-5 text-warning mt-3 mt-md-0"
+              >
+                Featured Project
+              </p>
+              <p
+                v-motion-slide-visible-bottom
+                :delay="600"
+                class="font-1 fs-3 text-light text-shadow mb-1"
+              >
+                Nextfire
+              </p>
+            </div>
+            <div class="ms-4">
+              <a
+                target="_blank"
+                href="https://nextfire-app-xi-nine.vercel.app/"
+                class="mb-2"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
+                  alt="external Link"
+                  title="site Link"
+                  width="60"
+                  height="60"
+                  v-motion-slide-visible-bottom
+                  :delay="600"
+              /></a>
+            </div>
+          </div>
+          <div
+            v-motion-slide-visible-bottom
+            :delay="700"
+            class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
+          >
+            <div
+              v-motion-slide-visible-bottom
+              :delay="800"
+              class="card-body font-2"
+            >
+            Nextfire is full-stack Social Blogging Platform inspired by sites like
+              DEV.to and Medium. With this project, authors will be able to
+              create engaging content under a custom username, and publish it
+              publicly with SEO-friendly rendering. Meanwhile, readers will be
+              able to interact with the posts by hearting or liking them in
+              real-time. The project will feature several advanced techniques
+              such as:
+
+              <ul>
+                <li class="">   <small>   Custom Firebase usernames for authors</small>  </li>
+                <li class="">   <small>  Bot-friendly content for improved SEO </small>  </li>
+                <li class="">   <small>   Advanced Server-Side Rendering (SSR), Static Site Generation
+                  (SSG), and Incremental Static Regeneration (ISR) techniques </small>   
+                
+                </li>
+                <li class="">   <small> Firestore for real-time CRUD operations and data modeling  </small>   
+                 
+                </li>
+                <li class="">   <small>  Reactive forms with react-hook-form for user input </small>  </li>
+                <li class="">   <small> Image file uploads for post content  </small>  </li>
+                <li class="">   <small> Real-time hearts for reader engagement </small>   </li>
+                <li class="">   <small>  Security and Deployment for a production-ready app. </small>  </li>
+              </ul>
+            </div>
+
+            <ul class="list-group list-group-horizontal bg-transparent">
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+               Next.js
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Firebase
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Javascript
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+                Tailwind
+              </li>
+              <li
+                v-motion-slide-visible-bottom
+                :delay="300"
+                class="list-group-item"
+              >
+               Vercel
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- !SECTION -->
     </div>
 
-    <div class="container mt-6" >
+    <div class="container mt-6">
       <!-- SECTION ArchivedProjects -->
       <!-- <div class="row g-3">
         <div class="col-md-12 text-center">
@@ -633,20 +748,20 @@ export default {
   filter: brightness(120%);
   cursor: pointer;
 }
-.mt-6{
-  margin-top: 10rem;
+.mt-6 {
+  margin-top: 12rem;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-  margin-top: 3rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: 3rem;
   }
 }
 .my-6 {
   margin-top: 17rem;
   margin-bottom: 15rem;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     margin-top: 4rem;
-  margin-bottom: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -657,7 +772,6 @@ ul {
 
 img {
   transition: all 0.5s ease-out;
-
 }
 
 img:hover {
@@ -686,7 +800,7 @@ img:hover {
     position: static;
     background-color: rgba(27, 82, 95, 0.534) !important;
     backdrop-filter: blur(1px);
-      transform: scale(0.5);
+    transform: scale(0.5);
   }
 }
 </style>

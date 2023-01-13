@@ -54,6 +54,12 @@ export const AppState = reactive({
       id: 6,
     },
     {
+      title: "Next.js",
+      src: "https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png",
+      type: "framework",
+      id: 6,
+    },
+    {
       title: "DotNet Core",
       src: "https://wpguru.co.uk/wp-content/uploads/2020/04/dotnet-logo.png",
       type: "framework",
