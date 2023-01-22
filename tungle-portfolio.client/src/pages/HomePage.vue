@@ -30,7 +30,7 @@ import AboutSection from "../components/section/AboutSection.vue";
 import ContactSection from "../components/section/ContactSection.vue";
 
 import PortfolioSection from "../components/section/PortfolioSection.vue";
-import ExperienceSection from "../components/section/ExperienceSection.vue";
+import ExperienceSection from "../components/section/experience/ExperienceSection.vue";
 import SocialBar from "../components/socialIcons/SocialBar.vue";
 import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
 import LoadingAnimation from "../components/effects/LoadingAnimation.vue";

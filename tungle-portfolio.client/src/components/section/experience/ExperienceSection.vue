@@ -300,16 +300,16 @@
 <script>
 import { computed } from "@vue/reactivity";
 import { onMounted, ref, watchEffect } from "vue";
-import { AppState } from "../../AppState.js";
-import CartoonFrame from "../effects/CartoonFrame.vue";
-import ParallaxMouse from "../effects/ParallaxMouse.vue";
-import ResumeComponent from "../ResumeComponent.vue";
+import { AppState } from "../../../AppState.js";
+import CartoonFrame from "../../effects/CartoonFrame.vue";
+import ParallaxMouse from "../../effects/ParallaxMouse.vue";
+import ResumeComponent from "../../ResumeComponent.vue";
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
     onMounted(() => {
-    
+
     });
     watchEffect(() => {});
 
