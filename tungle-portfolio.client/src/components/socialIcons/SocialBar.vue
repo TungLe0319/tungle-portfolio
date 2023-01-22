@@ -29,8 +29,8 @@
         <LinkedInIcon  />
       </div>
       <div class="col-md-12 text-center">
-        <p>Designed & Built by <b> Tung Le</b></p>
-         <p>Copyright &copy; 2023 Tung Le</p>
+         <p>Designed & Built by <b> DevOpportunitiesLLC</b></p>
+        <p>Copyright &copy; 2023 DevOpportunitiesLLC</p>
       </div>
     </div>
   </div>
@@ -53,17 +53,17 @@ export default {
 
         window.addEventListener("scroll", () => {
                 scrollY.value = window.scrollY;
-             
+
                 if (scrollY.value >= 9000) {
                  let socialBar = document.getElementById('socialBar')
                  socialBar.classList.toggle= 'fixed-bottom'
-                 
+
                 }
             });
     });
 
     return {
-   
+
     };
   },
   components: { GitHubIcon, LinkedInIcon, PhoneIcon },
