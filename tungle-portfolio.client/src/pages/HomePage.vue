@@ -26,13 +26,13 @@
 
 <script>
 import EmailBar from "../components/socialIcons/EmailBar.vue";
-import AboutSection from "../components/section/AboutSection.vue";
-import ContactSection from "../components/section/ContactSection.vue";
+import AboutSection from "../components/sections/AboutSection.vue";
+import ContactSection from "../components/sections/ContactSection.vue";
 
-import PortfolioSection from "../components/section/PortfolioSection.vue";
-import ExperienceSection from "../components/section/experience/ExperienceSection.vue";
+import PortfolioSection from "../components/sections/PortfolioSection.vue";
+import ExperienceSection from "../components/sections/experience/ExperienceSection.vue";
 import SocialBar from "../components/socialIcons/SocialBar.vue";
-import HeroSectionV2 from "../components/section/HeroSectionV2.vue";
+import HeroSectionV2 from "../components/sections/HeroSectionV2.vue";
 import LoadingAnimation from "../components/effects/LoadingAnimation.vue";
 
 export default {

@@ -14,75 +14,7 @@
       </div>
 
       <!-- SECTION EDUCATION -->
-      <div class="row d-flex justify-content around">
-        <div class="col-md-12 d-flex justify-content-between">
-          <div class="section-title">
-            <p
-              v-motion-slide-visible-once-bottom
-              :delay="300"
-              class="font-1 text-warning fs-2"
-            >
-              Education
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center">
-          <div class="card-1">
-            <a
-              href="https://boisecodeworks.com/courses/immersive-full-stack"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://avatars.githubusercontent.com/u/94322600?s=280&v=4"
-                alt="full stack immersive image"
-                title="full stack immersive"
-              />
-            </a>
-          </div>
-          <div class="card-1">
-            <a
-              href="https://boisecodeworks.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbcw.blob.core.windows.net%2Fpublic%2Fimg%2F8600856373152463&f=1&nofb=1&ipt=7556aa255fdb3f0a77caa1be29b0f23e5f3d403a76f098fca104b1911e9c485b&ipo=images"
-                alt="boise codeworks image"
-                title="Boise Codeworks"
-                width="175"
-                height="175"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-6 align-items-center">
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light darken-10 fw-bold"
-          >
-            FULL STACK SOFTWARE DEVELOPMENT CERTIFICATION,
-          </p>
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light fw-bold darken-20"
-          >
-            2022 - Boise Codeworks, Boise, ID
-          </p>
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light"
-          >
-            An immersive full stack software development program that provided
-            over 500 hours of coding experience across multiple technology
-            stacks.
-          </p>
-        </div>
-      </div>
+     <Education/>
       <!-- !SECTION EDUCATION -->
 
       <!-- SECTION LANG AND TECH -->
@@ -179,120 +111,13 @@
       <!-- !SECTION LANG AND TECH -->
 
       <!-- SECTION DEVSOPPORTUNITIES -->
-      <div class="row my-5">
-        <div class="section-title">
-          <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
-        </div>
-        <div
-          class="col-md-6 d-flex justify-content-center align-items-center my-3 my-md-0"
-        >
-          <div
-            class="rounded-circle bg-light text-center devsopportunities-image elevation-6"
-          >
-            <img src="../../assets/img/LLCLogo.png" alt="LLC Logo" />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light darken-10 fw-bold"
-          >
-            2022
-          </p>
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light"
-          >
-            Company I Co-Founded with a team of 3 other developers from
-            CodeWorks to do freelance work while searching for full time
-            employment. I have had the opportunity to communicate with clients
-            to understand their needs and requirements, and to collaborate with
-            them to ensure that their goals are met.
-          </p>
-
-          <ul class="numbered nav-list">
-            <li class="numbered-list-item">
-              Effectively communicate technical concepts to non-technical
-              stakeholders and to build strong working relationships.
-            </li>
-            <li class="numbered-list-item">
-              Proactive in seeking feedback and making adjustments as needed to
-              ensure that the final product meets the client's expectations.
-            </li>
-            <li class="numbered-list-item">
-              While I have not had a great deal of experience working directly
-              with clients, I am eager to learn and to continue developing my
-              skills in this area.
-            </li>
-            <li class="numbered-list-item">
-              Confident that with my strong technical abilities and my
-              commitment to delivering high-quality work, I will be able to make
-              a valuable contribution to any project.
-            </li>
-          </ul>
-
-          <p class="font-1 fs-5 text-light darken-10">
-            Projects & work done Listed Below
-            <i
-              @click="scrollToProjects()"
-              class="mdi mdi-arrow-down-circle fs-1 text-light action"
-            ></i>
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center"></div>
-        </div>
-      </div>
+     <Devopportunities/>
 
       <!-- SECTION DEVSOPPORTUNITIES -->
 
-      <!-- SECTION CURRENTLY LEARNING -->
-      <!-- <div class="row my-5 gy-3">
-        <div class="section-title">
-          <p class="font-1 text-warning fs-2">Currently Learning</p>
-        </div>
-
-        <div class="col-md-6">
-          <div
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="card border-0 elevation-6 text-center"
-          >
-            <img
-              src="https://fireship.io/courses/react-next-firebase/img/featured.png"
-              alt="fireship.io react/firebase Image"
-              class="rounded img-fluid"
-            />
-          </div>
-        </div>
-        <div class="col-md-6">
-          <p
-            v-motion-slide-visible-once-bottom
-            :delay="300"
-            class="font-2 text-light"
-          >
-            The
-            <a href="https://fireship.io/">
-              <img
-                src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
-                alt="fireship.io logo"
-                width="40"
-              />
-              <b class="text-light darken-10"> Fireship.io's </b>
-            </a>
-            Next.js and Firebase course is a learning opportunity that focuses
-            on teaching developers how to use two popular technologies for
-            building modern web applications. Next.js is a framework for
-            building server-rendered React applications, and Firebase is a suite
-            of tools for building and deploying applications in the cloud.The
-            course covers topics such as server-side rendering, authentication,
-            data storage, and deployment, among others.
-          </p>
-        </div>
-      </div> -->
-      <!-- !SECTION CURRENTLY LEARNING -->
+      <!-- SECTION RiaFox-->
+<RiaFox/>
+      <!-- !SECTION RiaFox-->
     </div>
   </section>
 </template>
@@ -304,6 +129,8 @@ import { AppState } from "../../../AppState.js";
 import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
+import Devopportunities from "./devopportunities.vue";
+import RiaFox from "./RiaFox.vue"
 export default {
   props: {},
   setup(props) {
@@ -382,7 +209,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities },
 };
 </script>
 
@@ -463,60 +290,6 @@ li .filter-btn::before {
   transition: all 0.5s ease-in-out;
 }
 
-ul .numbered {
-  counter-reset: index;
-  padding: 0;
-}
-
-/* List element */
-li.numbered-list-item {
-  counter-increment: index;
-  display: flex;
-  align-items: center;
-  padding: 12px 0;
-  box-sizing: border-box;
-  color: #f8fcdb;
-  font-family: "Montserrat", sans-serif;
-}
-
-/* Element counter */
-li.numbered-list-item::before {
-  content: counters(index, ".", decimal-leading-zero);
-  font-size: 1.5rem;
-  text-align: right;
-  font-weight: bold;
-  min-width: 50px;
-  padding-right: 12px;
-  font-variant-numeric: tabular-nums;
-  align-self: flex-start;
-  background-image: linear-gradient(to bottom, aquamarine, orangered);
-  background-attachment: fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Element separation */
-li.numbered-list-item + li.numbered-list-item {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.devsopportunities-image {
-  height: 400px;
-  width: 400px;
-  img {
-    height: 400px;
-    width: 400px;
-  }
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-    height: 200px;
-    width: 200px;
-    img {
-      height: 200px;
-      width: 200px;
-    }
-  }
-}
 
 .box {
   border: solid black;
@@ -537,14 +310,5 @@ li.numbered-list-item + li.numbered-list-item {
   padding: 5px;
 }
 
-.v-motion {
-  transition: all 0.25s ease;
-  img {
-    transition: all 0.25s ease;
-  }
 
-  img:hover {
-    transform: rotate(8deg);
-  }
-}
 </style>
