@@ -111,7 +111,7 @@
       <!-- !SECTION LANG AND TECH -->
 
       <!-- SECTION DEVSOPPORTUNITIES -->
-     <Devopportunities/>
+ <DevOpportunities/>
 
       <!-- SECTION DEVSOPPORTUNITIES -->
 
@@ -130,7 +130,7 @@ import { AppState } from "../../../AppState.js";
 import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
-import Devopportunities from "./devopportunities.vue";
+import DevOpportunities from "./DevOpportunities.vue";
 
 import Riafox from "./RiaFox.vue";
 
@@ -212,7 +212,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities, Riafox },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities, Riafox, DevOpportunities },
 };
 </script>
 
