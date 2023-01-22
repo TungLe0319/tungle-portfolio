@@ -212,7 +212,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities, Riafox, DevOpportunities },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Riafox, DevOpportunities },
 };
 </script>
 
