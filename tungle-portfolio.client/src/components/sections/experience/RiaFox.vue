@@ -1,17 +1,17 @@
 <template>
   <div class="row my-5 gy-3">
     <div class="section-title">
-      <p class="font-1 text-warning fs-2">Currently Learning</p>
+      <p class="font-1 text-warning fs-2">RiaFox</p>
     </div>
 
     <div class="col-md-6">
       <div
         v-motion-slide-visible-once-bottom
         :delay="300"
-        class="card border-0 elevation-6 text-center"
+        class="card bg-transparent border-0  text-center"
       >
         <img
-          src="https://fireship.io/courses/react-next-firebase/img/featured.png"
+          src="https://www.riafox.com/wp-content/uploads/2018/02/Riafox_Logo_W_LR.png"
           alt="fireship.io react/firebase Image"
           class="rounded img-fluid"
         />
@@ -23,22 +23,8 @@
         :delay="300"
         class="font-2 text-light"
       >
-        The
-        <a href="https://fireship.io/">
-          <img
-            src="https://ia802200.us.archive.org/10/items/github.com-fireship-io-nft-art-generator_-_2022-01-22_14-51-40/cover.jpg"
-            alt="fireship.io logo"
-            width="40"
-          />
-          <b class="text-light darken-10"> Fireship.io's </b>
-        </a>
-        Next.js and Firebase course is a learning opportunity that focuses on
-        teaching developers how to use two popular technologies for building
-        modern web applications. Next.js is a framework for building
-        server-rendered React applications, and Firebase is a suite of tools for
-        building and deploying applications in the cloud.The course covers
-        topics such as server-side rendering, authentication, data storage, and
-        deployment, among others.
+     
+       As a Contracted Software Developer at RiaFox, I have been working on a variety of projects utilizing the MEAN stack. My primary responsibilities have included implementing minor features and fixing bugs, but I have also had the opportunity to work closely with a team and communicate effectively to achieve our shared goals. Despite my relatively junior role, I have gained valuable experience in working remotely and have been grateful for the opportunity to learn and grow as a developer. Overall, my time at RiaFox has been a great learning experience and I look forward to continuing to contribute to the success of the company.
       </p>
     </div>
   </div>

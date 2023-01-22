@@ -116,7 +116,8 @@
       <!-- SECTION DEVSOPPORTUNITIES -->
 
       <!-- SECTION RiaFox-->
-<RiaFox/>
+<Riafox/>
+
       <!-- !SECTION RiaFox-->
     </div>
   </section>
@@ -130,7 +131,9 @@ import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
 import Devopportunities from "./devopportunities.vue";
-import RiaFox from "./RiaFox.vue"
+
+import Riafox from "./RiaFox.vue";
+
 export default {
   props: {},
   setup(props) {
@@ -209,7 +212,7 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Devopportunities, Devopportunities, Devopportunities, Riafox },
 };
 </script>
 
