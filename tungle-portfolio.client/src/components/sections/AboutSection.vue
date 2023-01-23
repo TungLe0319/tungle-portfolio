@@ -26,9 +26,8 @@
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
-            Hi there! My name is Tung and I am a web developer who is
-            <b class="text-light darken-10">passionate </b> about design and
-            innovation. I don't have a particular style, but I enjoy adapting to
+            Hi there! My name is Tung and I am a web developer whose
+            <b class="text-light darken-10">strengths </b>  are in design collaboration. I don't have a particular style, but I enjoy adapting to
             each project and using it as a chance to try new things and grow my
             knowledge. My first
             <b class="text-light darken-10">"Hello World"</b> in web development
@@ -36,14 +35,10 @@
             hard to build my skills in both front-end and back-end
             development.My time at CodeWorks has left me with a strong
             foundation and a strong desire to keep learning and improving. I am
-            grateful for the education and opportunities I received at
-            CodeWorks, and I am excited to continue learning and growing in the
-            software development field. When I'm not working, you can find me
-            experimenting with new technologies and staying up-to-date on the
-            latest design trends. I am a problem-solver at heart and thrive on
-            finding creative solutions to complex challenges, and I am dedicated
-            to creating beautiful and functional websites that deliver
-            exceptional user experiences.
+            <b class="text-light darken-10">grateful</b> for the education and opportunities I received at
+            CodeWorks, and I am excited to continue learning and growing wherever I am because I know   <b class="text-light darken-10">ANYTHING, ANYTIME & ANYWHERE </b> is a chance to learn and grow. When I'm not working, you can find me walking my dog , hiking, drawing something, working out or
+            experimenting with new technologies. I am creative and a  problem-solver by heart and thrive on
+            finding solutions to complex challenges and creating beautiful works.
           </p>
         </div>
       </div>
@@ -97,7 +92,7 @@
         <div class="col-md-12">
           <p class="font-1 fs-4 text-warning">Some of my artwork</p>
           <p class="font-2 fs-6 text-light text-center">
-           I've appreicated at as a creative outlife since I was a kid, from pottery to painting and now to digital art. I  especially love drawing mandalas as a way of relaxation 
+            Since childhood I've appreciated art as a creative outlet , always stuck in my potter or art class wanting to make aesthetically beautiful things. I  especially love drawing mandalas as a way of relaxation
             that allows me to express myself and explore new ideas. Having a
             background in art as helped me develop valuable skills such as
             attention to detail, problem-solving, and the ability to visualize
