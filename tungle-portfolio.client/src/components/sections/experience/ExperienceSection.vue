@@ -277,7 +277,7 @@ li .filter-btn::before {
   border-top: none;
   border-bottom: #f7d778 4px solid;
   transition: all 1s ease;
-  padding: 4px;
+
 }
 
 .navbar-list li.active::before {

@@ -23,9 +23,26 @@
         :delay="300"
         class="font-2 text-light"
       >
-     
+
        As a Contracted Software Developer at RiaFox, I have been working on a variety of projects utilizing the MEAN stack. My primary responsibilities have included implementing minor features and fixing bugs, but I have also had the opportunity to work closely with a team and communicate effectively to achieve our shared goals. Despite my relatively junior role, I have gained valuable experience in working remotely and have been grateful for the opportunity to learn and grow as a developer. Overall, my time at RiaFox has been a great learning experience and I look forward to continuing to contribute to the success of the company.
       </p>
+
+         <ul class="numbered nav-list">
+            <li class="numbered-list-item">
+              Effectively communicated within team channels to properly pass on necessary changes and information regarding tasks.
+            </li>
+            <li class="numbered-list-item">
+              Proactive in seeking feedback and asking questions  as needed to
+              ensure that the task I'm undertaking is well understood and meets the team's expectations.
+            </li>
+            <li class="numbered-list-item">
+              While we have not had a great deal of experience working directly
+              with clients, I am eager to learn and to continue developing my
+              skills in this area.
+            </li>
+
+          </ul>
+
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <div class="row my-5">
         <div class="section-title">
-          <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
+          <p class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
         </div>
         <div
           class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
@@ -38,26 +38,25 @@
             :delay="300"
             class="font-2 text-light"
           >
-           LLC  I Co-Founded with a team of 3 other developers
+           I Co-Founded <b class="text-warning">DevOpportunities</b> with a team of 3 other developers
 
 
 
            to do freelance work while searching for full time
-            employment. Through this we wanted to show our proactiveness in wanting to hone our project management skills, technical expertise and profressional network, we've had the opportunity to communicate with client and work on a couple projects as a team together our most noteable one being SamadhiYogaIdaho which has details below.
+            employment. Through this we wanted to show our provocativeness in wanting to hone our project management skills, technical expertise and professional network. We've had the opportunity to communicate and work with clients  on a couple projects our most notable one being SamadhiYogaIdaho which has details below.
 
           </p>
 
           <ul class="numbered nav-list">
             <li class="numbered-list-item">
-              Effectively communicate technical concepts to non-technical
-              stakeholders and to build strong working relationships.
+              Effectively communicated with clients in regular meet ups to build strong working relationships and trust.
             </li>
             <li class="numbered-list-item">
               Proactive in seeking feedback and making adjustments as needed to
               ensure that the final product meets the client's expectations.
             </li>
             <li class="numbered-list-item">
-              While I have not had a great deal of experience working directly
+              While we have not had a great deal of experience working directly
               with clients, I am eager to learn and to continue developing my
               skills in this area.
             </li>

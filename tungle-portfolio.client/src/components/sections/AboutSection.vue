@@ -60,13 +60,13 @@
             width="100%"
             height="152"
             frameBorder="0"
-     
+
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             as="font"
             rel="preload"
           >
-        
+
         </iframe>
         </div>
         <div class="col-md-6 text-center">
@@ -97,7 +97,7 @@
         <div class="col-md-12">
           <p class="font-1 fs-4 text-warning">Some of my artwork</p>
           <p class="font-2 fs-6 text-light text-center">
-            I love drawing mandalas as a way of relaxation and creative outlet
+           I've appreicated at as a creative outlife since I was a kid, from pottery to painting and now to digital art. I  especially love drawing mandalas as a way of relaxation 
             that allows me to express myself and explore new ideas. Having a
             background in art as helped me develop valuable skills such as
             attention to detail, problem-solving, and the ability to visualize
