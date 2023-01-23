@@ -64,10 +64,16 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
+.hover-image{
+    transition: all 0.5s ease;
+}
+.hover-image:hover {
+  transform: scale(1.01);
+  transition: all 0.5s ease;
+  filter: brightness(120%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(142, 238, 228, 0.756);
+}
 
 
 

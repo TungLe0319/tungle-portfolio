@@ -4,13 +4,26 @@
           <p class="font-1 fs-2 text-warning">DevsOpportunities LLC</p>
         </div>
         <div
-          class="col-md-6 d-flex justify-content-center align-items-center my-3 my-md-0"
+          class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
         >
           <div
-            class="rounded-circle bg-light text-center devsopportunities-image elevation-6"
+            class="rounded-circle bg-light text-center devsopportunities-image elevation-6 mb-4"
           >
             <img src="../../../assets/img/LLCLogo.png" alt="LLC Logo" />
+
           </div>
+             <div class="d-flex  justify-content-center">
+          <a href="https://www.linkedin.com/in/daniel-le97/">
+            <img src="https://avatars.githubusercontent.com/u/107774403?v=4" alt="Daniel photo" width="100" class="rounded-circle elevation-6 hover-image " title="Daniel Le">
+          </a>
+          <a href="https://www.linkedin.com/in/tri-le1122/">
+            <img src="https://avatars.githubusercontent.com/u/107815260?v=4" alt="Tri photo" width="100" class="rounded-circle elevation-6 hover-image mx-3" title="Tri Le">
+          </a>
+          <a href="https://www.linkedin.com/in/molly-nettleton/">
+            <img src="https://avatars.githubusercontent.com/u/108630829?v=4" alt="Molly photo" width="100" class="rounded-circle elevation-6 hover-image " title="Molly Nettleton">
+          </a>
+           </div>
+
         </div>
         <div class="col-md-6">
           <p
@@ -25,11 +38,13 @@
             :delay="300"
             class="font-2 text-light"
           >
-            Company I Co-Founded with a team of 3 other developers from
-            CodeWorks to do freelance work while searching for full time
-            employment. I have had the opportunity to communicate with clients
-            to understand their needs and requirements, and to collaborate with
-            them to ensure that their goals are met.
+           LLC  I Co-Founded with a team of 3 other developers
+
+
+
+           to do freelance work while searching for full time
+            employment. Through this we wanted to show our proactiveness in wanting to hone our project management skills, technical expertise and profressional network, we've had the opportunity to communicate with client and work on a couple projects as a team together our most noteable one being SamadhiYogaIdaho which has details below.
+
           </p>
 
           <ul class="numbered nav-list">
@@ -46,11 +61,7 @@
               with clients, I am eager to learn and to continue developing my
               skills in this area.
             </li>
-            <li class="numbered-list-item">
-              Confident that with my strong technical abilities and my
-              commitment to delivering high-quality work, I will be able to make
-              a valuable contribution to any project.
-            </li>
+
           </ul>
 
           <p class="font-1 fs-5 text-light darken-10">

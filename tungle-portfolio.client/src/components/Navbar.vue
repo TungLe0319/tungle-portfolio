@@ -39,7 +39,7 @@
         </li>
         <li>
            <button  @click="readFile()" class="btn text-light font-1 fs-4" >
-  Resume 
+  Resume
   </button>
         </li>
       </ul>
@@ -55,9 +55,9 @@ import { onMounted } from "vue";
 export default {
   setup() {
     onMounted(() => {
-   
+
     });
-   
+
     return {
       scrollTo(x) {
         // console.log(x);
