@@ -116,7 +116,7 @@
           <div v-motion-slide-visible-once-bottom :delay="300" class="">
             <ParallaxMouse>
               <img
-                src="../../assets/img/Procreate/Trex.png"
+                src="../../assets/img/Procreate/Newt.png"
                 alt="Trex"
                 class="procreate-art"
               />
