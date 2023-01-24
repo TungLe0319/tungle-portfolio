@@ -72,14 +72,14 @@
               alt="image of a dog wearing bumblee bee hat"
               width="240"
               height="240"
-              class="elevation-6 rounded mb-2 mb-md-0"
+              class="elevation-6 rounded mb-2 mb-md-0 pets"
             />
             <img
               src="../../assets/img/Goblin.png"
               alt="close up image of a cat"
               width="240"
               height="240"
-              class="elevation-6 rounded"
+              class="elevation-6 rounded pets"
             />
           </div>
         </div>
@@ -92,9 +92,9 @@
         <div class="col-md-12">
           <p class="font-1 fs-4 text-warning">Some of my artwork</p>
           <p class="font-2 fs-6 text-light text-center">
-            Since childhood I've appreciated art as a creative outlet , always stuck in my potter or art class wanting to make aesthetically beautiful things. I  especially love drawing mandalas as a way of relaxation
+            Since childhood I've appreciated art as a creative outlet , always  in my pottery or art class  making  things. I  especially love drawing mandalas as a way of relaxation
             that allows me to express myself and explore new ideas. Having a
-            background in art as helped me develop valuable skills such as
+            background in art as helped me develop
             attention to detail, problem-solving, and the ability to visualize
             and communicate solutions to complex problems and to communicate
             more effectively with colleagues and clients.My artwork is
@@ -194,6 +194,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.pets{
+  object-fit: cover;
+}
 .about-me-text {
 
   //when screen is 768px OR LESS

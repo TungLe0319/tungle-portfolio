@@ -10,115 +10,21 @@
           Skills & Experience
         </h1>
 
-        <!-- <ResumeComponent/> -->
+
       </div>
 
-      <!-- SECTION EDUCATION -->
+
      <Education/>
-      <!-- !SECTION EDUCATION -->
 
-      <!-- SECTION LANG AND TECH -->
-      <div class="row skills-content gy-4 my-5 justify-content-center">
-        <div class="col-md-12">
-          <p class="font-1 text-warning fs-2">Languages & Technologies</p>
-        </div>
+      <SkillIcons/>
 
-        <div class="row justify-content-evenly">
-          <div class="col-md-4">
-            <a href="https://github.com/TungLe0319" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
-                alt=" Github Lang stats"
-                class="elevation-6 rounded"
-              />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://github.com/TungLe0319" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
-                alt="Github Overview"
-                class="elevation-6 rounded"
-              />
-            </a>
-          </div>
-        </div>
 
-        <div class="col-md-12">
-          <ul
-            class="d-md-flex justify-content-between bg-dark rounded-pill elevation-6 p-2 py-4 navbar-list justify-content-evenly"
-          >
-            <li
-              class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
-              @click="filterImages('reset', $event)"
-            >
-              All
-            </li>
-            <li
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('lang', $event)"
-            >
-              Languages
-            </li>
-            <li
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('tech', $event)"
-            >
-              Technologies
-            </li>
-            <li
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('framework', $event)"
-            >
-              Frameworks & Libraries
-            </li>
-            <li
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('database', $event)"
-            >
-              Databases
-            </li>
-          </ul>
-        </div>
-        <div class="image-container row g-3 justify-content-center">
-          <div class="col-md-10">
-            <div class="row image-container g-3">
-              <div
-                class="col-6 col-md-2 image-item"
-                v-for="s in skillsIcons"
-                :type="s.type"
-                :key="s.id"
-                v-bind="$attrs"
-              >
-                <ParallaxMouse>
-                  <CartoonFrame v-motion-roll-visible-once-left>
-                    <img
-                      class="img-fluid box3 box"
-                      :src="s.src"
-                      :title="s.title"
-                    />
-                  </CartoonFrame>
-                </ParallaxMouse>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
-        ></div>
-      </div>
-
-      <!-- !SECTION LANG AND TECH -->
-
-      <!-- SECTION DEVSOPPORTUNITIES -->
  <DevOpportunities/>
 
-      <!-- SECTION DEVSOPPORTUNITIES -->
 
-      <!-- SECTION RiaFox-->
-<Riafox/>
+<RiaFox/>
 
-      <!-- !SECTION RiaFox-->
+
     </div>
   </section>
 </template>
@@ -131,8 +37,10 @@ import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
 import DevOpportunities from "./DevOpportunities.vue";
+import Education from "./Education.vue";
 
-import Riafox from "./RiaFox.vue";
+import RiaFox from "./RiaFox.vue";
+import SkillIcons from "./SkillIcons.vue";
 
 export default {
   props: {},
@@ -212,106 +120,11 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent, Riafox, DevOpportunities },
+  components: { CartoonFrame, ParallaxMouse, ResumeComponent, RiaFox, DevOpportunities, SkillIcons, Education },
 };
 </script>
 
 <style lang="scss" scoped>
-.active {
-  border-bottom: none !important;
-
-  transition: all 1s ease;
-}
-
-.filter-button {
-  position: relative;
-  transition: all 1s ease;
-  &:not(.active) {
-    .underline {
-      left: 100%;
-      transition: all 1s ease;
-    }
-  }
-}
-
-li .filter-btn {
-  position: relative;
-}
-
-li .filter-btn::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: #f7d778;
-  transform: scaleX(0);
-
-  transition: transform 0.2s ease;
-}
-
-.filter-btn {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-}
-.filter-btn:hover {
-  transform: scale(1.1);
-
-  color: turquoise !important;
-}
-
-.navbar-list {
-  position: relative;
-  list-style: none;
-}
-
-.navbar-list li {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.navbar-list li.active {
-  color: turquoise !important;
-  font-size: 2rem;
-  border-top: none;
-  border-bottom: #f7d778 4px solid;
-  transition: all 1s ease;
-
-}
-
-.navbar-list li.active::before {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 8px;
-  background: #f7d778;
-  border-radius: 4px;
-  transition: all 0.5s ease-in-out;
-}
-
-
-.box {
-  border: solid black;
-  border-color: black;
-  background-position: center;
-  background-size: cover;
-  transition: all 0.2s ease !important;
-}
-.box:hover {
-  border: solid #f7d778;
-  border-color: #f7d778;
-}
-
-.box3 {
-  border-width: 5px 3px 3px 5px;
-  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
-  transform: rotate(2deg);
-  padding: 5px;
-}
 
 
 </style>

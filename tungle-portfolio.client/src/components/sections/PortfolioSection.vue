@@ -1,8 +1,9 @@
 <template>
   <section id="portfolio" class="py-5 section-bubble3">
     <div class="container">
-      <div class="section-title d-flex">
+      <div class="section-title ">
         <h1 class="font-1 text-light">Portfolio</h1>
+        <h4 class="font-1 text-warning">Some of these projects are hosted on render and so can take up a minute or two to load.</h4>
       </div>
       <!-- SECTION SAMADHIYOGAIDAHO -->
 
@@ -123,7 +124,7 @@
             <div class="me-4">
               <a
                 target="_blank"
-                href="https://betterafterbooks.apps.devopportunities.dev/"
+                href="https://better-after-books-demo.onrender.com/#/"
                 class="mb-2"
                 ><img
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
@@ -216,7 +217,7 @@
         </div>
         <div class="col-12 col-md-7 order-0 order-md-1">
           <a
-            href="https://betterafterbooks.apps.devopportunities.dev/"
+            href="https://better-after-books-demo.onrender.com/#/"
             target="_blank"
           >
             <img
@@ -493,11 +494,11 @@
                 <li class="">   <small>   Custom Firebase usernames for authors</small>  </li>
                 <li class="">   <small>  Bot-friendly content for improved SEO </small>  </li>
                 <li class="">   <small>   Advanced Server-Side Rendering (SSR), Static Site Generation
-                  (SSG), and Incremental Static Regeneration (ISR) techniques </small>   
-                
+                  (SSG), and Incremental Static Regeneration (ISR) techniques </small>
+
                 </li>
-                <li class="">   <small> Firestore for real-time CRUD operations and data modeling  </small>   
-                 
+                <li class="">   <small> Firestore for real-time CRUD operations and data modeling  </small>
+
                 </li>
                 <li class="">   <small>  Reactive forms with react-hook-form for user input </small>  </li>
                 <li class="">   <small> Image file uploads for post content  </small>  </li>

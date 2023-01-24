@@ -38,9 +38,9 @@
           </button>
         </li>
         <li>
-           <button  @click="readFile()" class="btn text-light font-1 fs-4" >
+           <a href="https://www.canva.com/design/DAFR_BK6TVg/KGT7RQJMqdw0ekC11HV-IQ/view?utm_content=DAFR_BK6TVg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"  class="btn text-light font-1 fs-4" >
   Resume
-  </button>
+  </a>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
@@ -80,9 +80,7 @@ export default {
 
 
       },
-      readFile() {
-     window.open('src/assets/img/Dev_resume.pdf', '_blank') //to open in new tab
-   }
+    
     };
   },
   components: {  ProgressBar },

@@ -66,6 +66,7 @@
             over 500 hours of coding experience across multiple technology
             stacks.
           </p>
+          
         </div>
       </div>
 </template>

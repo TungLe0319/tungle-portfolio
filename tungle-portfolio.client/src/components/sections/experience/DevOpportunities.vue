@@ -38,12 +38,7 @@
             :delay="300"
             class="font-2 text-light"
           >
-           I Co-Founded <b class="text-warning">DevOpportunities</b> with a team of 3 other developers
-
-
-
-           to do freelance work while searching for full time
-            employment. Through this we wanted to show our provocativeness in wanting to hone our project management skills, technical expertise and professional network. We've had the opportunity to communicate and work with clients  on a couple projects our most notable one being SamadhiYogaIdaho which has details below.
+        Together with a team of 3 other developers, I co-founded <b class="text-warning">DevOpportunities</b> as a way to gain experience in project management, technical expertise, and professional networking while searching for full-time employment. We've had the pleasure of working with clients on multiple projects, with our most notable one being the design, development, and deployment of the website for  <a href="https://samadhiyogaidaho.com/#/" target="_blank" class="text-warning"><b>SamadhiYogaIdaho</b></a> which has  further details below.
 
           </p>
 
