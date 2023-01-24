@@ -2,14 +2,23 @@
   <section id="about" class="about py-5 mt-0 section-bubble1 text-light font-1">
     <div class="container">
       <div class="d-flex justify-content-between">
-        <div class="section-title display-3">
-          <h1>About me</h1>
+        <div
+
+          class="section-title display-3"
+        >
+          <h1
+           v-motion-slide-visible-once-top :delay="600"
+          >About me</h1>
         </div>
       </div>
 
       <div class="row justify-content-center" ref="container">
         <div class="col-md-4 d-flex justify-content-center">
-          <div class="card-container">
+          <div
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="card-container"
+          >
             <div class="image-card perspective-left">
               <div class="box box3">
                 <div class="oddboxinner elevation-6"></div>
@@ -22,23 +31,29 @@
           class="col-lg-8 pt-4 pt-lg-0 content px-md-5 d-flex align-items-center"
         >
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
             Hi there! My name is Tung and I am a web developer whose
-            <b class="text-light darken-10">strengths </b>  are in design collaboration. I don't have a particular style, but I enjoy adapting to
-            each project and using it as a chance to try new things and grow my
-            knowledge. My first
+            <b class="text-light darken-10">strengths </b> are in design
+            collaboration. I don't have a particular style, but I enjoy adapting
+            to each project and using it as a chance to try new things and grow
+            my knowledge. My first
             <b class="text-light darken-10">"Hello World"</b> in web development
             sparked my interest in the field, and since then I've been working
             hard to build my skills in both front-end and back-end
             development.My time at CodeWorks has left me with a strong
             foundation and a strong desire to keep learning and improving. I am
-            <b class="text-light darken-10">grateful</b> for the education and opportunities I received at
-            CodeWorks, and I am excited to continue learning and growing wherever I am because I know   <b class="text-light darken-10">ANYTHING, ANYTIME & ANYWHERE </b> is a chance to learn and grow. When I'm not working, you can find me walking my dog , hiking, drawing something, working out or
-            experimenting with new technologies. I am creative and a  problem-solver by heart and thrive on
-            finding solutions to complex challenges and creating beautiful works.
+            <b class="text-light darken-10">grateful</b> for the education and
+            opportunities I received at CodeWorks, and I am excited to continue
+            learning and growing wherever I am because I know
+            <b class="text-light darken-10">ANYTHING, ANYTIME & ANYWHERE </b> is
+            a chance to learn and grow. When I'm not working, you can find me
+            walking my dog , hiking, drawing something, working out or
+            experimenting with new technologies. I am creative and a
+            problem-solver by heart and thrive on finding solutions to complex
+            challenges and creating beautiful works.
           </p>
         </div>
       </div>
@@ -47,27 +62,41 @@
         <div
           class="col-md-6 d-flex flex-column justify-content-center align-items-center"
         >
-          <p class="font-1 fs-4 text-warning">Current Favorite Song</p>
+          <p
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="font-1 fs-4 text-warning"
+          >
+            Current Favorite Song
+          </p>
           <iframe
+            v-motion-slide-visible-once-top
+            :delay="600"
             class="elevation-6"
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0"
             width="100%"
             height="152"
             frameBorder="0"
-
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
             as="font"
             rel="preload"
           >
-
-        </iframe>
+          </iframe>
         </div>
         <div class="col-md-6 text-center">
-          <p class="font-1 fs-4 text-warning">Creatures I'd die for</p>
+          <p
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="font-1 fs-4 text-warning"
+          >
+            Creatures I'd die for
+          </p>
           <div class="d-md-flex justify-content-around p-2">
             <img
+              v-motion-slide-visible-once-top
+              :delay="600"
               src="../../assets/img/Coco.png"
               alt="image of a dog wearing bumblee bee hat"
               width="240"
@@ -75,6 +104,8 @@
               class="elevation-6 rounded mb-2 mb-md-0 pets"
             />
             <img
+              v-motion-slide-visible-once-top
+              :delay="600"
               src="../../assets/img/Goblin.png"
               alt="close up image of a cat"
               width="240"
@@ -90,21 +121,32 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p class="font-1 fs-4 text-warning">Some of my artwork</p>
-          <p class="font-2 fs-6 text-light text-center">
-            Since childhood I've appreciated art as a creative outlet , always  in my pottery or art class  making  things. I  especially love drawing mandalas as a way of relaxation
-            that allows me to express myself and explore new ideas. Having a
-            background in art as helped me develop
+          <p
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="font-1 fs-4 text-warning"
+          >
+            Some of my artwork
+          </p>
+          <p
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="font-2 fs-6 text-light text-center"
+          >
+            Since childhood I've appreciated art as a creative outlet , always
+            in my pottery or art class making things. I especially love drawing
+            mandalas as a way of relaxation that allows me to express myself and
+            explore new ideas. Having a background in art as helped me develop
             attention to detail, problem-solving, and the ability to visualize
             and communicate solutions to complex problems and to communicate
-            more effectively with colleagues and clients.My artwork is
-            a source of personal satisfaction and pride, which aids me to
-            maintaining motivation and a positive outlook in my career and life.
+            more effectively with colleagues and clients.My artwork is a source
+            of personal satisfaction and pride, which aids me to maintaining
+            motivation and a positive outlook in my career and life.
           </p>
         </div>
 
         <div class="d-flex flex-wrap justify-content-around">
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" cla1s="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/SunflowerStar.png"
@@ -113,7 +155,7 @@
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Newt.png"
@@ -122,7 +164,7 @@
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/CosmicWolf.png"
@@ -131,7 +173,7 @@
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Mandala1.png"
@@ -140,7 +182,7 @@
               />
             </ParallaxMouse>
           </div>
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Mandala2.png"
@@ -150,7 +192,7 @@
             </ParallaxMouse>
           </div>
 
-          <div v-motion-slide-visible-once-bottom :delay="300" class="">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/Turtle.png"
@@ -176,7 +218,7 @@ export default {
   setup(props) {
     const editable = ref({});
     const container = ref(null);
-  useParallax(container);
+    useParallax(container);
 
     // Use an intersection observer to call the typeWriter function when the element comes into view
 
@@ -194,12 +236,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.pets{
+.pets {
   object-fit: cover;
 }
 .about-me-text {
-
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
     font-size: 1rem;

@@ -1,12 +1,18 @@
 <template>
  <div class="row skills-content gy-4 my-5 justify-content-center">
         <div class="col-md-12">
-          <p class="font-1 text-warning fs-2">Languages & Technologies</p>
+          <p
+            v-motion-slide-visible-once-top
+              :delay="600"
+          class="font-1 text-warning fs-2">Languages & Technologies</p>
         </div>
 
         <div class="row justify-content-evenly">
           <div class="col-md-4">
-            <a href="https://github.com/TungLe0319" target="_blank">
+            <a
+   v-motion-slide-visible-top
+                :delay="300"
+            href="https://github.com/TungLe0319" target="_blank">
               <img
                 src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
                 alt=" Github Lang stats"
@@ -15,7 +21,10 @@
             </a>
           </div>
           <div class="col-md-4">
-            <a href="https://github.com/TungLe0319" target="_blank">
+            <a
+   v-motion-slide-visible-top
+                :delay="300"
+            href="https://github.com/TungLe0319" target="_blank">
               <img
                 src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
                 alt="Github Overview"
@@ -30,37 +39,47 @@
             class="d-md-flex justify-content-between bg-dark rounded-pill elevation-6 p-2 py-4 navbar-list justify-content-evenly"
           >
             <li
+               v-motion-slide-visible-top
+                :delay="300"
               class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
               @click="filterImages('reset', $event)"
             >
               All
             </li>
             <li
+               v-motion-slide-visible-top
+                :delay="300"
               class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('lang', $event)"
             >
               Languages
             </li>
             <li
+              v-motion-slide-visible-top
+                :delay="300"
               class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('tech', $event)"
             >
               Technologies
             </li>
             <li
+              v-motion-slide-visible-top
+                :delay="300"
               class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('framework', $event)"
             >
               Frameworks & Libraries
             </li>
             <li
+              v-motion-slide-visible-top
+                :delay="300"
               class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
               @click="filterImages('database', $event)"
             >
               Databases
             </li>
           </ul>
-          
+
         </div>
         <div class="image-container row g-3 justify-content-center">
           <div class="col-md-10">
@@ -73,7 +92,7 @@
                 v-bind="$attrs"
               >
                 <ParallaxMouse>
-                  <CartoonFrame v-motion-roll-visible-once-left>
+                  <CartoonFrame v-motion-roll-visible-once-left :delay="300">
                     <img
                       class="img-fluid box3 box"
                       :src="s.src"

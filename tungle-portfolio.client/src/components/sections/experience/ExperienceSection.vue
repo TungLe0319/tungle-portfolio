@@ -3,7 +3,7 @@
     <div class="container">
       <div class="section-title">
         <h1
-          v-motion-slide-visible-once-bottom
+          v-motion-slide-visible-once-top
           :delay="300"
           class="font-1 text-light"
         >

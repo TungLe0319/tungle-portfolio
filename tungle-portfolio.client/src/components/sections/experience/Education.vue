@@ -3,7 +3,7 @@
         <div class="col-md-12 d-flex justify-content-between">
           <div class="section-title">
             <p
-              v-motion-slide-visible-once-bottom
+              v-motion-slide-visible-once-top
               :delay="300"
               class="font-1 text-warning fs-2"
             >
@@ -14,6 +14,7 @@
         <div class="col-md-6 d-flex justify-content-center">
           <div class="card-1">
             <a
+             v-motion-slide-visible-once-top  :delay="300"
               href="https://boisecodeworks.com/courses/immersive-full-stack"
               target="_blank"
               rel="noopener noreferrer"
@@ -27,6 +28,7 @@
           </div>
           <div class="card-1">
             <a
+             v-motion-slide-visible-once-top  :delay="300"
               href="https://boisecodeworks.com/"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,21 +46,21 @@
 
         <div class="col-md-6 align-items-center">
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="font-2 text-light darken-10 fw-bold"
           >
             FULL STACK SOFTWARE DEVELOPMENT CERTIFICATION,
           </p>
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="font-2 text-light fw-bold darken-20"
           >
-            2022 - Boise Codeworks, Boise, ID
+            2022 - Boise CodeWorks, Boise, ID
           </p>
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="font-2 text-light"
           >
@@ -66,7 +68,7 @@
             over 500 hours of coding experience across multiple technology
             stacks.
           </p>
-          
+
         </div>
       </div>
 </template>

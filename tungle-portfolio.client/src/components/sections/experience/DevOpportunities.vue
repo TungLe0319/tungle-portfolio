@@ -1,25 +1,42 @@
 <template>
     <div class="row my-5">
         <div class="section-title">
-          <p class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
+          <p
+            v-motion-slide-visible-top
+                :delay="300"
+          class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
         </div>
         <div
           class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
         >
           <div
+            v-motion-slide-visible-top
+                :delay="300"
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6 mb-4"
           >
-            <img src="../../../assets/img/LLCLogo.png" alt="LLC Logo" />
+            <img
+              v-motion-slide-visible-top
+                :delay="300"
+            src="../../../assets/img/LLCLogo.png" alt="LLC Logo" />
 
           </div>
              <div class="d-flex  justify-content-center">
-          <a href="https://www.linkedin.com/in/daniel-le97/">
+          <a
+            v-motion-slide-visible-once-top
+            :delay="300"
+          href="https://www.linkedin.com/in/daniel-le97/">
             <img src="https://avatars.githubusercontent.com/u/107774403?v=4" alt="Daniel photo" width="100" class="rounded-circle elevation-6 hover-image " title="Daniel Le">
           </a>
-          <a href="https://www.linkedin.com/in/tri-le1122/">
+          <a
+            v-motion-slide-visible-once-top
+            :delay="300"
+          href="https://www.linkedin.com/in/tri-le1122/">
             <img src="https://avatars.githubusercontent.com/u/107815260?v=4" alt="Tri photo" width="100" class="rounded-circle elevation-6 hover-image mx-3" title="Tri Le">
           </a>
-          <a href="https://www.linkedin.com/in/molly-nettleton/">
+          <a
+            v-motion-slide-visible-once-top
+            :delay="300"
+          href="https://www.linkedin.com/in/molly-nettleton/">
             <img src="https://avatars.githubusercontent.com/u/108630829?v=4" alt="Molly photo" width="100" class="rounded-circle elevation-6 hover-image " title="Molly Nettleton">
           </a>
            </div>
@@ -27,14 +44,14 @@
         </div>
         <div class="col-md-6">
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="font-2 text-light darken-10 fw-bold"
           >
             2022
           </p>
           <p
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="300"
             class="font-2 text-light"
           >
@@ -43,14 +60,23 @@
           </p>
 
           <ul class="numbered nav-list">
-            <li class="numbered-list-item">
+            <li
+              v-motion-slide-visible-once-top
+            :delay="300"
+            class="numbered-list-item">
               Effectively communicated with clients in regular meet ups to build strong working relationships and trust.
             </li>
-            <li class="numbered-list-item">
+            <li
+              v-motion-slide-visible-once-top
+            :delay="300"
+            class="numbered-list-item">
               Proactive in seeking feedback and making adjustments as needed to
               ensure that the final product meets the client's expectations.
             </li>
-            <li class="numbered-list-item">
+            <li
+              v-motion-slide-visible-once-top
+            :delay="300"
+            class="numbered-list-item">
               While we have not had a great deal of experience working directly
               with clients, I am eager to learn and to continue developing my
               skills in this area.
@@ -58,7 +84,10 @@
 
           </ul>
 
-          <p class="font-1 fs-5 text-light darken-10">
+          <p
+            v-motion-slide-visible-once-top
+            :delay="300"
+          class="font-1 fs-5 text-light darken-10">
             Projects & work done Listed Below
             <i
               @click="scrollToProjects()"
@@ -66,9 +95,7 @@
             ></i>
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center"></div>
-        </div>
+
       </div>
 </template>
 

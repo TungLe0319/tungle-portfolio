@@ -2,16 +2,18 @@
   <div class="d-block d-md-none">
        <div class="content-hover border-0">
       <div class="d-flex justify-content-between">
-      
+
         <div class="d-flex align-items-center">
-          <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
+          <GitHubIcon v-motion-slide-visible-once-top :delay="100" />
           <a
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="600"
             href=""
             class="ms-3"
           >
             <img
+              v-motion-slide-visible-top
+                :delay="300"
               src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
               alt="External Link to Webpage"
               width="30"
@@ -21,11 +23,11 @@
         </div>
       </div>
       <div class="">
-        <p v-motion-slide-visible-once-bottom :delay="700" class="fs-3 font-1">
+        <p v-motion-slide-visible-once-top :delay="700" class="fs-3 font-1">
           {{ project.title }}
         </p>
         <p
-          v-motion-slide-visible-once-bottom
+          v-motion-slide-visible-once-top
           :delay="900"
           class="text-light font-2"
         >
@@ -54,14 +56,14 @@
     <div class="content-hover border-0">
       <div class="d-flex justify-content-between">
         <!-- <i
-          v-motion-slide-visible-once-bottom
+          v-motion-slide-visible-once-top
           :delay="400"
           class="mdi mdi-folder fs-3 text-warning"
         ></i> -->
         <div class="d-flex align-items-center">
-          <GitHubIcon v-motion-slide-visible-once-bottom :delay="100" />
+          <GitHubIcon v-motion-slide-visible-once-top :delay="100" />
           <a
-            v-motion-slide-visible-once-bottom
+            v-motion-slide-visible-once-top
             :delay="600"
             href=""
             class="ms-3"
@@ -76,11 +78,11 @@
         </div>
       </div>
       <div class="">
-        <p v-motion-slide-visible-once-bottom :delay="700" class="fs-3 font-1">
+        <p v-motion-slide-visible-once-top :delay="700" class="fs-3 font-1">
           {{ project.title }}
         </p>
         <p
-          v-motion-slide-visible-once-bottom
+          v-motion-slide-visible-once-top
           :delay="900"
           class="text-light font-2"
         >
@@ -102,8 +104,8 @@
 
   </div>
 
-  
- 
+
+
 </template>
 
 <script>

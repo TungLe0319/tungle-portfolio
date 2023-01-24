@@ -2,8 +2,14 @@
   <section id="portfolio" class="py-5 section-bubble3">
     <div class="container">
       <div class="section-title ">
-        <h1 class="font-1 text-light">Portfolio</h1>
-        <h4 class="font-1 text-warning">Some of these projects are hosted on render and so can take up a minute or two to load.</h4>
+        <h1
+               v-motion-slide-visible-once-top
+         :delay="300"
+        class="font-1 text-light">Portfolio</h1>
+        <h4
+            v-motion-slide-visible-once-top
+         :delay="300"
+        class="font-1 text-warning">Some of these projects are hosted on render and so can take up a minute or two to load.</h4>
       </div>
       <!-- SECTION SAMADHIYOGAIDAHO -->
 
@@ -11,8 +17,8 @@
         <div class="col-md-7">
           <a href="https://www.samadhiyogaidaho.com/#/" target="_blank">
             <img
-              v-motion-slide-visible-bottom
-              :delay="500"
+             v-motion-slide-visible-once-top
+         :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060067418073993226/samadhiApp.png?width=720&height=399"
               class="img-fluid elevation-6 rounded"
               alt="Project Image"
@@ -23,14 +29,14 @@
           <div class="d-flex">
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -40,7 +46,7 @@
             <div class="ms-4">
               <a href="https://www.samadhiyogaidaho.com/#/" class="mb-2"
                 ><img
-                  v-motion-slide-visible-bottom
+                  v-motion-slide-visible-top
                   :delay="600"
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
                   alt="external Link"
@@ -52,12 +58,12 @@
           </div>
 
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-top
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="800"
               class="card-body font-2"
             >
@@ -76,35 +82,35 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 BootStrap
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 MongoDb
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 PocketBase
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
@@ -132,20 +138,20 @@
                   title="site Link"
                   width="60"
                   height="60"
-                  v-motion-slide-visible-bottom
+                  v-motion-slide-visible-top
                   :delay="600"
               /></a>
             </div>
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -154,13 +160,13 @@
             </div>
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-top
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
             style="z-index: 9"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="800"
               class="card-body text-start font-2"
             >
@@ -178,35 +184,35 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 C#
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 DotNet
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 MySQL
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
@@ -221,7 +227,7 @@
             target="_blank"
           >
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060067418820579439/BetterAfterBooks.png?width=720&height=390"
               class="img-fluid elevation-5 rounded"
@@ -236,7 +242,7 @@
         <div class="col-md-7">
           <a target="_blank" href="https://keepr-project-demo.onrender.com">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1060068356541120683/KeeprSS.png?width=720&height=395"
               class="img-fluid elevation-6 rounded"
@@ -248,14 +254,14 @@
           <div class="d-flex">
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -273,18 +279,18 @@
                   title="site Link"
                   width="60"
                   height="60"
-                  v-motion-slide-visible-bottom
+                  v-motion-slide-visible-top
                   :delay="600"
               /></a>
             </div>
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-top
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="800"
               class="card-body font-2"
             >
@@ -302,21 +308,21 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 HTML
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 CSS
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
@@ -340,20 +346,20 @@
                   title="site Link"
                   width="60"
                   height="60"
-                  v-motion-slide-visible-bottom
+                  v-motion-slide-visible-top
                   :delay="600"
               /></a>
             </div>
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -362,13 +368,13 @@
             </div>
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-top
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description-flip w-100"
             style="z-index: 9"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="800"
               class="card-body text-start font-2"
             >
@@ -381,28 +387,28 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Vue.Js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Node.Js & Express
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 BootStrap
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
@@ -414,7 +420,7 @@
         <div class="col-md-7 order-0 order-md-1">
           <a href="https://thetower-f4he.onrender.com" target="_blank">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="500"
               src="https://cdn.discordapp.com/attachments/1060066788878069891/1060067418464075877/TowerSS.png"
               class="img-fluid elevation-5 rounded"
@@ -430,7 +436,7 @@
         <div class="col-md-7">
           <a target="_blank" href="https://nextfire-app-xi-nine.vercel.app/">
             <img
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="500"
               src="https://media.discordapp.net/attachments/1060066788878069891/1063581265971904593/Screenshot_2023-01-13_at_3.11.41_PM.png?width=1362&height=747"
               class="img-fluid elevation-6 rounded"
@@ -442,14 +448,14 @@
           <div class="d-flex">
             <div>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="500"
                 class="font-1 fs-5 text-warning mt-3 mt-md-0"
               >
                 Featured Project
               </p>
               <p
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="600"
                 class="font-1 fs-3 text-light text-shadow mb-1"
               >
@@ -467,18 +473,18 @@
                   title="site Link"
                   width="60"
                   height="60"
-                  v-motion-slide-visible-bottom
+                  v-motion-slide-visible-top
                   :delay="600"
               /></a>
             </div>
           </div>
           <div
-            v-motion-slide-visible-bottom
+            v-motion-slide-visible-top
             :delay="700"
             class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
           >
             <div
-              v-motion-slide-visible-bottom
+              v-motion-slide-visible-top
               :delay="800"
               class="card-body font-2"
             >
@@ -509,35 +515,35 @@
 
             <ul class="list-group list-group-horizontal bg-transparent">
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                Next.js
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Firebase
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Javascript
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
                 Tailwind
               </li>
               <li
-                v-motion-slide-visible-bottom
+                v-motion-slide-visible-top
                 :delay="300"
                 class="list-group-item"
               >
@@ -645,9 +651,15 @@
           <div
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6 d-none d-md-block"
           >
-            <img src="../../assets/img/LLCLogo.png" alt="LLC Logo" class="" />
+            <img
+              v-motion-slide-visible-top
+                :delay="300"
+            src="../../assets/img/LLCLogo.png" alt="LLC Logo" class="" />
           </div>
-          <p class="font-1 fs-2 text-warning ms-4">
+          <p
+            v-motion-slide-visible-top
+                :delay="300"
+          class="font-1 fs-2 text-warning ms-4">
             Projects & Works done under DevsOpportunities LLC:
           </p>
         </div>
