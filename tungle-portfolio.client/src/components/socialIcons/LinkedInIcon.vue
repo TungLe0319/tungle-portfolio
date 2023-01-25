@@ -1,5 +1,8 @@
 <template>
-  <a href="https://www.linkedin.com/in/tung-le0319/" class="">
+  <a
+     v-motion-slide-top
+                :delay="300"
+  href="https://www.linkedin.com/in/tung-le0319/" class="">
     <i class="mdi mdi-linkedin fs-3 text-light" title="LinkedIn"></i>
   </a>
 </template>

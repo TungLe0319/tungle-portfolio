@@ -10,11 +10,19 @@
         class="col-1 text-center d-flex justify-content-center align-items-center"
       >
         <a
+
           href="mailto:tung.le0319@gmail.com"
           target="_blank"
-          class="email font-1 fs-3 text-light"
+          class="email font-1 fs-3 text-light text-shadow"
         >
-          tung.le0319@gmail.com
+        <p
+             v-motion-slide-left
+                :delay="600"
+        >
+
+                  tung.le0319@gmail.com
+        </p>
+
         </a>
       </div>
     </div>
@@ -29,8 +37,14 @@
         <LinkedInIcon  />
       </div>
       <div class="col-md-12 text-center">
-         <p>Designed & Built by <b> DevOpportunitiesLLC</b></p>
-        <p>Copyright &copy; 2023 DevOpportunitiesLLC</p>
+         <p
+           v-motion-slide-visible-top
+                :delay="300"
+         >Designed & Built by <b> DevOpportunitiesLLC</b></p>
+        <p
+          v-motion-slide-visible-top
+                :delay="300"
+        >Copyright &copy; 2023 DevOpportunitiesLLC</p>
       </div>
     </div>
   </div>

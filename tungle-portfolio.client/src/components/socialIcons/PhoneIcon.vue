@@ -1,5 +1,8 @@
 <template>
-  <a href="tel:208905308">
+  <a
+    v-motion-slide-top
+                :delay="900"
+  href="tel:208905308">
     <i class="mdi mdi-phone fs-3 text-light" title="Phone"></i>
   </a>
 </template>

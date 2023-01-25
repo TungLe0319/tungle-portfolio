@@ -6,7 +6,7 @@
 
           class="section-title display-3"
         >
-          <h1
+          <h1 class=" "
            v-motion-slide-visible-once-top :delay="600"
           >About me</h1>
         </div>
