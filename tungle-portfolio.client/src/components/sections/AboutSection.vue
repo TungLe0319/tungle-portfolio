@@ -60,7 +60,7 @@
 
       <div class="row my-5 justify-content-center">
         <div
-          class="col-md-6 d-flex flex-column justify-content-center align-items-center"
+          class="col-md-6 d-flex flex-column justify-content-center align-items-center mb-4 mb-md-0"
         >
           <p
             v-motion-slide-visible-once-top
@@ -101,7 +101,7 @@
               alt="image of a dog wearing bumblee bee hat"
               width="240"
               height="240"
-              class="elevation-6 rounded mb-2 mb-md-0 pets"
+              class="elevation-6 rounded mb-4 mb-md-0 pets"
             />
             <img
               v-motion-slide-visible-once-top
@@ -279,7 +279,8 @@ export default {
   transform: rotate(-2deg);
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    height: 305px;
+    height: 375px;
+      transform: rotate(0deg);
   }
 }
 
@@ -295,7 +296,7 @@ export default {
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
     width: 340px;
-    height: 360px;
+    height: 422px;
     padding: 4px;
   }
 }

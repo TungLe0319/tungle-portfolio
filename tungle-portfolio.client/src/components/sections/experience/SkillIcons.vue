@@ -36,7 +36,7 @@
 
         <div class="col-md-12">
           <ul
-            class="d-md-flex justify-content-between bg-dark rounded-pill elevation-6 p-2 py-4 navbar-list justify-content-evenly"
+            class="d-md-flex  justify-content-between bg-dark elevation-6 p-2 py-4 navbar-list justify-content-evenly"
           >
             <li
                v-motion-slide-visible-top
@@ -83,7 +83,7 @@
         </div>
         <div class="image-container row g-3 justify-content-center">
           <div class="col-md-10">
-            <div class="row image-container g-3">
+            <div class="row image-container gy-4">
               <div
                 class="col-6 col-md-2 image-item"
                 v-for="s in skillsIcons"
@@ -253,11 +253,24 @@ li .filter-btn::before {
 .navbar-list {
   position: relative;
   list-style: none;
+  border-radius: 50em;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+ border-radius: 8px;
+ display: flex;
+ flex-wrap: wrap;
+  }
 }
 
 .navbar-list li {
   display: inline-block;
   cursor: pointer;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+    display: block;
+    margin: 4px ;
+
+  }
 }
 
 .navbar-list li.active {
@@ -266,7 +279,10 @@ li .filter-btn::before {
   border-top: none;
   border-bottom: #f7d778 4px solid;
   transition: all 1s ease;
+//when screen is 768px OR LESS
+@media only screen and (max-width: 768px){
 
+}
 }
 
 .navbar-list li.active::before {
@@ -280,6 +296,10 @@ li .filter-btn::before {
   background: #f7d778;
   border-radius: 4px;
   transition: all 0.5s ease-in-out;
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px){
+display: none;
+  }
 }
 
 

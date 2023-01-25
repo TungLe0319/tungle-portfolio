@@ -43,17 +43,11 @@ import RiaFox from "./RiaFox.vue";
 import SkillIcons from "./SkillIcons.vue";
 
 export default {
-  props: {},
-  setup(props) {
-    const editable = ref({});
-    onMounted(() => {
 
-    });
-    watchEffect(() => {});
+  setup() {
 
     return {
-      editable,
-
+   
       skillsIcons: computed(() => AppState.skillsIcons),
       scrollToProjects() {
         window.scrollTo({

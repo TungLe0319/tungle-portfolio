@@ -103,7 +103,15 @@
 <script>
 export default {
   setup(){
-    return {}
+    return {
+       scrollToProjects() {
+        window.scrollTo({
+          top: document.getElementById("portfolio").offsetTop + 2250,
+          left: 0,
+          behavior: "smooth",
+        });
+      },
+    }
   }
 }
 </script>

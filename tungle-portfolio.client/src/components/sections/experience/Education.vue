@@ -11,7 +11,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6 d-flex justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center ">
           <div class="card-1">
             <a
              v-motion-slide-visible-once-top  :delay="300"
@@ -39,6 +39,7 @@
                 title="Boise Codeworks"
                 width="175"
                 height="175"
+                class=""
               />
             </a>
           </div>

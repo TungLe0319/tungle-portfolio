@@ -13,7 +13,15 @@
   z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
 }
 
+$highlight-color: #ff0000; // Example color value
+@mixin highlight {
+  background-color: $highlight-color;
+}
 
+.active-class {
+  @include highlight;
+  // Other styles for the class
+}
 
 .list-group-item {
   background: transparent;
