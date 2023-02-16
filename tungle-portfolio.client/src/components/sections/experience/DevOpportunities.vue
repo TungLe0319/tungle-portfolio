@@ -2,7 +2,7 @@
     <div class="row my-5">
         <div class="section-title">
           <p
-            v-motion-slide-visible-top
+            v-motion-slide-visible-once-top
                 :delay="300"
           class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
         </div>
@@ -10,12 +10,12 @@
           class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
         >
           <div
-            v-motion-slide-visible-top
+            v-motion-slide-visible-once-top
                 :delay="300"
             class="rounded-circle bg-light text-center devsopportunities-image elevation-6 mb-4"
           >
             <img
-              v-motion-slide-visible-top
+              v-motion-slide-visible-once-top
                 :delay="300"
             src="../../../assets/img/LLCLogo.png" alt="LLC Logo" />
 

@@ -9,22 +9,12 @@
         >
           Skills & Experience
         </h1>
-
-
       </div>
-
-
-     <Education/>
-
-      <SkillIcons/>
-
-
- <DevOpportunities/>
-
-
-<RiaFox/>
-
-
+      <Education />
+      <SkillIcons />
+      <DevOpportunities />
+      <RiaFox />
+      <CurrentlyLearning />
     </div>
   </section>
 </template>
@@ -36,6 +26,7 @@ import { AppState } from "../../../AppState.js";
 import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
+import CurrentlyLearning from "./CurrentlyLearning.vue";
 import DevOpportunities from "./DevOpportunities.vue";
 import Education from "./Education.vue";
 
@@ -43,11 +34,8 @@ import RiaFox from "./RiaFox.vue";
 import SkillIcons from "./SkillIcons.vue";
 
 export default {
-
   setup() {
-
     return {
-   
       skillsIcons: computed(() => AppState.skillsIcons),
       scrollToProjects() {
         window.scrollTo({
@@ -114,11 +102,17 @@ export default {
       },
     };
   },
-  components: { CartoonFrame, ParallaxMouse, ResumeComponent, RiaFox, DevOpportunities, SkillIcons, Education },
+  components: {
+    CartoonFrame,
+    ParallaxMouse,
+    ResumeComponent,
+    RiaFox,
+    DevOpportunities,
+    SkillIcons,
+    Education,
+    CurrentlyLearning,
+  },
 };
 </script>
 
-<style lang="scss" scoped>
-
-
-</style>
+<style lang="scss" scoped></style>

@@ -35,12 +35,23 @@
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
-            Hi there! My name is Tung and I am a web developer whose
-            <b class="text-light darken-10">strengths </b> are in design
-            collaboration. I don't have a particular style, but I enjoy adapting
-            to each project and using it as a chance to try new things and grow
-            my knowledge. My first
-            <b class="text-light darken-10">"Hello World"</b> in web development
+            Hi there! I came from a background of kitchens and customer service, I discovered my passion for building things with code.
+            <br>
+            <br>
+            I first came to know about programming & software development in 2021  when I heard from a friend who had recently undertaken a full-stack immersive bootcamp offered by Boise CodeWorks and recommended it to me, I have been working in kitchens and the customer service field for all of my professional working career and this was a chance at something I've been interested in but never pursued.
+            <br>
+            <br>
+            After a month of self-teaching with the pre-course work I knew this was what I wanted to continue to do and learn. So I  entered  CodeWorks ready to  put my heart and soul into it. I was coding every day, late into the night and on weekends. I was eating, sleeping, breathing code and I loved it.
+            <br>
+            <br>
+            Since Graduating fully completing the course 100% I have grown as a developer, working as a contracter and doing freelance work for customers, that have helped raise my expectations and standards I set formyself with building web applications
+            <br>
+            <br>
+            I'm still currently seeking a full-time role where I can contribute my skills in coding and business to help achieve any company goals while also building my skills as a developer and a team member.
+            <br>
+            <br>
+
+             <!-- in web development
             sparked my interest in the field, and since then I've been working
             hard to build my skills in both front-end and back-end
             development.My time at CodeWorks has left me with a strong
@@ -53,7 +64,7 @@
             walking my dog , hiking, drawing something, working out or
             experimenting with new technologies. I am creative and a
             problem-solver by heart and thrive on finding solutions to complex
-            challenges and creating beautiful works.
+            challenges and creating beautiful works. -->
           </p>
         </div>
       </div>

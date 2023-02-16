@@ -1,19 +1,13 @@
 <template>
   <div class="d-block d-md-none">
-       <div class="content-hover border-0">
+    <div class="content-hover border-0">
       <div class="d-flex justify-content-between">
-
         <div class="d-flex align-items-center">
           <GitHubIcon v-motion-slide-visible-once-top :delay="100" />
-          <a
-            v-motion-slide-visible-once-top
-            :delay="600"
-            href=""
-            class="ms-3"
-          >
+          <a v-motion-slide-visible-once-top :delay="600" href="" class="ms-3">
             <img
-              v-motion-slide-visible-top
-                :delay="300"
+              v-motion-slide-visible-once-top
+              :delay="300"
               src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"
               alt="External Link to Webpage"
               width="30"
@@ -46,8 +40,7 @@
         </ul>
       </div>
     </div>
-    </div>
-
+  </div>
 
   <div class="box rounded elevation-6 border-0">
     <div class="content border-0">
@@ -62,12 +55,7 @@
         ></i> -->
         <div class="d-flex align-items-center">
           <GitHubIcon v-motion-slide-visible-once-top :delay="100" />
-          <a
-            v-motion-slide-visible-once-top
-            :delay="600"
-            href=""
-            class="ms-3"
-          >
+          <a v-motion-slide-visible-once-top :delay="600" href="" class="ms-3">
             <img
               src="https://cdn-icons-png.flaticon.com/512/5873/5873833.png"
               alt="External Link to Webpage"
@@ -101,11 +89,7 @@
         </ul>
       </div>
     </div>
-
   </div>
-
-
-
 </template>
 
 <script>
@@ -114,18 +98,18 @@ import { onMounted, ref, watchEffect } from "vue";
 import GitHubIcon from "./socialIcons/GitHubIcon.vue";
 
 export default {
-    props: {
-        project: { type: Object, required: true },
-    },
-    setup(props) {
-        const editable = ref({});
-        onMounted(() => { });
-        watchEffect(() => { });
-        return {
-            editable,
-        };
-    },
-    components: { GitHubIcon }
+  props: {
+    project: { type: Object, required: true },
+  },
+  setup(props) {
+    const editable = ref({});
+    onMounted(() => {});
+    watchEffect(() => {});
+    return {
+      editable,
+    };
+  },
+  components: { GitHubIcon },
 };
 </script>
 
@@ -182,7 +166,6 @@ h1 {
 
 .box {
   position: relative;
-
 
   background-color: #eeeeee;
   display: flex;
@@ -263,12 +246,10 @@ h1 {
   }
 
   &:hover > {
-
-.content{
-
-  filter: grayscale(80%) +brightness(20%);
-  transition: all 0.25s ease;
-}
+    .content {
+      filter: grayscale(80%) + brightness(20%);
+      transition: all 0.25s ease;
+    }
 
     .content-hover,
     .content-hover2 {
@@ -277,5 +258,4 @@ h1 {
     }
   }
 }
-
 </style>

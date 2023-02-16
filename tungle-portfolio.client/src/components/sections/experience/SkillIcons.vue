@@ -1,116 +1,119 @@
 <template>
- <div class="row skills-content gy-4 my-5 justify-content-center">
-        <div class="col-md-12">
-          <p
-            v-motion-slide-visible-once-top
-              :delay="600"
-          class="font-1 text-warning fs-2">Languages & Technologies</p>
-        </div>
+  <div class="row skills-content gy-4 my-5 justify-content-center">
+    <div class="col-md-12">
+      <p
+        v-motion-slide-visible-once-top
+        :delay="600"
+        class="font-1 text-warning fs-2"
+      >
+        Languages & Technologies
+      </p>
+    </div>
 
-        <div class="row justify-content-evenly">
-          <div class="col-md-4">
-            <a
-   v-motion-slide-visible-top
-                :delay="300"
-            href="https://github.com/TungLe0319" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
-                alt=" Github Lang stats"
-                class="elevation-6 rounded"
-              />
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-   v-motion-slide-visible-top
-                :delay="300"
-            href="https://github.com/TungLe0319" target="_blank">
-              <img
-                src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
-                alt="Github Overview"
-                class="elevation-6 rounded"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div class="col-md-12">
-          <ul
-            class="d-md-flex  justify-content-between bg-dark elevation-6 p-2 py-4 navbar-list justify-content-evenly"
-          >
-            <li
-               v-motion-slide-visible-top
-                :delay="300"
-              class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
-              @click="filterImages('reset', $event)"
-            >
-              All
-            </li>
-            <li
-               v-motion-slide-visible-top
-                :delay="300"
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('lang', $event)"
-            >
-              Languages
-            </li>
-            <li
-              v-motion-slide-visible-top
-                :delay="300"
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('tech', $event)"
-            >
-              Technologies
-            </li>
-            <li
-              v-motion-slide-visible-top
-                :delay="300"
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('framework', $event)"
-            >
-              Frameworks & Libraries
-            </li>
-            <li
-              v-motion-slide-visible-top
-                :delay="300"
-              class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-              @click="filterImages('database', $event)"
-            >
-              Databases
-            </li>
-          </ul>
-
-        </div>
-        <div class="image-container row g-3 justify-content-center">
-          <div class="col-md-10">
-            <div class="row image-container gy-4">
-              <div
-                class="col-6 col-md-2 image-item"
-                v-for="s in skillsIcons"
-                :type="s.type"
-                :key="s.id"
-                v-bind="$attrs"
-              >
-                <ParallaxMouse>
-                  <CartoonFrame v-motion-roll-visible-once-left :delay="300">
-                    <img
-                      class="img-fluid box3 box"
-                      :src="s.src"
-                      :title="s.title"
-                    />
-                  </CartoonFrame>
-                </ParallaxMouse>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
-        ></div>
+    <div class="row justify-content-evenly">
+      <div class="col-md-4">
+        <a
+          v-motion-slide-visible-once-top
+          :delay="300"
+          href="https://github.com/TungLe0319"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
+            alt=" Github Lang stats"
+            class="elevation-6 rounded"
+          />
+        </a>
       </div>
+      <div class="col-md-4">
+        <a
+          v-motion-slide-visible-once-top
+          :delay="300"
+          href="https://github.com/TungLe0319"
+          target="_blank"
+        >
+          <img
+            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
+            alt="Github Overview"
+            class="elevation-6 rounded"
+          />
+        </a>
+      </div>
+    </div>
 
+    <div class="col-md-12">
+      <ul
+        class="d-md-flex justify-content-between bg-dark elevation-6 p-2 py-4 navbar-list justify-content-evenly"
+      >
+        <li
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
+          @click="filterImages('reset', $event)"
+        >
+          All
+        </li>
+        <li
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
+          @click="filterImages('lang', $event)"
+        >
+          Languages
+        </li>
+        <li
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
+          @click="filterImages('tech', $event)"
+        >
+          Technologies
+        </li>
+        <li
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
+          @click="filterImages('framework', $event)"
+        >
+          Frameworks & Libraries
+        </li>
+        <li
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
+          @click="filterImages('database', $event)"
+        >
+          Databases
+        </li>
+      </ul>
+    </div>
+    <div class="image-container row g-3 justify-content-center">
+      <div class="col-md-10">
+        <div class="row image-container gy-4">
+          <div
+            class="col-6 col-md-2 image-item"
+            v-for="s in skillsIcons"
+            :type="s.type"
+            :key="s.id"
+            v-bind="$attrs"
+          >
+            <div class="tool-tip font-1 font-bold px-2 bg-dark text-light py-1">
+              {{ s.title }}
+            </div>
+            <ParallaxMouse>
+              <CartoonFrame v-motion-roll-visible-once-left :delay="300">
+                <img class="img-fluid box3 box" :src="s.src" />
+              </CartoonFrame>
+            </ParallaxMouse>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
+    ></div>
+  </div>
 </template>
-
 
 <script>
 import { computed } from "@vue/reactivity";
@@ -119,16 +122,13 @@ import { AppState } from "../../../AppState.js";
 import CartoonFrame from "../../effects/CartoonFrame.vue";
 import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 
-
 import Riafox from "./RiaFox.vue";
 
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
-    onMounted(() => {
-
-    });
+    onMounted(() => {});
     watchEffect(() => {});
 
     return {
@@ -204,7 +204,6 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
 .active {
   border-bottom: none !important;
@@ -255,10 +254,10 @@ li .filter-btn::before {
   list-style: none;
   border-radius: 50em;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
- border-radius: 8px;
- display: flex;
- flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -266,10 +265,9 @@ li .filter-btn::before {
   display: inline-block;
   cursor: pointer;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     display: block;
-    margin: 4px ;
-
+    margin: 4px;
   }
 }
 
@@ -279,10 +277,9 @@ li .filter-btn::before {
   border-top: none;
   border-bottom: #f7d778 4px solid;
   transition: all 1s ease;
-//when screen is 768px OR LESS
-@media only screen and (max-width: 768px){
-
-}
+  //when screen is 768px OR LESS
+  @media only screen and (max-width: 768px) {
+  }
 }
 
 .navbar-list li.active::before {
@@ -297,17 +294,31 @@ li .filter-btn::before {
   border-radius: 4px;
   transition: all 0.5s ease-in-out;
   //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px){
-display: none;
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 }
+.image-item:hover {
+  .tool-tip {
+    transform: scale(1);
+    transition: transform 0.2s ease;
+  }
+}
+.tool-tip {
+  position: absolute;
+  z-index: 99999 !important;
+  transform: scale(0);
 
-
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
 .box {
   border: solid black;
   border-color: black;
   background-position: center;
   background-size: cover;
+  width: 200px;
+  height: 140px;
   transition: all 0.2s ease !important;
 }
 .box:hover {
@@ -321,5 +332,4 @@ display: none;
   transform: rotate(2deg);
   padding: 5px;
 }
-
 </style>

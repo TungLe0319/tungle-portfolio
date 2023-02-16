@@ -1,5 +1,6 @@
 <template>
- <div class="row d-flex justify-content around">
+ <div class="">
+  <div class="row d-flex justify-content around">
         <div class="col-md-12 d-flex justify-content-between">
           <div class="section-title">
             <p
@@ -71,7 +72,22 @@
           </p>
 
         </div>
+
+
+
+
+
+
+
+
+
       </div>
+
+      <div class="row">
+
+        
+      </div>
+ </div>
 </template>
 
 
