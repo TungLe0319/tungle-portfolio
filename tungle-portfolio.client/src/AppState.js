@@ -59,7 +59,7 @@ export const AppState = reactive({
     },
     {
       title: "Nuxt.js",
-      src: "https://imgs.search.brave.com/h9Ygf1p_bI45LGpoQjGdX_OWGLsEjbFsHBZ5m2tR2zA/rs:fit:600:600:1/g:ce/aHR0cHM6Ly9vcGVu/Y29sbGVjdGl2ZS1w/cm9kdWN0aW9uLnMz/LXVzLXdlc3QtMS5h/bWF6b25hd3MuY29t/LzYzMDQ3ODMwLTIz/YjktMTFlOS04MDcz/LWM3M2Y5ZDhjMDQ3/ZC5wbmc",
+      src: "https://imgs.search.brave.com/FMdSj87zaWeTu9iyKLDvCURwcA3p-DEbzR5N-BQO48U/rs:fit:600:431:1/g:ce/aHR0cHM6Ly9pbWdp/eC5jb3NtaWNqcy5j/b20vZDlkZDU5YjAt/ZTE3ZS0xMWU2LWEx/OWUtNzE2Y2M5MGEw/YzUxLW5leHQuanMt/bG9nby5qcGc_dz02/MDA",
       type: "framework",
     },
     {
