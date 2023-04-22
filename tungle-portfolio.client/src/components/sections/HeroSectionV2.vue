@@ -2,7 +2,7 @@
 
     <!-- Your section content goes here -->
 
-    
+
   <div
     class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
@@ -66,17 +66,17 @@
         </p>
       </div>
     </div>
-   
-    
+
+
   </section>
   <ScrollDownIcon/>
   <GentleWave />
-   
+
   </div>
 
 </template>
 
- 
+
  <script>
 import { onMounted, ref } from "vue";
 import GentleWave from "../effects/GentleWave.vue";
@@ -91,10 +91,10 @@ export default {
         // Add a scroll listener to update the scroll position
         onMounted(() => {
             window.addEventListener("scroll", () => {
-          
+
                 scrollY.value = window.scrollY;
-               
-            
+
+
             });
         });
         // Return the scroll position to the component
@@ -106,13 +106,13 @@ export default {
 };
 
  </script>
- 
+
  <style lang="scss" scoped>
 
  .pug-img{
  position: absolute;
  width: auto;
- 
+
  transform: translateY(450px);
  height: 300px;
 
@@ -148,4 +148,3 @@ export default {
 
 
  </style>
- 
