@@ -19,7 +19,7 @@
           target="_blank"
         >
           <img
-            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/languages.svg#gh-dark-mode-only"
+            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/e926d13a13700b7a9a95dae0c272b1ef0aef7818/generated/languages.svg"
             alt=" Github Lang stats"
             class="elevation-6 rounded"
           />
@@ -33,7 +33,7 @@
           target="_blank"
         >
           <img
-            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/master/generated/overview.svg#gh-dark-mode-only"
+            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/e926d13a13700b7a9a95dae0c272b1ef0aef7818/generated/overview.svg"
             alt="Github Overview"
             class="elevation-6 rounded"
           />
