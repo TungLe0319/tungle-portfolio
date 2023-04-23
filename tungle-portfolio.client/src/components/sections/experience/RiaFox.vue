@@ -27,16 +27,13 @@
     </div>
     <div class="col-md-6">
       <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
-        As a Contracted Software Developer at RiaFox, I have been working on a
-        variety of projects utilizing the MEAN stack. My primary
-        responsibilities have included implementing minor features and fixing
-        bugs, but I have also had the opportunity to work closely with a team
+        As a Contracted Software Developer at RiaFox, I have worked on several  projects utilizing the MEAN stack. My primary
+        responsibilities  included implementing minor features and fixing
+        bugs, but I have also had the opportunity and worked closely with a team
         and communicate effectively to achieve our shared goals. Despite my
-        relatively junior role, I have gained valuable experience in working
-        remotely and have been grateful for the opportunity to learn and grow as
-        a developer. Overall, my time at RiaFox has been a great learning
-        experience and I look forward to continuing to contribute to the success
-        of the company.
+        relatively junior role and limited time working with them , I  gained valuable experience in working
+        remotely and have been grateful for the opportunity to have been a part of their team.  Overall, my time at RiaFox has been a great learning
+        experience.
       </p>
 
       <ul class="numbered nav-list">
