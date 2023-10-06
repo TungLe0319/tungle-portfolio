@@ -100,9 +100,11 @@
             <div class="tool-tip font-1 font-bold px-2 bg-dark text-light py-1">
               {{ s.title }}
             </div>
-          
+            <ParallaxMouse>
+              <CartoonFrame v-motion-roll-visible-once-left :delay="300">
                 <img class="img-fluid box3 box" :src="s.src" />
-
+              </CartoonFrame>
+            </ParallaxMouse>
           </div>
         </div>
       </div>
