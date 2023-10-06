@@ -45,7 +45,7 @@
             </div>
             <div class="ms-4">
               <a href="https://www.samadhiyogaidaho.com/#/" class="mb-2"
-                ><img
+                  target="_blank" ><img
                   v-motion-slide-visible-once-top
                 :delay="600"
                   src="https://cdn-icons-png.flaticon.com/512/3971/3971765.png"

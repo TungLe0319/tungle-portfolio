@@ -7,11 +7,12 @@
           :delay="300"
           class="font-1 text-light"
         >
-          Skills & Experience
+         Skills, Certificates & Experience
         </h1>
       </div>
       <Education />
       <SkillIcons />
+     <Dexian/>
       <DevOpportunities />
       <RiaFox />
       <CurrentlyLearning />
@@ -28,6 +29,7 @@ import ParallaxMouse from "../../effects/ParallaxMouse.vue";
 import ResumeComponent from "../../ResumeComponent.vue";
 import CurrentlyLearning from "./CurrentlyLearning.vue";
 import DevOpportunities from "./DevOpportunities.vue";
+import Dexian from "./Dexian.vue";
 import Education from "./Education.vue";
 
 import RiaFox from "./RiaFox.vue";
@@ -110,6 +112,7 @@ export default {
     DevOpportunities,
     SkillIcons,
     Education,
+    Dexian,
     CurrentlyLearning,
   },
 };
