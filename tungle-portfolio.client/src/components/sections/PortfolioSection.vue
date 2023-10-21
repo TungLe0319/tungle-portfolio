@@ -68,7 +68,7 @@
               class="card-body font-2"
             >
               Custom Designed and built website for a small yoga business owner
-              client. intergrated Ghost for CMS Publishing for her blog as well
+              client. integrated Ghost for CMS Publishing for her blog as well
               as configuring MailGun for Email Service. The app allows users to
               easily browse and sign up for classes, view class schedules, and
               sign up for yoga retreats. It will also include a feature for

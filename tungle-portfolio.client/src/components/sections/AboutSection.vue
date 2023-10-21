@@ -156,8 +156,8 @@
           </p>
         </div>
 
-        <div class="d-flex flex-wrap justify-content-around">
-          <div v-motion-slide-visible-once-top :delay="600" cla1s="">
+        <div class="d-flex   justify-content-around">
+          <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
                 src="../../assets/img/Procreate/SunflowerStar.png"
@@ -258,7 +258,7 @@ export default {
 }
 .procreate-art {
   width: auto;
-  height: 300px;
+  height: 200px;
   cursor: pointer;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {

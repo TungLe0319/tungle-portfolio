@@ -12,6 +12,8 @@
       </div>
       <Education />
       <SkillIcons />
+
+      <!-- <TimeLine/> -->
      <Dexian/>
       <DevOpportunities />
       <RiaFox />
@@ -34,6 +36,7 @@ import Education from "./Education.vue";
 
 import RiaFox from "./RiaFox.vue";
 import SkillIcons from "./SkillIcons.vue";
+
 
 export default {
   setup() {
@@ -114,7 +117,8 @@ export default {
     Education,
     Dexian,
     CurrentlyLearning,
-  },
+ 
+},
 };
 </script>
 

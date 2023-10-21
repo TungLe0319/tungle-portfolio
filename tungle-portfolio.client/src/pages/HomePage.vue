@@ -13,8 +13,10 @@
         <!-- Add your main page content here -->
         <HeroSectionV2 />
         <AboutSection />
-        <ExperienceSection />
-        <PortfolioSection />
+        <!-- <TimeLine/> -->
+        <!-- <ExperienceSection /> -->
+        <ProjectPortfolioSection/>
+        <!-- <PortfolioSection /> -->
         <ContactSection />
         <div class="position-relative"></div>
         <SocialBar />
@@ -28,12 +30,13 @@
 import EmailBar from "../components/socialIcons/EmailBar.vue";
 import AboutSection from "../components/sections/AboutSection.vue";
 import ContactSection from "../components/sections/ContactSection.vue";
-
+import ProjectPortfolioSection from '../components/sections/Portfolio/PortfolioProjectsSection.vue'
 import PortfolioSection from "../components/sections/PortfolioSection.vue";
 import ExperienceSection from "../components/sections/experience/ExperienceSection.vue";
 import SocialBar from "../components/socialIcons/SocialBar.vue";
 import HeroSectionV2 from "../components/sections/HeroSectionV2.vue";
 import LoadingAnimation from "../components/effects/LoadingAnimation.vue";
+
 
 export default {
   data() {
@@ -49,13 +52,15 @@ export default {
   },
   components: {
     AboutSection,
+    ProjectPortfolioSection,
     PortfolioSection,
     ExperienceSection,
     ContactSection,
     SocialBar,
     EmailBar,
     HeroSectionV2,
-    LoadingAnimation
+    LoadingAnimation,
+
 },
 };
 </script>

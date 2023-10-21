@@ -17,7 +17,7 @@ export default {
     };
   },
   methods: {
-  
+
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
@@ -46,6 +46,7 @@ export default {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 1s ease;
 }
 
 /* copy from here */

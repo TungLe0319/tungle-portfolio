@@ -1,5 +1,5 @@
 <template>
-  <div class="row skills-content gy-4 my-5 justify-content-center">
+  <div class="row gy-4 my-5 justify-content-center">
     <div class="col-md-12">
       <p
         v-motion-slide-visible-once-top
@@ -41,57 +41,11 @@
       </div>
     </div>
 
-    <div class="col-md-12">
-      <ul
-        class="d-md-flex justify-content-between bg-dark elevation-6 p-2 py-4 navbar-list justify-content-evenly"
-      >
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="list-group-item font-2 fs-5 filter-button active filter-btn rounded"
-          @click="filterImages('reset', $event)"
-        >
-          All
-        </li>
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-          @click="filterImages('lang', $event)"
-        >
-          Languages
-        </li>
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-          @click="filterImages('tech', $event)"
-        >
-          Technologies
-        </li>
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-          @click="filterImages('framework', $event)"
-        >
-          Frameworks & Libraries
-        </li>
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="list-group-item font-2 fs-5 filter-button filter-btn rounded"
-          @click="filterImages('database', $event)"
-        >
-          Databases
-        </li>
-      </ul>
-    </div>
-    <div class="image-container row g-3 justify-content-center">
+    <div class="row g-3 justify-content-center">
       <div class="col-md-10">
-        <div class="row image-container gy-4">
+        <div class="row gy-4">
           <div
-            class="col-6 col-md-2 image-item"
+            class="col-6 col-md-1 image-item"
             v-for="s in skillsIcons"
             :type="s.type"
             :key="s.id"
@@ -100,9 +54,8 @@
             <div class="tool-tip font-1 font-bold px-2 bg-dark text-light py-1">
               {{ s.title }}
             </div>
-          
-                <img class="img-fluid box3 box" :src="s.src" />
 
+            <img class="img-fluid" :src="s.src" />
           </div>
         </div>
       </div>
@@ -203,99 +156,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.active {
-  border-bottom: none !important;
-
-  transition: all 1s ease;
-}
-
-.filter-button {
-  position: relative;
-  transition: all 1s ease;
-  &:not(.active) {
-    .underline {
-      left: 100%;
-      transition: all 1s ease;
-    }
-  }
-}
-
-li .filter-btn {
-  position: relative;
-}
-
-li .filter-btn::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background-color: #f7d778;
-  transform: scaleX(0);
-
-  transition: transform 0.2s ease;
-}
-
-.filter-btn {
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-}
-.filter-btn:hover {
-  transform: scale(1.1);
-
-  color: turquoise !important;
-}
-
-.navbar-list {
-  position: relative;
-  list-style: none;
-  border-radius: 50em;
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-    border-radius: 8px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.navbar-list li {
-  display: inline-block;
-  cursor: pointer;
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-    display: block;
-    margin: 4px;
-  }
-}
-
-.navbar-list li.active {
-  color: turquoise !important;
-  font-size: 2rem;
-  border-top: none;
-  border-bottom: #f7d778 4px solid;
-  transition: all 1s ease;
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-  }
-}
-
-.navbar-list li.active::before {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 8px;
-  background: #f7d778;
-  border-radius: 4px;
-  transition: all 0.5s ease-in-out;
-  //when screen is 768px OR LESS
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-}
 .image-item:hover {
   .tool-tip {
     transform: scale(1);
@@ -309,25 +169,5 @@ li .filter-btn::before {
 
   border-radius: 4px;
   transition: transform 0.2s ease;
-}
-.box {
-  border: solid black;
-  border-color: black;
-  background-position: center;
-  background-size: cover;
-  width: 200px;
-  height: 140px;
-  transition: all 0.2s ease !important;
-}
-.box:hover {
-  border: solid #f7d778;
-  border-color: #f7d778;
-}
-
-.box3 {
-  border-width: 5px 3px 3px 5px;
-  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
-  transform: rotate(2deg);
-  padding: 5px;
 }
 </style>

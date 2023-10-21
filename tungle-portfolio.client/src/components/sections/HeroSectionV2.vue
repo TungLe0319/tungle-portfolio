@@ -1,124 +1,116 @@
 <template>
-
-    <!-- Your section content goes here -->
-
+  <!-- Your section content goes here -->
 
   <div
     class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
-
     <section
-    class="locomotive-section container-fluid"
-    :style="{ transform: `translateY(-${scrollY}px)` }"
-  >
-    <div class="row justify-content-between w-100">
-      <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
-        <p
-          v-motion-slide-bottom
-          :delay="600"
-          class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
-        >
-          creative
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1000"
-          class="font-1 display-7 mb-0 text-shadow"
-        >
-          Designer <b class="display-6 text-warning">&</b>
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1500"
-          class="font-1 display-7 text-shadow"
-        >
-          Developer
-        </p>
+      class="locomotive-section container-fluid"
+      :style="{ transform: `translateY(-${scrollY}px)` }"
+    >
+      <div class="row justify-content-between w-100">
+        <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
+          >
+            creative
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1000"
+            class="font-1 display-7 mb-0 text-shadow"
+          >
+            Design <b class="display-1 text-warning">&</b>
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="text-start display-6 ms-5 font-1 mb-0 text-shadow"
+          >
+            collaborative
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1500"
+            class="font-1 display-7 text-shadow"
+          >
+            Development
+          </p>
+        </div>
+        <div id="heroText" class="col-md-6 text-end text-light">
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="display-6 font-1 mb-0 text-shadow"
+          >
+            Willing To Learn
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="600"
+            class="display-1 font-1 mb-0 text-shadow"
+          >
+            Anything
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1000"
+            class="font-1 display-1 mb-0 text-shadow"
+          >
+            Anytime
+          </p>
+          <p
+            v-motion-slide-bottom
+            :delay="1500"
+            class="font-1 display-1 text-shadow"
+          >
+            Anywhere
+          </p>
+        </div>
       </div>
-      <div id="heroText" class="col-md-6 text-end text-light">
-           <p
-          v-motion-slide-bottom
-          :delay="600"
-          class=" display-6 font-1 mb-0 text-shadow"
-        >
-           Willing To Learn
-        </p>
-         <p
-          v-motion-slide-bottom
-          :delay="600"
-          class="  display-1 font-1 mb-0 text-shadow"
-        >
-        Anything
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1000"
-          class="font-1 display-1 mb-0 text-shadow"
-        >
-          Anytime
-        </p>
-        <p
-          v-motion-slide-bottom
-          :delay="1500"
-          class="font-1 display-1 text-shadow"
-        >
-          Anywhere
-        </p>
-      </div>
-    </div>
-
-
-  </section>
-  <ScrollDownIcon/>
-  <GentleWave />
-
+    </section>
+    <ScrollDownIcon />
+    <GentleWave />
   </div>
-
 </template>
 
-
- <script>
+<script>
 import { onMounted, ref } from "vue";
 import GentleWave from "../effects/GentleWave.vue";
 import ScrollDownIcon from "../socialIcons/ScrollDownIcon.vue";
 
-
 export default {
-    name: "LocomotiveSection",
-    setup() {
-        // Create a reactive data model for the scroll position
-        const scrollY = ref(0);
-        // Add a scroll listener to update the scroll position
-        onMounted(() => {
-            window.addEventListener("scroll", () => {
-
-                scrollY.value = window.scrollY;
-
-
-            });
-        });
-        // Return the scroll position to the component
-        return {
-            scrollY
-        };
-    },
-    components: { GentleWave, ScrollDownIcon }
+  name: "LocomotiveSection",
+  setup() {
+    // Create a reactive data model for the scroll position
+    const scrollY = ref(0);
+    // Add a scroll listener to update the scroll position
+    onMounted(() => {
+      window.addEventListener("scroll", () => {
+        scrollY.value = window.scrollY;
+      });
+    });
+    // Return the scroll position to the component
+    return {
+      scrollY,
+    };
+  },
+  components: { GentleWave, ScrollDownIcon },
 };
+</script>
 
- </script>
+<style lang="scss" scoped>
+.pug-img {
+  position: absolute;
+  width: auto;
 
- <style lang="scss" scoped>
+  transform: translateY(450px);
+  height: 300px;
+}
 
- .pug-img{
- position: absolute;
- width: auto;
-
- transform: translateY(450px);
- height: 300px;
-
- }
-
-.locomotive-section{
+.locomotive-section {
   transition: transform 0.75s ease;
 }
 
@@ -134,8 +126,6 @@ export default {
   }
 }
 
-
-
 .hero-image {
   height: 100vh;
   /* always scale the image to the appropriate size of your screen */
@@ -145,6 +135,4 @@ export default {
   /* keeps the image fixed while scrolling , neat effect. */
   background-attachment: fixed;
 }
-
-
- </style>
+</style>

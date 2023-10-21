@@ -22,11 +22,7 @@
             About
           </button>
         </li>
-        <li>
-          <button @click="scrollTo(2)" class="btn text-light font-1 fs-4">
-            Experience
-          </button>
-        </li>
+
         <li>
           <button @click="scrollTo(3)" class="btn text-light font-1 fs-4">
             Portfolio
@@ -38,9 +34,13 @@
           </button>
         </li>
         <li>
-           <a href="https://www.canva.com/design/DAFR_BK6TVg/KGT7RQJMqdw0ekC11HV-IQ/view?utm_content=DAFR_BK6TVg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"  class="btn text-light font-1 fs-4" >
-  Resume
-  </a>
+          <a
+            href="https://www.canva.com/design/DAFR_BK6TVg/KGT7RQJMqdw0ekC11HV-IQ/view?utm_content=DAFR_BK6TVg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target="_blank"
+            class="btn text-light font-1 fs-4"
+          >
+            Resume
+          </a>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
@@ -54,9 +54,7 @@ import ProgressBar from "./effects/ProgressBar.vue";
 import { onMounted } from "vue";
 export default {
   setup() {
-    onMounted(() => {
-
-    });
+    onMounted(() => {});
 
     return {
       scrollTo(x) {
@@ -77,13 +75,10 @@ export default {
           left: 0,
           behavior: "smooth",
         });
-
-
       },
-    
     };
   },
-  components: {  ProgressBar },
+  components: { ProgressBar },
 };
 </script>
 
@@ -99,7 +94,6 @@ a:hover {
 
   color: turquoise !important;
 }
-
 
 .navbar-nav .router-link-exact-active {
   border-bottom: 2px solid var(--bs-success);
