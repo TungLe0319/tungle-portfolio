@@ -1,0 +1,173 @@
+@function color-yiq($background) {
+  $r: red($background);
+  $g: green($background);
+  $b: blue($background);
+
+  $yiq: calc((($r * 299) + ($g * 587) + ($b * 114)) / 1000);
+
+  @if ($yiq >= 128) {
+    @return #111;
+  } @else {
+    @return #fff;
+  }
+}
+
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+@function fade($background, $alpha) {
+  $r: red($background);
+  $g: green($background);
+  $b: blue($background);
+  @return rgba($r, $g, $b, $alpha);
+}
+
+body {
+  @each $color, $value in map-deep-get($themes, default) {
+    --bs-#{$color}: #{$value};
+    .bg-#{$color} {
+      color: color-yiq($value);
+      background-color: $value !important;
+    }
+    .text-#{$color} {
+      color: $value !important;
+    }
+    $num: 5;
+    @while $num < 100 {
+      $darker: darken($value, $num);
+      $lighter: lighten($value, $num);
+      .bg-#{$color} {
+        &.lighten-#{$num} {
+          color: color-yiq($lighter);
+          background-color: $lighter !important;
+        }
+        &.darken-#{$num} {
+          color: color-yiq($darker);
+          background-color: $darker !important;
+        }
+        &.fade-#{$num} {
+          background-color: fade($value, calc($num / 100)) !important;
+        }
+        &.fade-lighten-#{$num} {
+          background-color: fade($lighter, calc($num / 100)) !important;
+        }
+        &.fade-darken-#{$num} {
+          background-color: fade($darker, calc($num / 100)) !important;
+        }
+      }
+      .text-#{$color}.darken-#{$num} {
+        color: $darker !important;
+      }
+
+      .text-#{$color}.lighten-#{$num} {
+        color: $lighter !important;
+      }
+      $num: $num + 5;
+    }
+  }
+}
+
+:root {
+  body[data-theme="dark"] {
+    @each $color, $value in map-deep-get($themes, dark) {
+      --bs-#{$color}: #{$value};
+      .bg-#{$color} {
+        color: color-yiq($value);
+        background-color: $value !important;
+      }
+      .text-#{$color} {
+        color: $value !important;
+      }
+      $num: 5;
+      @while $num < 100 {
+        $darker: darken($value, $num);
+        $lighter: lighten($value, $num);
+        .bg-#{$color} {
+          &.lighten-#{$num} {
+            color: color-yiq($lighter);
+            background-color: $lighter !important;
+          }
+          &.darken-#{$num} {
+            color: color-yiq($darker);
+            background-color: $darker !important;
+          }
+          &.fade-#{$num} {
+            background-color: fade($value, calc($num / 100)) !important;
+          }
+          &.fade-lighten-#{$num} {
+            background-color: fade($lighter, calc($num / 100)) !important;
+          }
+          &.fade-darken-#{$num} {
+            background-color: fade($darker, calc($num / 100)) !important;
+          }
+        }
+        .text-#{$color}.darken-#{$num} {
+          color: $darker !important;
+        }
+
+        .text-#{$color}.lighten-#{$num} {
+          color: $lighter !important;
+        }
+        $num: $num + 5;
+      }
+    }
+    color: var(--bs-light);
+  }
+}
+
+
+.action {
+  cursor: pointer;
+}
+.no-select {
+  user-select: none;
+}
+
+
+
+
+.on-hover {
+  transition: all 0.2s linear;
+  opacity: 0;
+  pointer-events: none;
+}
+*:hover > .on-hover {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+.selectable {
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    &:after {
+      opacity: 0.1;
+    }
+  }
+
+  &:after {
+    border-radius: inherit;
+    bottom: 0;
+    color: inherit;
+    content: "";
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    background-color: currentColor;
+  }
+}
+
+
+.elevation-6 {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

@@ -1,13 +1,8 @@
-
 {
   "folders": [
     {
       "path": "tungle-portfolio.client",
       "name": "client"
-    },
-    {
-      "path": "tungle-portfolio",
-      "name": "server"
     }
   ],
   "settings": {
@@ -35,6 +30,7 @@
     "eslint.codeActionsOnSave.mode": "all",
     "editor.codeActionsOnSave": {
       "source.fixAll": true
-    }
+    },
+    "nuxt.isNuxtApp": false
   }
 }

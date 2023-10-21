@@ -1,15 +1,10 @@
-FROM node:16 AS build-env
+FROM nginx:1.19.2-alpine
 
-WORKDIR /app
-# replace with your projects name
-COPY ./package*.json ./
-RUN npm install
-RUN ls
-COPY ./ ./
+# copy built assets to nginx root
+COPY dist /usr/share/nginx/html
 
-
-ENV PORT=80
+# expose port
 EXPOSE 80
 
-
-CMD [ "npm", "start" ]
+# run nginx
+CMD ["nginx", "-g", "daemon off;"]
