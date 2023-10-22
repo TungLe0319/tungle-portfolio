@@ -35,36 +35,18 @@
             :delay="300"
             class="px-md-5 font-2 text-start about-me-text long-paragraph"
           >
-            Hi there! I came from a background of kitchens and customer service, I discovered my passion for building things with code.
+            Hi, my name is
             <br>
-            <br>
-            I first came to know about programming & software development in 2021  when I heard from a friend who had recently undertaken a full-stack immersive bootcamp offered by Boise CodeWorks and recommended it to me, I have been working in kitchens and the customer service field for all of my professional working career and this was a chance at something I've been interested in but never pursued.
-            <br>
-            <br>
-            After a month of self-teaching with the pre-course work I knew this was what I wanted to continue to do and learn. So I  entered  CodeWorks ready to  put my heart and soul into it. I was coding every day, late into the night and on weekends. I was eating, sleeping, breathing code and I loved it.
-            <br>
-            <br>
-            Since Graduating fully completing the course 100% I have grown as a developer, working as a contracter and doing freelance work for customers, that have helped raise my expectations and standards I set formyself with building web applications
-            <br>
-            <br>
-            I'm still currently seeking a full-time role where I can contribute my skills in coding and business to help achieve any company goals while also building my skills as a developer and a team member.
-            <br>
-            <br>
+            <div class="display-2 font-1">
+              Tung Le.
+            </div>
+          <div class="">
+         I'm a skilled software engineer with expertise in crafting exceptional UI/UX designs and creating immersive digital experiences. My current focus is on expanding my knowledge by mastering innovative frameworks like Svelte and Nuxt, allowing me to build cutting-edge, accessible, and beautifully styled webpages and applications.
+          </div>
+  <div class="display-2 font-1 text-end">
+            Open to work.
+            </div>
 
-             <!-- in web development
-            sparked my interest in the field, and since then I've been working
-            hard to build my skills in both front-end and back-end
-            development.My time at CodeWorks has left me with a strong
-            foundation and a strong desire to keep learning and improving. I am
-            <b class="text-light darken-10">grateful</b> for the education and
-            opportunities I received at CodeWorks, and I am excited to continue
-            learning and growing wherever I am because I know
-            <b class="text-light darken-10">ANYTHING, ANYTIME & ANYWHERE </b> is
-            a chance to learn and grow. When I'm not working, you can find me
-            walking my dog , hiking, drawing something, working out or
-            experimenting with new technologies. I am creative and a
-            problem-solver by heart and thrive on finding solutions to complex
-            challenges and creating beautiful works. -->
           </p>
         </div>
       </div>
@@ -130,8 +112,8 @@
     <!-- <BlockQuote/> -->
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row justiy">
+        <div class="col-md-6 ">
           <p
             v-motion-slide-visible-once-top
             :delay="600"
@@ -142,21 +124,15 @@
           <p
             v-motion-slide-visible-once-top
             :delay="600"
-            class="font-2 fs-6 text-light text-center"
+            class="font-2 fs-6 text-light "
           >
-            Since childhood I've appreciated art as a creative outlet , always
-            in my pottery or art class making things. I especially love drawing
-            mandalas as a way of relaxation that allows me to express myself and
-            explore new ideas. Having a background in art as helped me develop
-            attention to detail, problem-solving, and the ability to visualize
-            and communicate solutions to complex problems and to communicate
-            more effectively with colleagues and clients.My artwork is a source
-            of personal satisfaction and pride, which aids me to maintaining
-            motivation and a positive outlook in my career and life.
+           I  love to doodle and  draw, a source
+            of personal satisfaction and  aids me to maintaining
+            motivation and a positive outlook in life.
           </p>
         </div>
 
-        <div class="d-flex   justify-content-around">
+        <div class="d-flex  flex-wrap  justify-content-around">
           <div v-motion-slide-visible-once-top :delay="600" class="">
             <ParallaxMouse>
               <img
@@ -213,6 +189,7 @@
             </ParallaxMouse>
           </div>
         </div>
+    
       </div>
     </div>
   </section>
@@ -223,13 +200,14 @@ import { computed } from "@vue/reactivity";
 import { useParallax } from "@vueuse/core";
 import { onMounted, ref, watchEffect } from "vue";
 import ParallaxMouse from "../effects/ParallaxMouse.vue";
-
+import { AppState } from "../../AppState.js";
 export default {
   props: {},
   setup(props) {
     const editable = ref({});
     const container = ref(null);
     useParallax(container);
+
 
     // Use an intersection observer to call the typeWriter function when the element comes into view
 
@@ -240,6 +218,7 @@ export default {
     return {
       editable,
       container,
+      procreateImages: computed(() => AppState.portfolioImages),
     };
   },
   components: { ParallaxMouse },
@@ -258,7 +237,7 @@ export default {
 }
 .procreate-art {
   width: auto;
-  height: 200px;
+  height: 300px;
   cursor: pointer;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {

@@ -1,19 +1,26 @@
 <template>
-  <section id="portfolio" class="py-5 section-bubble3">
+  <section id="portfolio" class="py-5 section-bubble4">
     <div class="container">
-        <div class="section-title ">
+      <div class="section-title">
         <h1
-               v-motion-slide-visible-once-top
-         :delay="300"
-        class="font-1 text-light">Portfolio</h1>
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="font-1 text-light"
+        >
+          Portfolio
+        </h1>
         <h4
-            v-motion-slide-visible-once-top
-         :delay="300"
-        class="font-1 text-warning">Some of these projects are hosted on render and so can take up a minute or two to load.</h4>
+          v-motion-slide-visible-once-top
+          :delay="300"
+          class="font-1 text-warning"
+        >
+          Some of these projects are hosted on render and so can take up a
+          minute or two to load.
+        </h4>
       </div>
+
       <div class="text-white" v-for="p in projects">
-        <ProjectComponent :projectData="p" />
-        <!-- <ProjectComponent/> -->
+        <ProjectComponent :projectData="p" :key="p.title" />
       </div>
     </div>
   </section>

@@ -13,7 +13,7 @@
         <!-- Add your main page content here -->
         <HeroSectionV2 />
         <AboutSection />
-        <!-- <TimeLine/> -->
+
         <!-- <ExperienceSection /> -->
         <ProjectPortfolioSection/>
         <!-- <PortfolioSection /> -->

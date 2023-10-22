@@ -19,5 +19,8 @@
     "titleBar.inactiveForeground": "#15202b99"
   },
   "peacock.color": "#93e5c8",
-  "cSpell.words": ["Dexian"]
+  "cSpell.words": [
+    "Dexian"
+  ],
+  "nuxt.isNuxtApp": false
 }

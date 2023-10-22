@@ -8,12 +8,12 @@ export const AppState = reactive({
 
   percent: 0,
   portfolioImages: [
-    "../../assets/img/portfolio/InspireSS.png",
-    "../../assets/img/portfolio/DimensionMiner.png",
-    "../../assets/img/portfolio/ImGame.png",
-    "../../assets/img/portfolio/KeeprSS.png",
-    "../../assets/img/portfolio/Network.png",
-    "../../assets/img/portfolio/TowerSS.png",
+    "../../assets/img/Procreate/Mandala1.png",
+    // "/src/assets/img/Procreate/DimensionMiner.png",
+    // "/src/assets/img/Procreate/ImGame.png",
+    // "/src/assets/img/Procreate/KeeprSS.png",
+    // "/src/assets/img/Procreate/Network.png",
+    // "/src/assets/img/Procreate/TowerSS.png",
   ],
 
   skillsIcons: [
@@ -170,23 +170,44 @@ export const AppState = reactive({
       title: "Browse Learn Offer Grow (B.L.O.G)",
       imageSrc:
         "https://media.discordapp.net/attachments/1060066788878069891/1165068659912355990/image.png?ex=654581be&is=65330cbe&hm=430d46aed7750e097cf44cc1d98cf76596700d00cbe0e72e64a4f70784cef630&=&width=720&height=368",
-      description: `  SPA app designed to help people get together with other users for
-              events as well as create them. VueJs with Vue-Router for the
-              client. Express with Node.js and MongoDB with Mongoose to manage
-              database and handling relationships of both one to many, and many
-              to many objects. Identity management with Auth0.`,
-      technologies: ["Next.js", "Tailwind", "React", "Auth.js"],
+      description: `
+      <div class="profolio-description">
+
+  <p>Explore a collection of articles, stories, and projects. Like and comment to engage with the content.</p>
+
+  <p>Key Features:</p>
+  <ul>
+    <li>Server-Side Rendering (SSR) for improved performance and SEO</li>
+    <li>User Authentication via GitHub and Google for a personalized experience</li>
+    <li>Seamless Page Transitions for smooth navigation</li>
+    <li>Stylish Components crafted with Flowbite and Tailwind CSS for a modern look</li>
+  </ul>
+</div>`,
+      technologies: [
+        "Sveltekit",
+        "Auth.js",
+        "Prisma.io",
+        "Tailwind",
+        "Flowbite Svelte",
+      ],
       link: "https://svelte-blog.tung.devopportunities.dev/",
     },
     {
       title: "The Daily Sun",
       imageSrc:
         "https://cdn.discordapp.com/attachments/1060066788878069891/1165069470625181706/image.png?ex=6545827f&is=65330d7f&hm=bb345073945238971a93be26cc104ec6500979661b9938eb5013cad754400a8c&",
-      description: `  SPA app designed to help people get together with other users for
-              events as well as create them. VueJs with Vue-Router for the
-              client. Express with Node.js and MongoDB with Mongoose to manage
-              database and handling relationships of both one to many, and many
-              to many objects. Identity management with Auth0.`,
+      description: ` <p>TheDailySun! a full-stack E-commerce app built with Vue, Prisma, NextAuth.js and Nuxt</p>
+
+  <p>Features:</p>
+  <ul>
+    <li>Featured Project with modern styling</li>
+    <li>Dynamic Slug pages for detailed product information</li>
+    <li>Yoga Retreats: Sign up for rejuvenating yoga retreats</li>
+    <li>Teacher Schedule Management: Teachers can manage their schedules and events</li>
+    <li>Customer Information Management: The business can efficiently manage customer data</li>
+    <li>Optimized for All Devices: The Single Page Application (SPA) is optimized for both desktop and mobile use, ensuring a convenient user experience on any device</li>
+  </ul>
+`,
       technologies: ["Nuxt", "Tailwind", "NextAuth.js"],
       link: "https://thedailysun.devopportunities.dev/",
     },
@@ -194,16 +215,19 @@ export const AppState = reactive({
       title: "SamadhiYogaIdaho",
       imageSrc:
         "https://media.discordapp.net/attachments/1060066788878069891/1060067418073993226/samadhiApp.png?width=720&height=399",
-      description: `Custom Designed and built website for a small yoga business owner client. integrated Ghost for CMS Publishing for her blog as well
-              as configuring MailGun for Email Service. The app allows users to
-              easily browse and sign up for classes, view class schedules, and
-              sign up for yoga retreats. It will also include a feature for
-              teachers to manage their schedules and events, the business to
-              manage customer information. The SPA will be optimized for both
-              desktop and mobile use, making it convenient for users to access
-              from any device. Overall, the goal of the app is to provide a
-              seamless and convenient experience for both the business and its
-              customers.`,
+      description: `<div class="profolio-description">
+  <p>Full-stack SPA custom designed and deployed for a small yoga business owner client.</p>
+
+  <p>Features:</p>
+  <ul>
+    <li>Sign ups for posted classes and yoga events</li>
+    <li>Class Schedules</li>
+    <li>Yoga Retreats</li>
+    <li>Integrated CMS for publishing blog articles with configured Mailgun email service</li>
+  </ul>
+
+
+</div>`,
       technologies: ["Vue.Js", "Bootstrap", "MongoDb", "PocketBase", "Ghost"],
       link: "https://www.samadhiyogaidaho.com/#/",
     },
@@ -211,28 +235,53 @@ export const AppState = reactive({
       title: "Better After Books",
       imageSrc:
         "https://media.discordapp.net/attachments/1060066788878069891/1060067418820579439/BetterAfterBooks.png?width=720&height=390",
-      description: `     Better After Books is a social network that allows users to
-              discover new books and save them to a list collection (i.e, a
-              wishlist,favorites,reading and finished list) and browsing what
-              other users recommended and reviewed. Demonstrates a working
-              knowledge of how to architect and design full-stack applications.
-              Utilizing a VueJs frontend with Vue-Router to manage the DOM. On
-              the server-side, using DotNet WebApi for server and implement the
-              Repository pattern to communicate with a MySQL server for their
-              database. In addition, Auth0 for user management, Dapper as an
-              ORM.`,
-      technologies: ["Vue.Js", "C#", "DotNet", "MySQL", "Bootstrap"],
+      description: `  <div class="profolio-description">
+ <p>Hosted on Render (Can take a minute or two to load)</p>
+  <p>Full-stack social network designed for book enthusiasts.
+  Inspired by Bookbub.com</p>
+
+  <p>Key Features:</p>
+  <ul>
+    <li>Discoverable books via Google's API</li>
+    <li> Browse recommendations and reviews from other users to find your next great read.</li>
+    <li>Customized collections, including wishlists, favorites, recommendations, reading lists, and finished books.</li>
+    <li>Utilizes DotNet WebApi and implements the Repository pattern to interact with a MySQL database.</li>
+    <li>Auth0 is employed for user authentication and management.</li>
+    <li>Dapper is used as the Object-Relational Mapping (ORM) for efficient data access.</li>
+  </ul>
+
+</div>`,
+      technologies: [
+        "Vue.Js",
+        "C#",
+        "DotNet",
+        "MySQL",
+        "Bootstrap",
+        "Dapper(ORM)",
+      ],
       link: "https://better-after-books-demo.onrender.com/#/",
     },
     {
       title: "NextFire",
       imageSrc:
         "https://cdn.discordapp.com/attachments/1060066788878069891/1063581265971904593/Screenshot_2023-01-13_at_3.11.41_PM.png?ex=6545703e&is=6532fb3e&hm=cc269604b7d98b7b1b248d5d8ee4c92f2fbcaee773f845c974f0ccfae078a099&",
-      description: `  SPA app designed to help people get together with other users for
-              events as well as create them. VueJs with Vue-Router for the
-              client. Express with Node.js and MongoDB with Mongoose to manage
-              database and handling relationships of both one to many, and many
-              to many objects. Identity management with Auth0.`,
+      description: ` <div class="profolio-description">
+
+  <p>Full-stack social blogging platform build with React, Firebase,  and Next.js.
+  Inspired by Dev.to, course taught by Fireship.io </p>
+
+  <p>Key Features:</p>
+  <ul>
+    <li>Bot-friendly content (SEO)</li>
+    <li>SSR, SSG, and ISR techniques</li>
+    <li>Firestore realtime CRUD and data modeling</li>
+    <li>Vue.js Frontend: The frontend is developed using Vue.js and Vue Router, effectively managing the Document Object Model (DOM).</li>
+    <li>Reactive forms with react-hook-form</li>
+    <li>Image file uploads</li>
+    <li>Realtime hearts</li>
+    <li>Security & Deployment</li>
+  </ul>
+</div>`,
       technologies: ["Next.js", "Tailwind", "React"],
       link: "https://next-fire.tung.devopportunities.dev/",
     },
@@ -240,16 +289,21 @@ export const AppState = reactive({
       title: "Keepr",
       imageSrc:
         "https://media.discordapp.net/attachments/1060066788878069891/1060068356541120683/KeeprSS.png?width=720&height=395",
-      description: `  Keepr is a social network that allows users to visually share and
-              discover new interests by posting images or videos to their own,
-              or others', collections (i.e., a collection of 'vaults,' usually
-              with a common theme) and browsing what other users have kept.
-              Demonstrates a working knowledge of building full-stack
-              applications. Utilizing a VueJs frontend with Vue-Router to manage
-              the DOM. On the server-side, using DotNet WebApi for their server
-              and implement the Repository pattern to communicate with their
-              database. In addition, Auth0 for user management, Dapper as an
-              ORM, and a MySQL server for their database.`,
+      description: `<div class="profolio-description">
+  <p>Hosted on Render (Can take a minute or two to load)</p>
+  <p>Full-stack dynamic social network designed for visual sharing and exploration of diverse interests. Inspired by Pinterest.</p>
+
+  <p>Key Features:</p>
+  <ul>
+    <li>Visual Sharing: Users can post images or videos to their own collections, known as 'vaults,' each often centered around a common theme.</li>
+    <li>Content Discovery: Explore the curated collections of other users and find new interests.</li>
+
+    <li>DotNet WebApi: On the server-side, the project relies on DotNet WebApi and applies the Repository pattern to interact with a MySQL database.</li>
+    <li>User Management: Auth0 is integrated for robust user authentication and management.</li>
+    <li>Data Access: Dapper serves as the Object-Relational Mapping (ORM) to streamline database interactions.</li>
+  </ul>
+
+</div>`,
       technologies: ["HTML", "CSS", "Javascript"],
       link: "https://keepr-project-demo.onrender.com",
     },

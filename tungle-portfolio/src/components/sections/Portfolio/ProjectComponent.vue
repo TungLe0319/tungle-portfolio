@@ -16,31 +16,34 @@
       <div class="d-flex">
         <div class="project-title">
           <p
-         v-motion-slide-visible-once-top :delay="600"
-            class="font-1 fs-2 text-warning mt-3 mt-md-0 "
+            v-motion-slide-visible-once-top
+            :delay="600"
+            class="font-1 fs-2 text-warning mt-3 mt-md-0"
           >
             {{ projectData.title }}
           </p>
         </div>
       </div>
       <div
-        class="card elevation-6 p-2 border-0 bg-primary text-light project-description w-100"
+        class="card elevation-6 p-3 border-0 bg-primary text-light project-description w-100"
       >
-        <p
-      v-motion-slide-visible-once-top :delay="600"
+        <span
+          v-motion-slide-visible-once-top
+          :delay="600"
           class="font-2 text-light text-shadow mb-1"
+          v-html="projectData.description"
         >
-          {{ projectData.description }}
-        </p>
+        </span>
         <div class="font-2">
           <ul class="list-group list-group-horizontal bg-transparent">
             <li
-              class="list-group-item p-0 px-2 py-2"
+              class="list-group-item p-0 px-2 py-2 elevation-4"
               v-for="(tech, index) in projectData.technologies"
               :key="index"
             >
               <span
-             v-motion-slide-visible-once-top :delay="600"
+                v-motion-slide-visible-once-top
+                :delay="600"
                 class="badge text-bg-warning"
                 >{{ tech }}</span
               >
@@ -53,8 +56,6 @@
 </template>
 
 <script>
-
-
 export default {
   props: {
     projectData: Object,
@@ -79,13 +80,13 @@ export default {
   filter: brightness(75%);
 }
 
-.project-container:hover .box-1{
- transform: translateX(0);
+.project-container:hover .box-1 {
+  transform: translateX(0);
   transition: all 0.5s ease;
 }
 
-.project-container:hover .box-1 .project-title{
-   transform: translateX(0);
+.project-container:hover .box-1 .project-title {
+  transform: translateX(0);
   transition: all 0.5s ease;
 }
 
@@ -96,7 +97,16 @@ export default {
 
 .project-title {
   transform: translateY(-3rem) translateX(-30rem);
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
+.list-group-item {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  transition: all 0.5s ease;
+  transform: translateY(-3px);
+}
 </style>
