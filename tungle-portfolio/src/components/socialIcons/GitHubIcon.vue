@@ -1,8 +1,5 @@
 <template>
-  <a
-    v-motion-slide-top
-                :delay="600"
-  href="https://github.com/TungLe0319">
+  <a v-motion-slide-top :delay="600" href="https://github.com/TungLe0319" target="_blank">
     <i class="mdi mdi-github fs-3 text-light" title="Github Link"></i>
   </a>
 </template>
@@ -19,8 +16,9 @@ export default {
 i {
   z-index: 99999 !important;
   transition: all 0.5s ease-out;
+  font-size: 3rem !important;
   @media only screen and (max-width: 768px) {
-    font-size: 4rem!important;
+    font-size: 4rem !important;
   }
 }
 i:hover {

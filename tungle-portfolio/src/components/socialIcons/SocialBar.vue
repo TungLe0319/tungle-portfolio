@@ -1,10 +1,10 @@
 <template>
   <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
-      <div class="col-2 d-flex flex-column align-items-start">
-        <PhoneIcon />
-        <GitHubIcon />
-        <LinkedInIcon class="linkedIn-icon" />
+      <div class="col-2 ps-2 d-flex flex-column align-items-start">
+        <i><ResumeIcon /></i>
+        <i> <GitHubIcon /></i>
+        <i> <LinkedInIcon class="linkedIn-icon" /></i>
       </div>
       <div
         class="col-1 text-center d-flex justify-content-center align-items-center"
@@ -21,16 +21,16 @@
   </div>
 
   <!-- SECTION FOOTER  -->
-  <div class="container-fluid section-bubble5 py-4 test">
+  <div class="section-bubble2">
     <div class="row justify-content-center">
       <div class="col-12 d-flex justify-content-center icons d-md-none">
-        <PhoneIcon />
+        <ResumeIcon />
         <GitHubIcon />
         <LinkedInIcon />
       </div>
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 text-center text-light">
         <p v-motion-slide-visible-once-top :delay="300">
-          Designed & Built by <b> DevOpportunitiesLLC</b>
+          Designed & Built by <b> Yours Truly</b>
         </p>
         <p v-motion-slide-visible-once-top :delay="300">
           Copyright &copy; 2023 DevOpportunitiesLLC
@@ -45,7 +45,7 @@ import { onMounted, ref } from "vue";
 
 import GitHubIcon from "./GitHubIcon.vue";
 import LinkedInIcon from "./LinkedInIcon.vue";
-import PhoneIcon from "./PhoneIcon.vue";
+import ResumeIcon from "./ResumeIcon.vue";
 
 export default {
   setup() {
@@ -63,7 +63,7 @@ export default {
 
     return {};
   },
-  components: { GitHubIcon, LinkedInIcon, PhoneIcon },
+  components: { GitHubIcon, LinkedInIcon, ResumeIcon },
 };
 </script>
 
@@ -73,22 +73,15 @@ export default {
 }
 
 .email {
-  transform: rotate(90deg) + translateX(-50px) + translateY(-20px);
+  transform: rotate(90deg) + translateX(-10px) + translateY(-20px);
   transition: all 0.5s ease-out;
 }
 .email:hover {
-  transform: rotate(90deg) + translateX(-70px) + translateY(-20px);
+  transform: rotate(90deg) + translateX(-30px) + translateY(-20px);
   color: turquoise !important;
   transition: all 0.5s ease-out;
 }
-.email-icon:after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: #fff;
-}
+
 .linkedIn-icon:after {
   content: "";
   display: block;

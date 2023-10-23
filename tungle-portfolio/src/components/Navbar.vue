@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-custom px-3">
-    <div class="d-flex me-5">
+    <div class=" d-none d-md-flex me-5">
       <p class="mb-0 font-1 fs-3 text-light">Tung Le</p>
       <p class="mb-0 ms-4 font-1 fs-3 text-light">SoftWare Developer</p>
     </div>

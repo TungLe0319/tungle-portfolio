@@ -1,8 +1,11 @@
 <template>
   <a
-     v-motion-slide-top
-                :delay="300"
-  href="https://www.linkedin.com/in/tung-le0319/" class="">
+    v-motion-slide-top
+    :delay="300"
+    href="https://www.linkedin.com/in/tung-le0319/"
+    class=""
+    target="_blank"
+  >
     <i class="mdi mdi-linkedin fs-3 text-light" title="LinkedIn"></i>
   </a>
 </template>
@@ -18,8 +21,9 @@ export default {
 <style lang="scss" scoped>
 i {
   transition: all 0.5s ease-out;
+  font-size: 3rem !important;
   @media only screen and (max-width: 768px) {
-    font-size: 4rem!important;
+    font-size: 4rem !important;
   }
 }
 i:hover {

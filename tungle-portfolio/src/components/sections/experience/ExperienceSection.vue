@@ -1,23 +1,23 @@
 <template>
   <section id="experience" class="py-5 section-bubble2">
     <div class="container">
-      <div class="section-title">
+      <!-- <div class="section-title">
         <h1
           v-motion-slide-visible-once-top
           :delay="300"
-          class="font-1 text-light"
+          class="font-1 text-light7"
         >
          Skills, Certificates & Experience
         </h1>
-      </div>
-      <Education />
+      </div> -->
       <SkillIcons />
+      <Education />
 
       <!-- <TimeLine/> -->
      <Dexian/>
       <DevOpportunities />
       <RiaFox />
-      <CurrentlyLearning />
+
     </div>
   </section>
 </template>
@@ -117,7 +117,7 @@ export default {
     Education,
     Dexian,
     CurrentlyLearning,
- 
+
 },
 };
 </script>

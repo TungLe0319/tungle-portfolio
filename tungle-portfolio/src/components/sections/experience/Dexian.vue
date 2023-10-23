@@ -1,13 +1,7 @@
 <template>
   <div class="row my-5">
     <div class="section-title">
-      <p
-        v-motion-slide-visible-once-top
-        :delay="300"
-        class="font-1 fs-2 text-warning"
-      >
-        US Navy - Contracted under Dexian
-      </p>
+
     </div>
     <div
       class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
@@ -20,13 +14,23 @@
         <img
           v-motion-slide-visible-once-top
           :delay="300"
-          src="https://imgs.search.brave.com/lsYZlcYBG_O9ZfLQq12aU8pYAk7mXYRMkvA_folL8NQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXF1aW5peC5jb20v/Y29udGVudC9kYW0v/ZXF4Y29ycC9lbl91/cy9pbWFnZXMvcGFy/dG5lci1kaXJlY3Rv/cnkvMTkwMV9ncm91/cC9sb2dvLnBuZw"
+          src="https://www.1901group.com/wp-content/uploads/2021/01/MenuLogoLEIDOSVECTOR-03.svg"
           alt="LLC Logo"
+          class="image"
         />
       </div>
       <div class="d-flex justify-content-center"></div>
     </div>
     <div class="col-md-6">
+
+  <p
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="font-1 fs-2 text-warning"
+      >
+        1901 Group - Contracted through Dexian
+      </p>
+
       <p
         v-motion-slide-visible-once-top
         :delay="300"
@@ -35,52 +39,38 @@
         April 2023 - October 2023
       </p>
       <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
-   As an <strong> Enterprise Service Desk Specialist</strong> at 1901 Group, I played a pivotal role in providing technical support to end-users, showcasing my expertise as a DoD 8570 Certified professional. My responsibilities encompassed resolving a diverse range of technical issues, including account, internet, software, and hardware support, for various computer systems, including laptops, desktops, and network printers.
-
-One of my significant achievements is my CompTIA Security+ Certification, which validates my proficiency in cybersecurity. You can find my certification details here for reference.
-
-Working within the challenging environment of the Navy Intranet, which boasted over 700,000 users, I served as the first line of communication for addressing issues and responding to incidents promptly. This experience sharpened my ability to manage high-stress situations and contribute effectively to a large user base.
+        <strong> Enterprise Service Desk Specialist</strong> at 1901 Group,
+        provided comprehensive technical support, both independently and
+        collaboratively. My role involved resolving diverse technical
+        challenges, spanning account administration, hardware, and software
+        issues, for a wide range of computer systems, including laptops,
+        desktops, and network printers. Worked in fast pase and challenging
+        environment of the Navy Intranet, which serves over 700,000 users, I
+        served as the first line of communication for addressing issues and
+        responding to incidents promptly.
       </p>
 
-      <ul class="numbered nav-list">
+      <!-- <ul class="numbered nav-list">
         <li
           v-motion-slide-visible-once-top
           :delay="300"
           class="numbered-list-item"
         >
-          Effectively communicated with clients in regular meet ups to build
-          strong working relationships and trust.
+       Provided comprehensive technical support, both independently and
+        collaboratively. My role involved resolving diverse technical
+        challenges, spanning account administration, hardware, and software
+        issues, for a wide range of computer systems, including laptops,
+        desktops, and network printers.
         </li>
         <li
           v-motion-slide-visible-once-top
           :delay="300"
           class="numbered-list-item"
         >
-          Proactive in seeking feedback and making adjustments as needed to
-          ensure that the final product meets the client's expectations.
+        Remotely Assisted Users resolving complex technical issues either with remote desktop management assistance or walking through user lacking technical lingo.
         </li>
-        <li
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="numbered-list-item"
-        >
-          While we have not had a great deal of experience working directly with
-          clients, I am eager to learn and to continue developing my skills in
-          this area.
-        </li>
-      </ul>
 
-      <p
-        v-motion-slide-visible-once-top
-        :delay="300"
-        class="font-1 fs-5 text-light darken-10"
-      >
-        Projects & work done Listed Below
-        <i
-          @click="scrollToProjects()"
-          class="mdi mdi-arrow-down-circle fs-1 text-light action"
-        ></i>
-      </p>
+      </ul> -->
     </div>
   </div>
 </template>
@@ -141,18 +131,24 @@ li.numbered-list-item + li.numbered-list-item {
 
 .devsopportunities-image {
   flex: auto;
+
   img {
-    height: 300px;
-    width: 400px;
+    height: 100px;
+    width: 200px;
+    background-color: #f8fcdb;
+    border-radius: 4px;
   }
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
     height: 200px;
     width: 200px;
     img {
-      height: 200px;
-      width: 200px;
+      height: 100px;
+
     }
   }
 }
+
+
+
 </style>

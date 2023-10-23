@@ -7,6 +7,8 @@
           v-motion-slide-visible-once-top
           :delay="300"
           :src="projectData.imageSrc"
+          width="600"
+          height="200"
           class="img-fluid elevation-6 rounded project-image"
           alt="Project Image"
         />
@@ -30,25 +32,27 @@
         <span
           v-motion-slide-visible-once-top
           :delay="600"
-          class="font-2 text-light text-shadow mb-1"
+          class="font-2 text-light text-shadow mb-1 text-smaller"
           v-html="projectData.description"
         >
         </span>
-        <div class="font-2">
-          <ul class="list-group list-group-horizontal bg-transparent">
-            <li
-              class="list-group-item p-0 px-2 py-2 elevation-4"
+        <div class="">
+          <div
+            class="list-group list-group-horizontal bg-transparent flex-wrap"
+          >
+            <div
+              class="list-group-item text-smaller p-1 py-2 py-md-1 elevation-4 d-flex flex-wrap"
               v-for="(tech, index) in projectData.technologies"
               :key="index"
             >
               <span
                 v-motion-slide-visible-once-top
                 :delay="600"
-                class="badge text-bg-warning"
+                class="badge fs-6 bg-warning"
                 >{{ tech }}</span
               >
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -68,6 +72,9 @@ export default {
 </script>
 
 <style scoped>
+.text-smaller {
+  font-size: 10pt;
+}
 .text-bg-warning {
   background-color: #e6cb7a !important;
 }
@@ -91,13 +98,19 @@ export default {
 }
 
 .box-1 {
-  transform: translateX(-100px);
-  transition: all 0.5s ease;
+  @media only screen and (min-width: 769px) {
+    transform: translateX(-100px);
+    transition: all 0.5s ease;
+  }
 }
 
 .project-title {
-  transform: translateY(-3rem) translateX(-30rem);
+  transform: translateY(0) translateX(0);
   transition: all 0.5s ease;
+
+  @media only screen and (min-width: 769px) {
+    transform: translateY(1rem) translateX(6rem);
+  }
 }
 
 .list-group-item {

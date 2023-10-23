@@ -1,6 +1,6 @@
 <template>
-  <div class="row gy-4 my-5 justify-content-center">
-    <div class="col-md-12">
+  <div class="row gy-4 mb-5  justify-content-center">
+    <!-- <div class="col-md-12">
       <p
         v-motion-slide-visible-once-top
         :delay="600"
@@ -8,44 +8,13 @@
       >
         Languages & Technologies
       </p>
-    </div>
-
-    <div class="row justify-content-evenly">
-      <div class="col-md-4">
-        <a
-          v-motion-slide-visible-once-top
-          :delay="300"
-          href="https://github.com/TungLe0319"
-          target="_blank"
-        >
-          <img
-            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/e926d13a13700b7a9a95dae0c272b1ef0aef7818/generated/languages.svg"
-            alt=" Github Lang stats"
-            class="elevation-6 rounded"
-          />
-        </a>
-      </div>
-      <div class="col-md-4">
-        <a
-          v-motion-slide-visible-once-top
-          :delay="300"
-          href="https://github.com/TungLe0319"
-          target="_blank"
-        >
-          <img
-            src="https://raw.githubusercontent.com/TungLe0319/GithubStats/e926d13a13700b7a9a95dae0c272b1ef0aef7818/generated/overview.svg"
-            alt="Github Overview"
-            class="elevation-6 rounded"
-          />
-        </a>
-      </div>
-    </div>
+    </div> -->
 
     <div class="row g-3 justify-content-center">
       <div class="col-md-10">
         <div class="row gy-4">
           <div
-            class="col-6 col-md-1 image-item"
+            class=" col-3  col-md-2  image-item"
             v-for="s in skillsIcons"
             :type="s.type"
             :key="s.id"
@@ -55,14 +24,11 @@
               {{ s.title }}
             </div>
 
-            <img class="img-fluid" :src="s.src" />
+            <img class="img-fluid skill-image" :src="s.src" />
           </div>
         </div>
       </div>
     </div>
-    <div
-      class="col-md-12 d-md-flex justify-content-around mb-4 flex-wrap"
-    ></div>
   </div>
 </template>
 
@@ -169,5 +135,11 @@ export default {
 
   border-radius: 4px;
   transition: transform 0.2s ease;
+}
+
+.skill-image{
+   @media only screen and (max-width: 768px) {
+
+  }
 }
 </style>

@@ -41,7 +41,7 @@
       </div>
     </div>
 
-    <div class="col-md-12">
+    <!-- <div class="col-md-12">
       <ul
         class="d-md-flex justify-content-between bg-dark elevation-6 p-2 py-4 navbar-list justify-content-evenly"
       >
@@ -86,7 +86,7 @@
           Databases
         </li>
       </ul>
-    </div>
+    </div> -->
     <div class="image-container row g-3 justify-content-center">
       <div class="col-md-10">
         <div class="row image-container gy-4">

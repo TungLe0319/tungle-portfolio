@@ -13,11 +13,11 @@
 export default {
 
   setup() {
-  
 
- 
+
+
     return {
- 
+
     };
   },
 };
@@ -32,5 +32,6 @@ export default {
   margin: 0px auto;
   background-color: #fff;
 }
+
 
 </style>

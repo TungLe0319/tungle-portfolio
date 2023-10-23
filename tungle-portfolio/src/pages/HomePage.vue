@@ -14,11 +14,11 @@
         <HeroSectionV2 />
         <AboutSection />
 
-        <!-- <ExperienceSection /> -->
+        <ExperienceSection />
         <ProjectPortfolioSection/>
         <!-- <PortfolioSection /> -->
-        <ContactSection />
-        <div class="position-relative"></div>
+        <!-- <ContactSection /> -->
+
         <SocialBar />
         <!-- <EmailBar/> -->
       </div>

@@ -7,17 +7,17 @@
           class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
         </div>
         <div
-          class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
+          class="col-md-6 d-flex flex-column   align-items-center my-3 "
         >
           <div
             v-motion-slide-visible-once-top
                 :delay="300"
-            class="rounded-circle bg-light text-center devsopportunities-image elevation-6 mb-4"
+            class="rounded-circle bg-light text-center  elevation-6 mb-4"
           >
             <img
               v-motion-slide-visible-once-top
                 :delay="300"
-            src="../../../assets/img/LLCLogo.png" alt="LLC Logo" />
+            src="../../../assets/img/LLCLogo.png" alt="LLC Logo" width="100" height="100" />
 
           </div>
              <div class="d-flex  justify-content-center">
@@ -25,19 +25,19 @@
             v-motion-slide-visible-once-top
             :delay="300"
           href="https://www.linkedin.com/in/daniel-le97/">
-            <img src="https://avatars.githubusercontent.com/u/107774403?v=4" alt="Daniel photo" width="100" class="rounded-circle elevation-6 hover-image " title="Daniel Le">
+            <img src="https://avatars.githubusercontent.com/u/107774403?v=4" alt="Daniel photo" width="60" class="rounded-circle elevation-6 hover-image " title="Daniel Le">
           </a>
           <a
             v-motion-slide-visible-once-top
             :delay="300"
           href="https://www.linkedin.com/in/tri-le1122/">
-            <img src="https://avatars.githubusercontent.com/u/107815260?v=4" alt="Tri photo" width="100" class="rounded-circle elevation-6 hover-image mx-3" title="Tri Le">
+            <img src="https://avatars.githubusercontent.com/u/107815260?v=4" alt="Tri photo" width="60" class="rounded-circle elevation-6 hover-image mx-3" title="Tri Le">
           </a>
           <a
             v-motion-slide-visible-once-top
             :delay="300"
           href="https://www.linkedin.com/in/molly-nettleton/">
-            <img src="https://avatars.githubusercontent.com/u/108630829?v=4" alt="Molly photo" width="100" class="rounded-circle elevation-6 hover-image " title="Molly Nettleton">
+            <img src="https://avatars.githubusercontent.com/u/108630829?v=4" alt="Molly photo" width="60" class="rounded-circle elevation-6 hover-image " title="Molly Nettleton">
           </a>
            </div>
 
@@ -55,11 +55,11 @@
             :delay="300"
             class="font-2 text-light"
           >
-        Together with a team of 3 other developers, I co-founded <b class="text-warning">DevOpportunities</b> as a way to gain experience in project management, technical expertise, and professional networking while searching for full-time employment. We've had the pleasure of working with clients on multiple projects, with our most notable one being the design, development, and deployment of the website for  <a href="https://samadhiyogaidaho.com/#/" target="_blank" class="text-warning"><b>SamadhiYogaIdaho</b></a> which has  further details below.
+         Co-founded <b class="text-warning">DevOpportunities</b> along with other developers to gain  experience in project management, technical expertise, and professional networking. We've had the pleasure of working with clients on  projects, with our most notable one being the design, development, and deployment of the website for  <a href="https://samadhiyogaidaho.com/#/" target="_blank" class="text-warning"><b>SamadhiYogaIdaho</b></a> which has  further details below.
 
           </p>
 
-          <ul class="numbered nav-list">
+          <!-- <ul class="numbered nav-list">
             <li
               v-motion-slide-visible-once-top
             :delay="300"
@@ -82,18 +82,9 @@
               skills in this area.
             </li>
 
-          </ul>
+          </ul> -->
 
-          <p
-            v-motion-slide-visible-once-top
-            :delay="300"
-          class="font-1 fs-5 text-light darken-10">
-            Projects & work done Listed Below
-            <i
-              @click="scrollToProjects()"
-              class="mdi mdi-arrow-down-circle fs-1 text-light action"
-            ></i>
-          </p>
+
         </div>
 
       </div>

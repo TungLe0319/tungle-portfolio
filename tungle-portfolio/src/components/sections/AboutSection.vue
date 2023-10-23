@@ -1,16 +1,7 @@
 <template>
-  <section id="about" class="about py-5 mt-0 section-bubble1 text-light font-1">
+  <section id="about" class="about py-md-5 pb-0 pt-5 mt-0 section-bubble1 text-light font-1">
     <div class="container">
-      <div class="d-flex justify-content-between">
-        <div
-
-          class="section-title display-3"
-        >
-          <h1 class=" "
-           v-motion-slide-visible-once-top :delay="600"
-          >About me</h1>
-        </div>
-      </div>
+     
 
       <div class="row justify-content-center" ref="container">
         <div class="col-md-4 d-flex justify-content-center">
@@ -37,13 +28,13 @@
           >
             Hi, my name is
             <br>
-            <div class="display-2 font-1">
+            <div class="display-2 font-1 text-warning">
               Tung Le.
             </div>
           <div class="">
          I'm a skilled software engineer with expertise in crafting exceptional UI/UX designs and creating immersive digital experiences. My current focus is on expanding my knowledge by mastering innovative frameworks like Svelte and Nuxt, allowing me to build cutting-edge, accessible, and beautifully styled webpages and applications.
           </div>
-  <div class="display-2 font-1 text-end">
+  <div class="display-2 font-1 text-end text-warning">
             Open to work.
             </div>
 
@@ -60,23 +51,9 @@
             :delay="600"
             class="font-1 fs-4 text-warning"
           >
-            Current Favorite Song
+          What I Code To
           </p>
-          <iframe
-            v-motion-slide-visible-once-top
-            :delay="600"
-            class="elevation-6"
-            style="border-radius: 12px"
-            src="https://open.spotify.com/embed/track/4U45aEWtQhrm8A5mxPaFZ7?utm_source=generator&theme=0"
-            width="100%"
-            height="152"
-            frameBorder="0"
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            as="font"
-            rel="preload"
-          >
-          </iframe>
+       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4ANPW38qMEYQ3Z1mVLrtmm?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div class="col-md-6 text-center">
           <p
@@ -189,7 +166,7 @@
             </ParallaxMouse>
           </div>
         </div>
-    
+
       </div>
     </div>
   </section>
@@ -269,7 +246,7 @@ export default {
   transform: rotate(-2deg);
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    height: 375px;
+    height: 275px;
       transform: rotate(0deg);
   }
 }
@@ -285,8 +262,8 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
   //when screen is 768px OR LESS
   @media only screen and (max-width: 768px) {
-    width: 340px;
-    height: 422px;
+    width: 240px;
+    height: 322px;
     padding: 4px;
   }
 }

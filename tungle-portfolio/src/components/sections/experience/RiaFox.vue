@@ -1,5 +1,5 @@
 <template>
-  <div class="row my-5 gy-3">
+  <div class="row  gy-3">
     <div class="section-title">
       <p
         v-motion-slide-visible-once-top
@@ -10,33 +10,36 @@
       </p>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 d-flex align-items-start justify-content-center">
       <div
         v-motion-slide-visible-once-top
         :delay="300"
-        class="card bg-transparent border-0 text-center"
+        class="card bg-transparent border-0 text-center justify-content-center d-fle"
       >
         <img
           v-motion-slide-visible-once-top
           :delay="300"
           src="https://www.riafox.com/wp-content/uploads/2018/02/Riafox_Logo_W_LR.png"
-          alt="fireship.io react/firebase Image"
+          alt="riafox logo"
+          width="300"
+          height="400"
           class="rounded img-fluid"
         />
       </div>
     </div>
     <div class="col-md-6">
       <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
-        As a Contracted Software Developer at RiaFox, I have worked on several  projects utilizing the MEAN stack. My primary
-        responsibilities  included implementing minor features and fixing
-        bugs, but I have also had the opportunity and worked closely with a team
-        and communicate effectively to achieve our shared goals. Despite my
-        relatively junior role and limited time working with them , I  gained valuable experience in working
-        remotely and have been grateful for the opportunity to have been a part of their team.  Overall, my time at RiaFox has been a great learning
-        experience.
+        Assisted with several projects utilizing the <b class="text-warning"> MongoDB, Express, Angular,
+        Node(MEAN)</b> stack. My primary responsibilities included implementing
+        minor features and fixing bugs, but I have also had the opportunity and
+        worked closely with a team and communicate effectively to achieve our
+        shared goals. Despite my relatively junior role and limited time working
+        with them , I gained valuable experience in working remotely and have
+        been grateful for the opportunity to have been a part of their team.
+        Overall, my time at RiaFox has been a great learning experience.
       </p>
 
-      <ul class="numbered nav-list">
+      <!-- <ul class="numbered nav-list">
         <li
           v-motion-slide-visible-once-top
           :delay="300"
@@ -64,36 +67,7 @@
           this area.
         </li>
       </ul>
-      <details>
-        <summary
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="font-1 text-warning fs-4"
-        >
-          Contributions
-        </summary>
-
-        <blockquote>
-          <ul class="numbered nav-list">
-            <li
-              v-motion-slide-visible-once-top
-              :delay="300"
-              class="numbered-list-item"
-            >
-              Incorporated Microsoft-specific CSS to ensure consistent
-              presentation of email templates across various clients.
-            </li>
-            <li
-              v-motion-slide-visible-once-top
-              :delay="300"
-              class="numbered-list-item"
-            >
-              Carried out user acceptance testing to assess the user's
-              experience and note out any missing functionality or bugs..
-            </li>
-          </ul>
-        </blockquote>
-      </details>
+      -->
     </div>
   </div>
 </template>
