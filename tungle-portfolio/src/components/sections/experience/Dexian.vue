@@ -1,29 +1,7 @@
 <template>
-  <div class="row my-5">
-    <div class="section-title">
-
-    </div>
-    <div
-      class="col-md-6 d-flex flex-column justify-content-center align-items-center my-3 my-md-0"
-    >
-      <div
-        v-motion-slide-visible-once-top
-        :delay="300"
-        class="devsopportunities-image"
-      >
-        <img
-          v-motion-slide-visible-once-top
-          :delay="300"
-          src="https://www.1901group.com/wp-content/uploads/2021/01/MenuLogoLEIDOSVECTOR-03.svg"
-          alt="LLC Logo"
-          class="image"
-        />
-      </div>
-      <div class="d-flex justify-content-center"></div>
-    </div>
+  <div class="row my-5 pb-md-5 pb-3">
     <div class="col-md-6">
-
-  <p
+      <p
         v-motion-slide-visible-once-top
         :delay="300"
         class="font-1 fs-2 text-warning"
@@ -39,15 +17,17 @@
         April 2023 - October 2023
       </p>
       <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
-        <strong> Enterprise Service Desk Specialist</strong> at 1901 Group,
-        provided comprehensive technical support, both independently and
-        collaboratively. My role involved resolving diverse technical
-        challenges, spanning account administration, hardware, and software
-        issues, for a wide range of computer systems, including laptops,
-        desktops, and network printers. Worked in fast pase and challenging
-        environment of the Navy Intranet, which serves over 700,000 users, I
-        served as the first line of communication for addressing issues and
-        responding to incidents promptly.
+        <strong class="text-warning">
+          Enterprise Service Desk Specialist</strong
+        >
+        at 1901 Group, provided comprehensive technical support, both
+        independently and collaboratively. My role involved resolving diverse
+        technical challenges, spanning account administration, hardware, and
+        software issues, for a wide range of computer systems, including
+        laptops, desktops, and network printers. Worked in fast pase and
+        challenging environment of the Navy Intranet, which serves over 700,000
+        users, I served as the first line of communication for addressing issues
+        and responding to incidents promptly.
       </p>
 
       <!-- <ul class="numbered nav-list">
@@ -71,6 +51,23 @@
         </li>
 
       </ul> -->
+    </div>
+    <div
+      class="col-md-6 d-flex flex-column justify-content-center align-items-center  my-md-0"
+    >
+      <div
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="devsopportunities-image d-flex justify-content-center  align-items-center "
+      >
+        <img
+          v-motion-slide-visible-once-top
+          :delay="300"
+          src="https://www.1901group.com/wp-content/uploads/2021/01/MenuLogoLEIDOSVECTOR-03.svg"
+          alt="LLC Logo"
+          class="image"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -133,8 +130,8 @@ li.numbered-list-item + li.numbered-list-item {
   flex: auto;
 
   img {
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
     background-color: #f8fcdb;
     border-radius: 4px;
   }
@@ -144,11 +141,7 @@ li.numbered-list-item + li.numbered-list-item {
     width: 200px;
     img {
       height: 100px;
-
     }
   }
 }
-
-
-
 </style>

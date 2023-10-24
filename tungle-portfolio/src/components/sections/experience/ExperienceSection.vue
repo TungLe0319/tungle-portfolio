@@ -1,23 +1,11 @@
 <template>
   <section id="experience" class="py-5 section-bubble2">
     <div class="container">
-      <!-- <div class="section-title">
-        <h1
-          v-motion-slide-visible-once-top
-          :delay="300"
-          class="font-1 text-light7"
-        >
-         Skills, Certificates & Experience
-        </h1>
-      </div> -->
       <SkillIcons />
       <Education />
-
-      <!-- <TimeLine/> -->
-     <Dexian/>
+      <Dexian />
       <DevOpportunities />
       <RiaFox />
-
     </div>
   </section>
 </template>
@@ -36,7 +24,6 @@ import Education from "./Education.vue";
 
 import RiaFox from "./RiaFox.vue";
 import SkillIcons from "./SkillIcons.vue";
-
 
 export default {
   setup() {
@@ -117,8 +104,7 @@ export default {
     Education,
     Dexian,
     CurrentlyLearning,
-
-},
+  },
 };
 </script>
 

@@ -1,13 +1,10 @@
 <template>
-    <div class="row my-5">
+    <div class="row my-5 pb-5">
         <div class="section-title">
-          <p
-            v-motion-slide-visible-once-top
-                :delay="300"
-          class="font-1 fs-2 text-warning">DevOpportunities LLC</p>
+
         </div>
         <div
-          class="col-md-6 d-flex flex-column   align-items-center my-3 "
+          class="col-md-6 d-flex flex-column justify-content-center    align-items-center my-3 "
         >
           <div
             v-motion-slide-visible-once-top
@@ -17,7 +14,7 @@
             <img
               v-motion-slide-visible-once-top
                 :delay="300"
-            src="../../../assets/img/LLCLogo.png" alt="LLC Logo" width="100" height="100" />
+            src="../../../assets/img/LLCLogo.png" alt="LLC Logo" width="150" height="150" />
 
           </div>
              <div class="d-flex  justify-content-center">
@@ -43,21 +40,27 @@
 
         </div>
         <div class="col-md-6">
-          <p
-            v-motion-slide-visible-once-top
-            :delay="300"
-            class="font-2 text-light darken-10 fw-bold"
-          >
-            2022
-          </p>
-          <p
-            v-motion-slide-visible-once-top
-            :delay="300"
-            class="font-2 text-light"
-          >
-         Co-founded <b class="text-warning">DevOpportunities</b> along with other developers to gain  experience in project management, technical expertise, and professional networking. We've had the pleasure of working with clients on  projects, with our most notable one being the design, development, and deployment of the website for  <a href="https://samadhiyogaidaho.com/#/" target="_blank" class="text-warning"><b>SamadhiYogaIdaho</b></a> which has  further details below.
+        <p
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="font-1 fs-2 text-warning"
+      >
+        DevOpportunitiesLLC
+      </p>
 
-          </p>
+      <p
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="font-2 text-light darken-10 fw-bold"
+      >
+        Present
+      </p>
+      <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
+    Co-founded <b class="text-warning">DevOpportunities</b> along with other developers. Our goal was to gain experience in project management, technical expertise, and professional networking. We've had the pleasure of working on several projects together.
+
+    One notable project involved designing, developing, and deploying a website for <a href="https://samadhiyogaidaho.com/#/" target="_blank" class="text-warning"><b>SamadhiYogaIdaho</b></a>.
+</p>
+
 
           <!-- <ul class="numbered nav-list">
             <li

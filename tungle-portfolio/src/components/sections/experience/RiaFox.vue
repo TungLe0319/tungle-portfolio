@@ -1,33 +1,22 @@
 <template>
-  <div class="row  gy-3">
-    <div class="section-title">
+  <div class="row mt-5  gy-3">
+
+    <div class="col-md-6">
+        <p
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="font-1 fs-2 text-warning"
+      >
+       Riafox
+      </p>
+
       <p
         v-motion-slide-visible-once-top
         :delay="300"
-        class="font-1 text-warning fs-2"
+        class="font-2 text-light darken-10 fw-bold"
       >
-        RiaFox
+        Jan 2023 - March 2023
       </p>
-    </div>
-
-    <div class="col-md-6 d-flex align-items-start justify-content-center">
-      <div
-        v-motion-slide-visible-once-top
-        :delay="300"
-        class="card bg-transparent border-0 text-center justify-content-center d-fle"
-      >
-        <img
-          v-motion-slide-visible-once-top
-          :delay="300"
-          src="https://www.riafox.com/wp-content/uploads/2018/02/Riafox_Logo_W_LR.png"
-          alt="riafox logo"
-          width="300"
-          height="400"
-          class="rounded img-fluid"
-        />
-      </div>
-    </div>
-    <div class="col-md-6">
       <p v-motion-slide-visible-once-top :delay="300" class="font-2 text-light">
         Assisted with several projects utilizing the <b class="text-warning"> MongoDB, Express, Angular,
         Node(MEAN)</b> stack. My primary responsibilities included implementing
@@ -68,6 +57,26 @@
         </li>
       </ul>
       -->
+    </div>
+
+
+
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div
+        v-motion-slide-visible-once-top
+        :delay="300"
+        class="card bg-transparent border-0 text-center justify-content-center d-fle"
+      >
+        <img
+          v-motion-slide-visible-once-top
+          :delay="300"
+          src="https://www.riafox.com/wp-content/uploads/2018/02/Riafox_Logo_W_LR.png"
+          alt="riafox logo"
+          width="400"
+          height="400"
+          class="rounded img-fluid"
+        />
+      </div>
     </div>
   </div>
 </template>

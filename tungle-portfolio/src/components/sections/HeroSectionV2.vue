@@ -5,11 +5,11 @@
     class="container-fluid hero-image text-center d-flex flex-column justify-content-center align-items-center"
   >
     <section
-      class="locomotive-section container-fluid"
+      class="locomotive-section container-fluid "
       :style="{ transform: `translateY(-${scrollY}px)` }"
     >
-      <div class="row justify-content-between w-100">
-        <div id="heroText2" class="col-md-6 hero-text-2 mt-5">
+      <div class="row  w-100     ">
+        <div id="heroText2" class="col-md-6 hero-text-2 mt-5     ">
           <p
             v-motion-slide-bottom
             :delay="600"
@@ -39,13 +39,13 @@
             Development
           </p>
         </div>
-        <div id="heroText" class="col-md-6 text-end text-light">
+        <div id="heroText" class="col-md-6 text-end text-light  d-xl-flex flex-xl-column   pe-5 justify-content-xl-center  ">
           <p
             v-motion-slide-bottom
             :delay="600"
             class="display-6 font-1 mb-0 text-shadow"
           >
-            Willing To Learn
+            Open to Learning
           </p>
           <p
             v-motion-slide-bottom

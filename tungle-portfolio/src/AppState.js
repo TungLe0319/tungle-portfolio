@@ -180,7 +180,7 @@ export const AppState = reactive({
     <li>Secure Stripe Checkout</li>
   </ul>
 `,
-      technologies: ["Nuxt", "Tailwind", "NextAuth.js","Prisma.io", "Stripe"],
+      technologies: ["Nuxt", "Tailwind", "NextAuth.js", "Prisma.io", "Stripe",],
       link: "https://thedailysun.devopportunities.dev/",
     },
     {
@@ -192,6 +192,7 @@ export const AppState = reactive({
 
   <p>Features:</p>
   <ul>
+    <li>Tailored and customized landing page</li>
     <li>Sign ups for posted classes and yoga events</li>
     <li>Class Schedules</li>
     <li>Yoga Retreats</li>
@@ -228,7 +229,7 @@ export const AppState = reactive({
         "DotNet",
         "MySQL",
         "Bootstrap",
-        "Dapper(ORM)",
+        "Dapper",
       ],
       link: "https://better-after-books-demo.onrender.com/#/",
     },
@@ -253,7 +254,7 @@ export const AppState = reactive({
     <li>Security & Deployment</li>
   </ul>
 </div>`,
-      technologies: ["Next.js", "Tailwind", "React"],
+      technologies: ["Next.js", "Tailwind", "React", "Firebase"],
       link: "https://next-fire.tung.devopportunities.dev/",
     },
     {
@@ -262,20 +263,18 @@ export const AppState = reactive({
         "https://media.discordapp.net/attachments/1060066788878069891/1060068356541120683/KeeprSS.png?width=720&height=395",
       description: `<div class="profolio-description">
   <p>Hosted on Render (Can take a minute or two to load)</p>
-  <p>Full-stack dynamic social network designed for visual sharing and exploration of diverse interests. Inspired by Pinterest.</p>
+  <p>Full-stack social network designed for visual sharing and exploration of diverse interests. Inspired by Pinterest.</p>
 
   <p>Key Features:</p>
   <ul>
-    <li>Visual Sharing: Users can post images or videos to their own collections, known as 'vaults,' each often centered around a common theme.</li>
-    <li>Content Discovery: Explore the curated collections of other users and find new interests.</li>
-
-    <li>DotNet WebApi: On the server-side, the project relies on DotNet WebApi and applies the Repository pattern to interact with a MySQL database.</li>
-    <li>User Management: Auth0 is integrated for robust user authentication and management.</li>
-    <li>Data Access: Dapper serves as the Object-Relational Mapping (ORM) to streamline database interactions.</li>
+    <li>Visual sharing and posting  of images  to "collections".</li>
+    <li>Modern Styled components</li>
+    <li>Masonry Layout</li>
+    <li>User Management and Auth flow </li>
   </ul>
 
 </div>`,
-      technologies: ["HTML", "CSS", "Javascript"],
+      technologies: ["Vue.js", "Bootstrap", "Node.js", "Axios"],
       link: "https://keepr-project-demo.onrender.com",
     },
   ],
