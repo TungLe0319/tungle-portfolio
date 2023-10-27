@@ -9,7 +9,7 @@
 
     <!-- The main page -->
     <transition name="fade" mode="out-in" appear>
-      <div class="main-page" v-if="mainLoaded">
+      <div class="main-page  " v-if="mainLoaded">
         <!-- Add your main page content here -->
         <HeroSectionV2 />
         <AboutSection />

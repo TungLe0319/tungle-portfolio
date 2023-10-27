@@ -1,13 +1,19 @@
 <template>
-  <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
+  <div id="socialBar" class="fixed-bottom d-none d-md-block">
     <div class="row my-3 my-md-0 justify-content-between">
-      <div class="col-2 ps-2 d-flex flex-column align-items-start">
+      <div class="col-2  ms-2 d-flex flex-column align-items-start">
         <i><ResumeIcon /></i>
         <i> <GitHubIcon /></i>
         <i> <LinkedInIcon class="linkedIn-icon" /></i>
       </div>
+
+
+
+
+
+
       <div
-        class="col-1 text-center d-flex justify-content-center align-items-center"
+        class="col-1 text-center me-1 d-flex justify-content-center align-items-center"
       >
         <a
           href="mailto:tung.le0319@gmail.com"
@@ -21,14 +27,14 @@
   </div>
 
   <!-- SECTION FOOTER  -->
-  <div class="section-bubble2">
-    <div class="row justify-content-center">
+  <div class="section-bubble2 d-flex justify-content-center ">
+    <div class="row justify-content-center w-75 ">
       <div class="col-12 d-flex justify-content-center icons d-md-none">
         <ResumeIcon />
         <GitHubIcon />
         <LinkedInIcon />
       </div>
-      <div class="col-md-12 text-center text-light">
+      <div class="col-md-9 text-center text-light">
         <p v-motion-slide-visible-once-top :delay="300">
           Designed & Built by <b> Yours Truly</b>
         </p>
