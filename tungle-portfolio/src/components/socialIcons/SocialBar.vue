@@ -1,15 +1,20 @@
 <template>
-  <div class="container-fluid fixed-bottom d-none d-md-block">
-    <div class="position-fixed bottom-0 start-0">
-      <div class="col-2 ps-2 d-flex flex-column align-items-start">
+  <div id="socialBar" class="fixed-bottom d-none d-md-block">
+    <div class="row my-3 my-md-0 justify-content-between">
+      <div class="col-2  ms-2 d-flex flex-column align-items-start">
         <i><ResumeIcon /></i>
         <i> <GitHubIcon /></i>
         <i> <LinkedInIcon class="linkedIn-icon" /></i>
       </div>
-    </div>
 
-    <div class="position-fixed bottom-0 end-0">
-      <div class="col-2  d-flex flex-column align-items-start">
+
+
+
+
+
+      <div
+        class="col-1 text-center me-1 d-flex justify-content-center align-items-center"
+      >
         <a
           href="mailto:tung.le0319@gmail.com"
           target="_blank"
@@ -22,14 +27,14 @@
   </div>
 
   <!-- SECTION FOOTER  -->
-  <div class="section-bubble2">
-    <div class="row justify-content-center">
+  <div class="section-bubble2 d-flex justify-content-center ">
+    <div class="row justify-content-center w-75 ">
       <div class="col-12 d-flex justify-content-center icons d-md-none">
         <ResumeIcon />
         <GitHubIcon />
         <LinkedInIcon />
       </div>
-      <div class="col-md-12 text-center text-light">
+      <div class="col-md-9 text-center text-light">
         <p v-motion-slide-visible-once-top :delay="300">
           Designed & Built by <b> Yours Truly</b>
         </p>
@@ -74,11 +79,11 @@ export default {
 }
 
 .email {
-  transform: rotate(90deg) + translateX(-115px) + translateY(-80px);
+  transform: rotate(90deg) + translateX(-10px) + translateY(-20px);
   transition: all 0.5s ease-out;
 }
 .email:hover {
-  transform: rotate(90deg) + translateX(-150px) + translateY(-80px);
+  transform: rotate(90deg) + translateX(-30px) + translateY(-20px);
   color: turquoise !important;
   transition: all 0.5s ease-out;
 }

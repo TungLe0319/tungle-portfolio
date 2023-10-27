@@ -4,7 +4,7 @@
   </header>
   <main class="">
     <router-view />
-    <!-- <ProgressBar/> -->
+    <ProgressBar/>
   </main>
 </template>
 
