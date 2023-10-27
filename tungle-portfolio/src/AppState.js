@@ -180,7 +180,7 @@ export const AppState = reactive({
     <li>Secure Stripe Checkout</li>
   </ul>
 `,
-      technologies: ["Nuxt", "Tailwind", "NextAuth.js", "Prisma.io", "Stripe",],
+      technologies: ["Nuxt", "Tailwind", "NextAuth.js", "Prisma.io", "Stripe"],
       link: "https://thedailysun.devopportunities.dev/",
     },
     {
@@ -223,14 +223,7 @@ export const AppState = reactive({
   </ul>
 
 </div>`,
-      technologies: [
-        "Vue.Js",
-        "C#",
-        "DotNet",
-        "MySQL",
-        "Bootstrap",
-        "Dapper",
-      ],
+      technologies: ["Vue.Js", "C#", "DotNet", "MySQL", "Bootstrap", "Dapper"],
       link: "https://better-after-books-demo.onrender.com/#/",
     },
     {
@@ -274,7 +267,7 @@ export const AppState = reactive({
   </ul>
 
 </div>`,
-      technologies: ["Vue.js", "Bootstrap", "Node.js", "Axios"],
+      technologies: ["Vue.Js", "C#", "DotNet", "MySQL", "Bootstrap", "Dapper"],
       link: "https://keepr-project-demo.onrender.com",
     },
   ],
