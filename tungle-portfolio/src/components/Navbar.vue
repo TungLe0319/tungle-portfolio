@@ -45,7 +45,7 @@
       </ul>
       <!-- LOGIN COMPONENT HERE -->
     </div>
-    <ProgressBar />
+    <!-- <ProgressBar /> -->
   </nav>
 </template>
 

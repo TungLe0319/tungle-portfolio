@@ -4,6 +4,7 @@
   </header>
   <main>
     <router-view />
+    <ProgressBar/>
   </main>
 </template>
 
@@ -11,6 +12,7 @@
 import { computed, onMounted } from "vue";
 import { AppState } from "./AppState";
 import Navbar from "./components/Navbar.vue";
+import ProgressBar from "./components/effects/ProgressBar.vue";
 
 export default {
   setup() {
@@ -53,7 +55,7 @@ export default {
       appState: computed(() => AppState),
     };
   },
-  components: { Navbar },
+  components: { Navbar, ProgressBar },
 };
 </script>
 <style lang="scss">
