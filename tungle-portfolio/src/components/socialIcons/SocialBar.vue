@@ -1,20 +1,16 @@
 <template>
-  <div  class="container-fluid fixed-bottom d-none d-md-block">
-
-
-<div class=" position-fixed  bottom-0   start-0 ">
-    <div class="col-2 ps-2 d-flex flex-column align-items-start">
+  <div class="container-fluid fixed-bottom d-none d-md-block">
+    <div class="position-fixed bottom-0 start-0">
+      <div class="col-2 ps-2 d-flex flex-column align-items-start">
         <i><ResumeIcon /></i>
         <i> <GitHubIcon /></i>
         <i> <LinkedInIcon class="linkedIn-icon" /></i>
       </div>
-</div>
+    </div>
 
-
-
-<div class=" position-fixed  bottom-0   end-0 ">
-    <div class="col-2 ps-2 d-flex flex-column align-items-start">
-          <a
+    <div class="position-fixed bottom-0 end-0">
+      <div class="col-2  d-flex flex-column align-items-start">
+        <a
           href="mailto:tung.le0319@gmail.com"
           target="_blank"
           class="email font-1 fs-3 text-light text-shadow"
@@ -22,11 +18,7 @@
           <p v-motion-slide-left :delay="600">tung.le0319@gmail.com</p>
         </a>
       </div>
-</div>
-
-
-
-
+    </div>
   </div>
 
   <!-- SECTION FOOTER  -->

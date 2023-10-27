@@ -2,9 +2,9 @@
   <header>
     <Navbar class="fixed-top" id="nav" />
   </header>
-  <main>
+  <main class="">
     <router-view />
-    <ProgressBar/>
+    <!-- <ProgressBar/> -->
   </main>
 </template>
 
