@@ -1,15 +1,20 @@
 <template>
-  <div id="socialBar" class="container-fluid fixed-bottom d-none d-md-block">
-    <div class="row my-3 my-md-0 justify-content-between">
-      <div class="col-2 ps-2 d-flex flex-column align-items-start">
+  <div  class="container-fluid fixed-bottom d-none d-md-block">
+
+
+<div class=" position-fixed  bottom-0   start-0 ">
+    <div class="col-2 ps-2 d-flex flex-column align-items-start">
         <i><ResumeIcon /></i>
         <i> <GitHubIcon /></i>
         <i> <LinkedInIcon class="linkedIn-icon" /></i>
       </div>
-      <div
-        class="col-1 text-center d-flex justify-content-center align-items-center"
-      >
-        <a
+</div>
+
+
+
+<div class=" position-fixed  bottom-0   end-0 ">
+    <div class="col-2 ps-2 d-flex flex-column align-items-start">
+          <a
           href="mailto:tung.le0319@gmail.com"
           target="_blank"
           class="email font-1 fs-3 text-light text-shadow"
@@ -17,7 +22,11 @@
           <p v-motion-slide-left :delay="600">tung.le0319@gmail.com</p>
         </a>
       </div>
-    </div>
+</div>
+
+
+
+
   </div>
 
   <!-- SECTION FOOTER  -->
@@ -73,11 +82,11 @@ export default {
 }
 
 .email {
-  transform: rotate(90deg) + translateX(-10px) + translateY(-20px);
+  transform: rotate(90deg) + translateX(-115px) + translateY(-80px);
   transition: all 0.5s ease-out;
 }
 .email:hover {
-  transform: rotate(90deg) + translateX(-30px) + translateY(-20px);
+  transform: rotate(90deg) + translateX(-150px) + translateY(-80px);
   color: turquoise !important;
   transition: all 0.5s ease-out;
 }

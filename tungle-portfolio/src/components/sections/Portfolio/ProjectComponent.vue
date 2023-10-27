@@ -1,7 +1,7 @@
 <template>
   <div class="row my-5 py-5 py-2 position-relative project-container">
     <!-- Render the section content based on props -->
-    <div class="col-md-7">
+    <div class="col-md-7   justify-content-end  d-flex ">
       <a :href="projectData.link" target="_blank">
         <img
           v-motion-slide-visible-once-top
